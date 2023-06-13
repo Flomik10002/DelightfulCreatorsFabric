@@ -20,7 +20,6 @@ public class ModTags {
 
         public static final TagKey<Fluid> TOMATO_SAUCE = createCommonFluidTag("tomato_sauce");
 
-
         public static @NotNull TagKey<Fluid> createFluidTag(String modFluidTagName) {
             return TagKey.of(Registry.FLUID_KEY, new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
         }
