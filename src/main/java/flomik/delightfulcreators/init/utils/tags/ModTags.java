@@ -1,6 +1,5 @@
 package flomik.delightfulcreators.init.utils.tags;
 
-
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.tag.TagKey;
@@ -18,7 +17,7 @@ public class ModTags {
 
     public static class ModFluidTags {
 
-        public static final TagKey<Fluid> TOMATO_SAUCE = createCommonFluidTag("tomato_sauce");
+        public static final TagKey<Fluid> TOMATO_SAUCE = createFluidTag("tomato_sauce");
 
         public static @NotNull TagKey<Fluid> createFluidTag(String modFluidTagName) {
             return TagKey.of(Registry.FLUID_KEY, new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));

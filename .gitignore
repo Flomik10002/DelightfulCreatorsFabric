@@ -1,6 +1,7 @@
 # gradle
 
 .gradle/
+.idea
 build/
 out/
 classes/
