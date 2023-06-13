@@ -2,14 +2,15 @@
 	"schemaVersion": 1,
 	"id": "delightful-creator",
 	"version": "${version}",
-	"name": "Delightful Creator",
+	"name": "Delightful Creators",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Flomik"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Flomik10002/DelightfulCreatorsFabric",
+		"sources": "https://github.com/Flomik10002/DelightfulCreatorsFabric",
+		"issues": "https://github.com/Flomik10002/DelightfulCreatorsFabric/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/delightfulcreators/icon.png",
