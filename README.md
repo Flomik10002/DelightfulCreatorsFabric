@@ -20,3 +20,7 @@
 [![](https://img.shields.io/badge/CREATE%20FABRIC-ae7c38?logo=curseforge&labelColor=gray&style=for-the-badge)][CREATE_FABRIC]
 
 ![](https://raw.githubusercontent.com/modrinth/art/5f7653034c85cc0bbf45d63bbcb167c624b7374b/Branding/Badge/badge-dark.svg)
+
+## License
+
+This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
