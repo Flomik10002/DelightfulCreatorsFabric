@@ -24,7 +24,15 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                         new Identifier("delightfulcreators:fluid/tomato_sauce_flow")
                 ));
 
-        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
-                ModFluids.STILL_TOMATO_SAUCE, ModFluids.FLOWING_TOMATO_SAUCE);
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_APPLE_CIDER, ModFluids.FLOWING_APPLE_CIDER, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0xbb7907
+            ));
+
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.STILL_TOMATO_SAUCE, ModFluids.FLOWING_TOMATO_SAUCE);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),ModFluids.STILL_APPLE_CIDER, ModFluids.FLOWING_APPLE_CIDER);
+
+
     }
 }

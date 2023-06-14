@@ -1,6 +1,8 @@
 {
   "item.delightfulcreators.tomato_sauce_bucket": "Tomato Sauce Bucket",
   "block.delightfulcreators.tomato_sauce_block": "Tomato Sauce",
+  "item.delightfulcreators.apple_cider_bucket": "Apple Cider Bucket",
+  "block.delightfulcreators.apple_cider_block": "Apple Cider",
 
-  "itemGroup.delightfulcreators.delightfulcreators": "Delightful Creators"
+  "itemGroup.delightfulcreators.main": "Delightful Creators"
 }

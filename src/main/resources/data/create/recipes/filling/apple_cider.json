@@ -1,26 +1,24 @@
 {
+  "replace": "true",
+  "type": "create:filling",
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": ["create", "farmersdelight"]
     }
   ],
-  "type": "create:mixing",
   "ingredients": [
     {
-      "item": "minecraft:apple"
+      "item": "minecraft:glass_bottle"
     },
     {
-      "item": "minecraft:apple"
-    },
-    {
-      "item": "minecraft:sugar"
+      "fluid": "delightfulcreators:apple_cider",
+      "amount": 27000
     }
   ],
   "results": [
     {
-      "fluid": "delightfulcreators:apple_cider",
-      "amount": 27000
+      "item": "farmersdelight:apple_cider"
     }
   ]
 }

@@ -16,10 +16,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import org.jetbrains.annotations.Nullable;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributeHandler;
 
-public abstract class TomatoSauceFluid extends FlowableFluid {
+public abstract class AppleCiderFluid extends FlowableFluid {
 
     @Nullable
     protected ParticleEffect getParticle() {
@@ -28,22 +26,22 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
 
     @Override
     public Fluid getStill() {
-        return ModFluids.STILL_TOMATO_SAUCE;
+        return ModFluids.STILL_APPLE_CIDER;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluids.FLOWING_TOMATO_SAUCE;
+        return ModFluids.FLOWING_APPLE_CIDER;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluids.TOMATO_SAUCE_BUCKET;
+        return ModFluids.APPLE_CIDER_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluids.TOMATO_SAUCE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluids.APPLE_CIDER_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -64,7 +62,7 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
 
     @Override
     protected int getLevelDecreasePerBlock(WorldView world) {
-        return 2;
+        return 1;
     }
 
     @Override
@@ -79,7 +77,7 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
 
     @Override
     public int getTickRate(WorldView world) {
-        return 30;
+        return 5;
     }
 
     @Override
@@ -97,7 +95,7 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
         return false;
     }
 
-    public static class Flowing extends TomatoSauceFluid {
+    public static class Flowing extends AppleCiderFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -111,7 +109,7 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
 
     }
 
-    public static class Still extends TomatoSauceFluid {
+    public static class Still extends AppleCiderFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;
