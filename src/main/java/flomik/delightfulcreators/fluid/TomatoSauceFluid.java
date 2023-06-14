@@ -1,30 +1,14 @@
 package flomik.delightfulcreators.fluid;
 
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
-import net.minecraft.particle.ParticleEffect;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
-import org.jetbrains.annotations.Nullable;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
-import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributeHandler;
 
-public abstract class TomatoSauceFluid extends FlowableFluid {
-
-    @Nullable
-    protected ParticleEffect getParticle() {
-        return null;
-    }
+public abstract class TomatoSauceFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
@@ -47,22 +31,6 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
     }
 
     @Override
-    protected boolean isInfinite() {
-        return false;
-    }
-
-    @Override
-    protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
-        final BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
-        Block.dropStacks(state, world, pos, blockEntity);
-    }
-
-    @Override
-    protected int getFlowSpeed(WorldView world) {
-        return 4;
-    }
-
-    @Override
     protected int getLevelDecreasePerBlock(WorldView world) {
         return 2;
     }
@@ -80,16 +48,6 @@ public abstract class TomatoSauceFluid extends FlowableFluid {
     @Override
     public int getTickRate(WorldView world) {
         return 30;
-    }
-
-    @Override
-    protected float getBlastResistance() {
-        return 100f;
-    }
-
-    @Override
-    protected boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
-        return false;
     }
 
     @Override

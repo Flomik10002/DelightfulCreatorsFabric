@@ -16,6 +16,8 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
             registry.register(new Identifier("delightfulcreators:fluid/tomato_sauce_still"));
             registry.register(new Identifier("delightfulcreators:fluid/tomato_sauce_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/apple_cider_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/apple_cider_flow"));
         });
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_TOMATO_SAUCE, ModFluids.FLOWING_TOMATO_SAUCE,
@@ -25,9 +27,8 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 ));
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_APPLE_CIDER, ModFluids.FLOWING_APPLE_CIDER, new SimpleFluidRenderHandler(
-                new Identifier("minecraft:block/water_still"),
-                new Identifier("minecraft:block/water_flow"),
-                0xbb7907
+                new Identifier("delightfulcreators:fluid/apple_cider_still"),
+                new Identifier("delightfulcreators:fluid/apple_cider_flow")
             ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluids.STILL_TOMATO_SAUCE, ModFluids.FLOWING_TOMATO_SAUCE);

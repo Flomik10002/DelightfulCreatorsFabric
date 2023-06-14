@@ -16,7 +16,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModFluids {
-
     public static FlowableFluid STILL_TOMATO_SAUCE;
     public static FlowableFluid FLOWING_TOMATO_SAUCE;
     public static Block TOMATO_SAUCE_BLOCK;
@@ -25,11 +24,6 @@ public class ModFluids {
     public static FlowableFluid FLOWING_APPLE_CIDER;
     public static Block APPLE_CIDER_BLOCK;
     public static Item APPLE_CIDER_BUCKET;
-
-    public static boolean isTomato_Sauce(FluidState state) {
-        return state.isOf(ModFluids.STILL_TOMATO_SAUCE) || state.isOf(ModFluids.FLOWING_TOMATO_SAUCE);
-    }
-
 
     public static void register() {
         STILL_TOMATO_SAUCE = Registry.register(Registry.FLUID,
