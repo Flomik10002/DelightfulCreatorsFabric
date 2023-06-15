@@ -23,7 +23,7 @@
 
 [![](https://raw.githubusercontent.com/modrinth/art/5f7653034c85cc0bbf45d63bbcb167c624b7374b/Branding/Badge/badge-dark.svg)][MODRINTH]
 
-<h3>Making automation between <a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight" rel="noopener nofollow ugc">Farmer's Delight</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/create" rel="noopener nofollow ugc">Create</a> more correct.</h3>
+<h3>Making automation between <a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric" rel="noopener nofollow ugc">Farmer's Delight</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/create-fabric" rel="noopener nofollow ugc">Create</a> more correct.</h3>
 
 ## License
 
