@@ -24,7 +24,8 @@
   ],
   "results": [
     {
-      "item": "farmersdelight:hot_cocoa"
+      "fluid": "delightfulcreators:hot_cocoa",
+      "amount": 27000
     }
   ]
 }

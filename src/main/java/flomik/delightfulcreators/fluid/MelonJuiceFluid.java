@@ -6,33 +6,27 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
-import net.minecraft.world.WorldView;
 
-public abstract class TomatoSauceFluid extends ModFluidsTemplate {
+public abstract class MelonJuiceFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_TOMATO_SAUCE;
+        return ModFluidsRegister.STILL_MELON_JUICE;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_TOMATO_SAUCE;
+        return ModFluidsRegister.FLOWING_MELON_JUICE;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.TOMATO_SAUCE_BUCKET;
+        return ModFluidsRegister.MELON_JUICE_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.TOMATO_SAUCE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
-    }
-
-    @Override
-    protected int getLevelDecreasePerBlock(WorldView world) {
-        return 2;
+        return ModFluidsRegister.MELON_JUICE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -46,16 +40,11 @@ public abstract class TomatoSauceFluid extends ModFluidsTemplate {
     }
 
     @Override
-    public int getTickRate(WorldView world) {
-        return 30;
-    }
-
-    @Override
     public boolean isStill(FluidState state) {
         return false;
     }
 
-    public static class Flowing extends TomatoSauceFluid {
+    public static class Flowing extends MelonJuiceFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -69,7 +58,7 @@ public abstract class TomatoSauceFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends TomatoSauceFluid {
+    public static class Still extends MelonJuiceFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

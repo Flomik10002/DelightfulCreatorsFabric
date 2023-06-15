@@ -11,22 +11,22 @@ public abstract class AppleCiderFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluids.STILL_APPLE_CIDER;
+        return ModFluidsRegister.STILL_APPLE_CIDER;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluids.FLOWING_APPLE_CIDER;
+        return ModFluidsRegister.FLOWING_APPLE_CIDER;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluids.APPLE_CIDER_BUCKET;
+        return ModFluidsRegister.APPLE_CIDER_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluids.APPLE_CIDER_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.APPLE_CIDER_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override

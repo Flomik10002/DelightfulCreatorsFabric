@@ -25,7 +25,8 @@
   ],
   "results": [
     {
-      "item": "farmersdelight:melon_juice"
+      "fluid": "delightfulcreators:melon_juice",
+      "amount": 27000
     }
   ]
 }

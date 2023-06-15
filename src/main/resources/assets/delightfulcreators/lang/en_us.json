@@ -3,6 +3,10 @@
   "block.delightfulcreators.tomato_sauce_block": "Tomato Sauce",
   "item.delightfulcreators.apple_cider_bucket": "Apple Cider Bucket",
   "block.delightfulcreators.apple_cider_block": "Apple Cider",
+  "item.delightfulcreators.hot_cocoa_bucket": "Hot Cocoa Bucket",
+  "block.delightfulcreators.hot_cocoa_block": "Hot Cocoa",
+  "item.delightfulcreators.melon_juice_bucket": "Melon Juice Bucket",
+  "block.delightfulcreators.melon_juice_block": "Melon Juice",
 
   "itemGroup.delightfulcreators.main": "Delightful Creators"
 }

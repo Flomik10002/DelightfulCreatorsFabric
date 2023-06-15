@@ -1,6 +1,6 @@
 package flomik.delightfulcreators;
 
-import flomik.delightfulcreators.fluid.ModFluids;
+import flomik.delightfulcreators.fluid.ModFluidsRegister;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +12,6 @@ public class DelightfulCreatorsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModFluids.register();
+		ModFluidsRegister.register();
 	}
 }
