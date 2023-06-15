@@ -16,10 +16,6 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         ClientSpriteRegistryCallback.event(PlayerScreenHandler.BLOCK_ATLAS_TEXTURE).register((atlasTexture, registry) -> {
             registry.register(new Identifier("delightfulcreators:fluid/tomato_sauce_still"));
             registry.register(new Identifier("delightfulcreators:fluid/tomato_sauce_flow"));
-            registry.register(new Identifier("delightfulcreators:fluid/apple_cider_still"));
-            registry.register(new Identifier("delightfulcreators:fluid/apple_cider_flow"));
-            registry.register(new Identifier("delightfulcreators:fluid/melon_juice_still"));
-            registry.register(new Identifier("delightfulcreators:fluid/melon_juice_flow"));
             registry.register(new Identifier("delightfulcreators:fluid/hot_cocoa_still"));
             registry.register(new Identifier("delightfulcreators:fluid/hot_cocoa_flow"));
         });

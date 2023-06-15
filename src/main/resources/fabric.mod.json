@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "delightful-creator",
+	"id": "delightful-creators",
 	"version": "${version}",
 	"name": "Delightful Creators",
 	"description": "Making automation between Farmer's Delight and Create",
@@ -24,7 +24,7 @@
 		]
 	},
 	"mixins": [
-		"delightfulcreator.mixins.json"
+		"delightfulcreators.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.14.21",
