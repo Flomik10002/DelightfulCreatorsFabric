@@ -14,8 +14,8 @@
   ],
   "results": [
     {
-      "amount" : 20250,
-      "fluid" : "delightfulcreators:tomato_sauce"
+      "fluid" : "delightfulcreators:tomato_sauce",
+      "amount": 27000
     }
   ]
 }

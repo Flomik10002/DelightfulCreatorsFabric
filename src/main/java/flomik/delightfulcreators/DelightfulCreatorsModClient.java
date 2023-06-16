@@ -18,6 +18,24 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
             registry.register(new Identifier("delightfulcreators:fluid/tomato_sauce_flow"));
             registry.register(new Identifier("delightfulcreators:fluid/hot_cocoa_still"));
             registry.register(new Identifier("delightfulcreators:fluid/hot_cocoa_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/beetroot_soup_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/beetroot_soup_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/chicken_soup_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/chicken_soup_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/noodle_soup_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/noodle_soup_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/pumpkin_soup_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/pumpkin_soup_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/vegetable_soup_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/vegetable_soup_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/fish_stew_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/fish_stew_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/beef_stew_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/beef_stew_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/rabbit_stew_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/rabbit_stew_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/mushroom_stew_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/mushroom_stew_flow"));
         });
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE,
@@ -43,10 +61,63 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 new Identifier("delightfulcreators:fluid/hot_cocoa_flow")
         ));
 
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_BEETROOT_SOUP, ModFluidsRegister.FLOWING_BEETROOT_SOUP, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/beetroot_soup_still"),
+                new Identifier("delightfulcreators:fluid/beetroot_soup_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_CHICKEN_SOUP, ModFluidsRegister.FLOWING_CHICKEN_SOUP, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/chicken_soup_still"),
+                new Identifier("delightfulcreators:fluid/chicken_soup_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_NOODLE_SOUP, ModFluidsRegister.FLOWING_NOODLE_SOUP, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/noodle_soup_still"),
+                new Identifier("delightfulcreators:fluid/noodle_soup_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_PUMPKIN_SOUP, ModFluidsRegister.FLOWING_PUMPKIN_SOUP, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/pumpkin_soup_still"),
+                new Identifier("delightfulcreators:fluid/pumpkin_soup_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_VEGETABLE_SOUP, ModFluidsRegister.FLOWING_VEGETABLE_SOUP, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/vegetable_soup_still"),
+                new Identifier("delightfulcreators:fluid/vegetable_soup_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_FISH_STEW, ModFluidsRegister.FLOWING_FISH_STEW, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/fish_stew_still"),
+                new Identifier("delightfulcreators:fluid/fish_stew_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_BEEF_STEW, ModFluidsRegister.FLOWING_BEEF_STEW, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/beef_stew_still"),
+                new Identifier("delightfulcreators:fluid/beef_stew_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_RABBIT_STEW, ModFluidsRegister.FLOWING_RABBIT_STEW, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/rabbit_stew_still"),
+                new Identifier("delightfulcreators:fluid/rabbit_stew_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_MUSHROOM_STEW, ModFluidsRegister.FLOWING_MUSHROOM_STEW, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/mushroom_stew_still"),
+                new Identifier("delightfulcreators:fluid/mushroom_stew_flow")
+        ));
+
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_APPLE_CIDER, ModFluidsRegister.FLOWING_APPLE_CIDER);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MELON_JUICE, ModFluidsRegister.FLOWING_MELON_JUICE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_HOT_COCOA, ModFluidsRegister.FLOWING_HOT_COCOA);
-
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_BEETROOT_SOUP, ModFluidsRegister.FLOWING_BEETROOT_SOUP);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_CHICKEN_SOUP, ModFluidsRegister.FLOWING_CHICKEN_SOUP);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_NOODLE_SOUP, ModFluidsRegister.FLOWING_NOODLE_SOUP);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_PUMPKIN_SOUP, ModFluidsRegister.FLOWING_PUMPKIN_SOUP);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_VEGETABLE_SOUP, ModFluidsRegister.FLOWING_VEGETABLE_SOUP);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_FISH_STEW, ModFluidsRegister.FLOWING_FISH_STEW);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_BEEF_STEW, ModFluidsRegister.FLOWING_BEEF_STEW);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_RABBIT_STEW, ModFluidsRegister.FLOWING_RABBIT_STEW);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MUSHROOM_STEW, ModFluidsRegister.FLOWING_MUSHROOM_STEW);
     }
 }

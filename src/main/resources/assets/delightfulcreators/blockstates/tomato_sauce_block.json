@@ -1,6 +1,6 @@
 {
   "variants": {
-    "": {
+    "particle": {
       "model": "delightfulcreators:block/tomato_sauce_block"
     }
   }

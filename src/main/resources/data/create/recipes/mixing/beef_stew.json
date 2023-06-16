@@ -20,7 +20,8 @@
   ],
   "results": [
     {
-      "item": "farmersdelight:beef_stew"
+      "fluid": "delightfulcreators:beef_stew",
+      "amount": 27000
     }
   ]
 }

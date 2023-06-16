@@ -20,7 +20,8 @@
   ],
   "results": [
     {
-      "item": "minecraft:beetroot_soup"
+      "fluid": "delightfulcreators:beetroot_soup",
+      "amount": 27000
     }
   ]
 }

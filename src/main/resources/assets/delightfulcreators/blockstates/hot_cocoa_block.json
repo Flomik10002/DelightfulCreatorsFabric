@@ -1,6 +1,6 @@
 {
   "variants": {
-    "": {
+    "particle": {
       "model": "delightfulcreators:block/hot_cocoa_block"
     }
   }

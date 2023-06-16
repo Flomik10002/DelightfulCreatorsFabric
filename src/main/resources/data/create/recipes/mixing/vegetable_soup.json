@@ -23,7 +23,8 @@
   ],
   "results": [
     {
-      "item": "farmersdelight:vegetable_soup"
+      "fluid": "delightfulcreators:vegetable_soup",
+      "amount": 27000
     }
   ]
 }

@@ -17,7 +17,8 @@
   ],
   "results": [
     {
-      "item": "minecraft:mushroom_stew"
+      "fluid": "delightfulcreators:mushroom_stew",
+      "amount": 27000
     }
   ]
 }

@@ -28,7 +28,8 @@
   ],
   "results": [
     {
-      "item": "minecraft:rabbit_stew"
+      "fluid": "delightfulcreators:rabbit_stew",
+      "amount": 27000
     }
   ]
 }

@@ -23,7 +23,8 @@
   ],
   "results": [
     {
-      "item": "farmersdelight:chicken_soup"
+      "fluid": "delightfulcreators:chicken_soup",
+      "amount": 27000
     }
   ]
 }

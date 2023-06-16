@@ -24,7 +24,8 @@
   ],
   "results": [
     {
-      "item": "farmersdelight:pumpkin_soup"
+      "fluid": "delightfulcreators:pumpkin_soup",
+      "amount": 27000
     }
   ]
 }
