@@ -1,0 +1,24 @@
+{
+  "replace": "true",
+  "type": "create:filling",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farmersdelight:pie_crust"
+    },
+    {
+      "fluid": "delightfulcreators:sweet_berry_stuffing",
+      "amount": 40500
+    }
+  ],
+  "results": [
+    {
+      "item": "farmersdelight:sweet_berry_cheesecake"
+    }
+  ]
+}

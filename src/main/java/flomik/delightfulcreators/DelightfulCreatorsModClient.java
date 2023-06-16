@@ -36,6 +36,10 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
             registry.register(new Identifier("delightfulcreators:fluid/rabbit_stew_flow"));
             registry.register(new Identifier("delightfulcreators:fluid/mushroom_stew_still"));
             registry.register(new Identifier("delightfulcreators:fluid/mushroom_stew_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/glow_berry_custard_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/glow_berry_custard_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/sweet_berry_stuffing_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/sweet_berry_stuffing_flow"));
         });
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE,
@@ -106,6 +110,16 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 new Identifier("delightfulcreators:fluid/mushroom_stew_flow")
         ));
 
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/glow_berry_custard_still"),
+                new Identifier("delightfulcreators:fluid/glow_berry_custard_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_SWEET_BERRY_STUFFING, ModFluidsRegister.FLOWING_SWEET_BERRY_STUFFING, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/sweet_berry_stuffing_still"),
+                new Identifier("delightfulcreators:fluid/sweet_berry_stuffing_flow")
+        ));
+
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_APPLE_CIDER, ModFluidsRegister.FLOWING_APPLE_CIDER);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MELON_JUICE, ModFluidsRegister.FLOWING_MELON_JUICE);
@@ -119,5 +133,7 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_BEEF_STEW, ModFluidsRegister.FLOWING_BEEF_STEW);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_RABBIT_STEW, ModFluidsRegister.FLOWING_RABBIT_STEW);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MUSHROOM_STEW, ModFluidsRegister.FLOWING_MUSHROOM_STEW);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_SWEET_BERRY_STUFFING, ModFluidsRegister.FLOWING_SWEET_BERRY_STUFFING);
     }
 }

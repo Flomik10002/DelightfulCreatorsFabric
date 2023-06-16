@@ -1,0 +1,24 @@
+{
+  "replace": "true",
+  "type": "create:filling",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farmersdelight:pie_crust"
+    },
+    {
+      "fluid": "create:chocolate",
+      "amount": 40500
+    }
+  ],
+  "results": [
+    {
+      "item": "farmersdelight:chocolate_pie"
+    }
+  ]
+}

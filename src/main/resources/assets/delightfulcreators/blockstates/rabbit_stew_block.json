@@ -1,6 +1,6 @@
 {
   "variants": {
-    "particle": {
+    "": {
       "model": "delightfulcreators:block/rabbit_stew_block"
     }
   }

@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "amount": 81000,
+      "fluidTag": "c:milk"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:sweet_berry_stuffing",
+      "amount": 81000
+    }
+  ]
+}

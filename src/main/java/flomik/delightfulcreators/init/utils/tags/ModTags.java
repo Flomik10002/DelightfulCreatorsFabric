@@ -41,6 +41,13 @@ public class ModTags {
         public static final TagKey<Fluid> CHICKEN_SOUP = createCommonFluidTag("chicken_soup");
         public static final TagKey<Fluid> NOODLE_SOUP = createCommonFluidTag("noodle_soup");
         public static final TagKey<Fluid> PUMPKIN_SOUP = createCommonFluidTag("pumpkin_soup");
+        public static final TagKey<Fluid> FISH_STEW = createCommonFluidTag("fish_stew");
+        public static final TagKey<Fluid> BEEF_STEW = createCommonFluidTag("beef_stew");
+        public static final TagKey<Fluid> VEGETABLE_SOUP = createCommonFluidTag("vegetable_soup");
+        public static final TagKey<Fluid> RABBIT_STEW = createCommonFluidTag("rabbit_stew");
+        public static final TagKey<Fluid> MUSHROOM_STEW = createCommonFluidTag("mushroom_stew");
+
+
 
 
         public static @NotNull TagKey<Fluid> createFluidTag(String modFluidTagName) {

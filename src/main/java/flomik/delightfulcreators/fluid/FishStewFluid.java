@@ -6,7 +6,6 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
-import net.minecraft.world.WorldView;
 
 public abstract class FishStewFluid extends ModFluidsTemplate {
 
@@ -31,28 +30,8 @@ public abstract class FishStewFluid extends ModFluidsTemplate {
     }
 
     @Override
-    protected int getLevelDecreasePerBlock(WorldView world) {
-        return 2;
-    }
-
-    @Override
     public boolean matchesType(Fluid fluid) {
         return fluid == getStill() || fluid == getFlowing();
-    }
-
-    @Override
-    public int getLevel(FluidState state) {
-        return 0;
-    }
-
-    @Override
-    public int getTickRate(WorldView world) {
-        return 30;
-    }
-
-    @Override
-    public boolean isStill(FluidState state) {
-        return false;
     }
 
     public static class Flowing extends FishStewFluid {
@@ -65,6 +44,11 @@ public abstract class FishStewFluid extends ModFluidsTemplate {
         @Override
         public int getLevel(FluidState state) {
             return state.get(LEVEL);
+        }
+
+        @Override
+        public boolean isStill(FluidState state) {
+            return false;
         }
 
     }

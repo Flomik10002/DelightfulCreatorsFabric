@@ -6,6 +6,7 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.world.WorldView;
 
 public abstract class HotCocoaFluid extends ModFluidsTemplate {
 
@@ -35,13 +36,18 @@ public abstract class HotCocoaFluid extends ModFluidsTemplate {
     }
 
     @Override
-    public int getLevel(FluidState state) {
-        return 0;
+    protected int getFlowSpeed(WorldView worldView) {
+        return 4;
     }
 
     @Override
-    public boolean isStill(FluidState state) {
-        return false;
+    protected int getLevelDecreasePerBlock(WorldView worldView) {
+        return 1;
+    }
+
+    @Override
+    public int getTickRate(WorldView worldView) {
+        return 5;
     }
 
     public static class Flowing extends HotCocoaFluid {
@@ -54,6 +60,11 @@ public abstract class HotCocoaFluid extends ModFluidsTemplate {
         @Override
         public int getLevel(FluidState state) {
             return state.get(LEVEL);
+        }
+
+        @Override
+        public boolean isStill(FluidState state) {
+            return false;
         }
 
     }

@@ -25,6 +25,10 @@
   "block.delightfulcreators.mushroom_stew_block": "Mushroom Stew",
   "item.delightfulcreators.rabbit_stew_bucket": "Rabbit Stew Bucket",
   "block.delightfulcreators.rabbit_stew_block": "Rabbit Stew",
+  "item.delightfulcreators.glow_berry_custard_bucket": "Glow Berry Custard Bucket",
+  "block.delightfulcreators.glow_berry_custard_block": "Glow Berry Custard",
+  "item.delightfulcreators.sweet_berry_stuffing_bucket": "Sweet Berry Stuffing Bucket",
+  "block.delightfulcreators.sweet_berry_stuffing_block": "Sweet Berry Stuffing",
 
   "itemGroup.delightfulcreators.main": "Delightful Creators"
 }

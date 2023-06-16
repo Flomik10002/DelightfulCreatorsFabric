@@ -44,21 +44,23 @@ public abstract class ModFluidsTemplate extends FlowableFluid {
 
     @Override
     protected int getFlowSpeed(WorldView worldView) {
-        return 4;
+        return 2;
     }
 
     @Override
     protected int getLevelDecreasePerBlock(WorldView worldView) {
-        return 1;
+        return 2;
     }
 
     @Override
     public int getTickRate(WorldView worldView) {
-        return 5;
+        return 30;
     }
 
     @Override
     protected float getBlastResistance() {
         return 100.0f;
     }
+
+
 }
