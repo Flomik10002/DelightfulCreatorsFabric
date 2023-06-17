@@ -22,6 +22,9 @@ public class ModTags {
     }
 
     public static class ModItemTags {
+        public static final TagKey<Item> BILLET_FOOD = createCommonItemTag("billet_food");
+        public static final TagKey<Item> FLUID_BUCKET = createCommonItemTag("fluid_bucket");
+
         public static @NotNull TagKey<Item> createItemTag(String modFluidTagName) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
         }

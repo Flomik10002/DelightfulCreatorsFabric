@@ -33,5 +33,12 @@
   "item.delightfulcreators.pasta_with_mutton_chop_billet": "Pasta With Mutton Chop Billet",
   "item.delightfulcreators.pasta_with_meatballs_billet": "Pasta With Meatballs Billet",
 
-  "itemGroup.delightfulcreators.main": "Delightful Creators"
+  "itemGroup.delightfulcreators.main": "Delightful Creators",
+
+  "advancement.delightfulcreators.root": "Delightful Creators",
+  "advancement.delightfulcreators.root.desc": "Culinary inventions are waiting for you!",
+  "advancement.delightfulcreators.semifinished": "Semifinished",
+  "advancement.delightfulcreators.semifinished.desc": "Grunt, spit and securely glue with adhesive tape!",
+  "advancement.delightfulcreators.fluid_bucket": "Culinary engineer",
+  "advancement.delightfulcreators.fluid_bucket.desc": "Application of engineering knowledge in cooking!"
 }

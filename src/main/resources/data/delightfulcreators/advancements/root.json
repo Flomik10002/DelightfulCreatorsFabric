@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "0": {
+      "conditions": {},
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "delightfulcreators:textures/gui/advancements.png",
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.delightfulcreators.root.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "farmersdelight:tomato"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.delightfulcreators.root"
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}
