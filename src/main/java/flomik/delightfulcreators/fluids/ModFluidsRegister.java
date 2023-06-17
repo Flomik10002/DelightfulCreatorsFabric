@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.fluid.FlowableFluid;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -20,6 +21,47 @@ public class ModFluidsRegister {
     public static FlowableFluid FLOWING_TOMATO_SAUCE, FLOWING_HOT_COCOA, FLOWING_MELON_JUICE, FLOWING_APPLE_CIDER, FLOWING_BEETROOT_SOUP, FLOWING_CHICKEN_SOUP, FLOWING_NOODLE_SOUP, FLOWING_PUMPKIN_SOUP, FLOWING_VEGETABLE_SOUP, FLOWING_FISH_STEW, FLOWING_BEEF_STEW, FLOWING_RABBIT_STEW, FLOWING_MUSHROOM_STEW, FLOWING_GLOW_BERRY_CUSTARD, FLOWING_SWEET_BERRY_STUFFING;
     public static Block TOMATO_SAUCE_BLOCK, HOT_COCOA_BLOCK, MELON_JUICE_BLOCK, APPLE_CIDER_BLOCK, BEETROOT_SOUP_BLOCK, CHICKEN_SOUP_BLOCK, NOODLE_SOUP_BLOCK, PUMPKIN_SOUP_BLOCK, VEGETABLE_SOUP_BLOCK, FISH_STEW_BLOCK, BEEF_STEW_BLOCK, RABBIT_STEW_BLOCK, MUSHROOM_STEW_BLOCK, GLOW_BERRY_CUSTARD_BLOCK, SWEET_BERRY_STUFFING_BLOCK;
     public static Item TOMATO_SAUCE_BUCKET, HOT_COCOA_BUCKET, MELON_JUICE_BUCKET, APPLE_CIDER_BUCKET, BEETROOT_SOUP_BUCKET, CHICKEN_SOUP_BUCKET, NOODLE_SOUP_BUCKET, PUMPKIN_SOUP_BUCKET, VEGETABLE_SOUP_BUCKET, FISH_STEW_BUCKET, BEEF_STEW_BUCKET, RABBIT_STEW_BUCKET, MUSHROOM_STEW_BUCKET, GLOW_BERRY_CUSTARD_BUCKET, SWEET_BERRY_STUFFING_BUCKET;
+
+    public static boolean isTomatoSauce(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_TOMATO_SAUCE) || state.isOf(ModFluidsRegister.FLOWING_TOMATO_SAUCE);
+    }
+    public static boolean isHotCocoa(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_HOT_COCOA) || state.isOf(ModFluidsRegister.FLOWING_HOT_COCOA);
+    }
+    public static boolean isBeetrootSoup(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_BEETROOT_SOUP) || state.isOf(ModFluidsRegister.FLOWING_BEETROOT_SOUP);
+    }
+    public static boolean isChickenSoup(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_CHICKEN_SOUP) || state.isOf(ModFluidsRegister.FLOWING_CHICKEN_SOUP);
+    }
+    public static boolean isNoodleSoup(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_NOODLE_SOUP) || state.isOf(ModFluidsRegister.FLOWING_NOODLE_SOUP);
+    }
+    public static boolean isPumpkinSoup(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_PUMPKIN_SOUP) || state.isOf(ModFluidsRegister.FLOWING_PUMPKIN_SOUP);
+    }
+    public static boolean isVegetableSoup(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_VEGETABLE_SOUP) || state.isOf(ModFluidsRegister.FLOWING_VEGETABLE_SOUP);
+    }
+    public static boolean isFishStew(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_FISH_STEW) || state.isOf(ModFluidsRegister.FLOWING_FISH_STEW);
+    }
+    public static boolean isBeefStew(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_BEEF_STEW) || state.isOf(ModFluidsRegister.FLOWING_BEEF_STEW);
+    }
+    public static boolean isRabbitStew(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_RABBIT_STEW) || state.isOf(ModFluidsRegister.FLOWING_RABBIT_STEW);
+    }
+    public static boolean isMushroomStew(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_MUSHROOM_STEW) || state.isOf(ModFluidsRegister.FLOWING_MUSHROOM_STEW);
+    }
+    public static boolean isGlowBerryCustard(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD) || state.isOf(ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
+    }
+    public static boolean isSweetBerryStuffing(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_SWEET_BERRY_STUFFING) || state.isOf(ModFluidsRegister.FLOWING_SWEET_BERRY_STUFFING);
+    }
+
 
     public static void register() {
         STILL_TOMATO_SAUCE = Registry.register(Registry.FLUID,
