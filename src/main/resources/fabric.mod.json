@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "delightful-creators",
+	"id": "delightfulcreators",
 	"version": "${version}",
 	"name": "Delightful Creators",
 	"description": "Making automation between Farmer's Delight and Create",
