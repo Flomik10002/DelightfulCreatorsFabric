@@ -5,7 +5,7 @@
 [FARMERS_DELIGHT_FORGE]: https://www.curseforge.com/minecraft/mc-mods/farmers-delight
 [FARMERS_DELIGHT_FABRIC]: https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric
 [MODRINTH]: https://modrinth.com/mod/delightdulcreators
-[CURSEFORGE]: https://legacy.curseforge.com/minecraft/mc-mods/delightful-creators-fabric
+[CURSEFORGE]: https://curseforge.com/minecraft/mc-mods/delightful-creators-fabric
 
 # Delightful Creators 
 
@@ -19,9 +19,8 @@
 [![](https://img.shields.io/badge/FABRIC%20LANGUAGE%20KOTLIN-blue?logo=kotlin&labelColor=gray&style=for-the-badge)][KOTLIN_FABRIC]
 [![](https://img.shields.io/badge/CREATE%20FABRIC-ae7c38?logo=curseforge&labelColor=gray&style=for-the-badge)][CREATE_FABRIC]
 
-[![](https://cf.way2muchnoise.eu/delightful-creators-fabric.svg)][CURSEFORGE]
-
-[![](https://raw.githubusercontent.com/modrinth/art/5f7653034c85cc0bbf45d63bbcb167c624b7374b/Branding/Badge/badge-dark.svg)][MODRINTH]
+[![](https://cf.way2muchnoise.eu/873936.svg?badge_style=for_the_badge)][CURSEFORGE]
+[![](https://img.shields.io/modrinth/dt/jmJ87gsb?color=brightgreen&logo=modrinth&logoColor=brightgreen&style=for-the-badge)][MODRINTH]
 
 <h3>Making automation between <a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric" rel="noopener nofollow ugc">Farmer's Delight</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/create-fabric" rel="noopener nofollow ugc">Create</a> more correct.</h3>
 
