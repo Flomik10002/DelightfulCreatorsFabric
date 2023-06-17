@@ -1,5 +1,7 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -7,26 +9,26 @@ import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 
-public abstract class BeefStewFluid extends ModFluidsTemplate {
+public abstract class PumpkinSoupFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_BEEF_STEW;
+        return ModFluidsRegister.STILL_PUMPKIN_SOUP;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_BEEF_STEW;
+        return ModFluidsRegister.FLOWING_PUMPKIN_SOUP;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.BEEF_STEW_BUCKET;
+        return ModFluidsRegister.PUMPKIN_SOUP_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.BEEF_STEW_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.PUMPKIN_SOUP_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -34,7 +36,7 @@ public abstract class BeefStewFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    public static class Flowing extends BeefStewFluid {
+    public static class Flowing extends PumpkinSoupFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -53,7 +55,7 @@ public abstract class BeefStewFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends BeefStewFluid {
+    public static class Still extends PumpkinSoupFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

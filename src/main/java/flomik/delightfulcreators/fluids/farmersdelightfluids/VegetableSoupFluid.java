@@ -1,33 +1,34 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
-import net.minecraft.world.WorldView;
 
-public abstract class HotCocoaFluid extends ModFluidsTemplate {
+public abstract class VegetableSoupFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_HOT_COCOA;
+        return ModFluidsRegister.STILL_VEGETABLE_SOUP;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_HOT_COCOA;
+        return ModFluidsRegister.FLOWING_VEGETABLE_SOUP;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.HOT_COCOA_BUCKET;
+        return ModFluidsRegister.VEGETABLE_SOUP_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.HOT_COCOA_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.VEGETABLE_SOUP_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -35,22 +36,7 @@ public abstract class HotCocoaFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    @Override
-    protected int getFlowSpeed(WorldView worldView) {
-        return 4;
-    }
-
-    @Override
-    protected int getLevelDecreasePerBlock(WorldView worldView) {
-        return 1;
-    }
-
-    @Override
-    public int getTickRate(WorldView worldView) {
-        return 5;
-    }
-
-    public static class Flowing extends HotCocoaFluid {
+    public static class Flowing extends VegetableSoupFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -69,7 +55,7 @@ public abstract class HotCocoaFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends HotCocoaFluid {
+    public static class Still extends VegetableSoupFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

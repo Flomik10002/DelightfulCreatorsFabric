@@ -1,5 +1,7 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -7,26 +9,26 @@ import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 
-public abstract class VegetableSoupFluid extends ModFluidsTemplate {
+public abstract class NoodleSoupFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_VEGETABLE_SOUP;
+        return ModFluidsRegister.STILL_NOODLE_SOUP;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_VEGETABLE_SOUP;
+        return ModFluidsRegister.FLOWING_NOODLE_SOUP;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.VEGETABLE_SOUP_BUCKET;
+        return ModFluidsRegister.NOODLE_SOUP_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.VEGETABLE_SOUP_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.NOODLE_SOUP_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -34,7 +36,7 @@ public abstract class VegetableSoupFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    public static class Flowing extends VegetableSoupFluid {
+    public static class Flowing extends NoodleSoupFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -53,7 +55,7 @@ public abstract class VegetableSoupFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends VegetableSoupFluid {
+    public static class Still extends NoodleSoupFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

@@ -1,6 +1,7 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
+import flomik.delightfulcreators.fluids.farmersdelightfluids.*;
 import flomik.delightfulcreators.item.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;

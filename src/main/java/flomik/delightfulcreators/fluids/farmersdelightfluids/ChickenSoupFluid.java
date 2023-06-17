@@ -1,4 +1,4 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
@@ -6,27 +6,29 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 
-public abstract class SweetBerryStuffingFluid extends ModFluidsTemplate {
+public abstract class ChickenSoupFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_SWEET_BERRY_STUFFING;
+        return ModFluidsRegister.STILL_CHICKEN_SOUP;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_SWEET_BERRY_STUFFING;
+        return ModFluidsRegister.FLOWING_CHICKEN_SOUP;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.SWEET_BERRY_STUFFING_BUCKET;
+        return ModFluidsRegister.CHICKEN_SOUP_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.SWEET_BERRY_STUFFING_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.CHICKEN_SOUP_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -34,7 +36,7 @@ public abstract class SweetBerryStuffingFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    public static class Flowing extends SweetBerryStuffingFluid {
+    public static class Flowing extends ChickenSoupFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -53,7 +55,7 @@ public abstract class SweetBerryStuffingFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends SweetBerryStuffingFluid {
+    public static class Still extends ChickenSoupFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

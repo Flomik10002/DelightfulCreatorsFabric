@@ -1,5 +1,7 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
@@ -7,26 +9,26 @@ import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 
-public abstract class GlowBerryCustardFluid extends ModFluidsTemplate {
+public abstract class TomatoSauceFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD;
+        return ModFluidsRegister.STILL_TOMATO_SAUCE;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD;
+        return ModFluidsRegister.FLOWING_TOMATO_SAUCE;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.GLOW_BERRY_CUSTARD_BUCKET;
+        return ModFluidsRegister.TOMATO_SAUCE_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.GLOW_BERRY_CUSTARD_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.TOMATO_SAUCE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -34,7 +36,7 @@ public abstract class GlowBerryCustardFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    public static class Flowing extends GlowBerryCustardFluid {
+    public static class Flowing extends TomatoSauceFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -53,7 +55,7 @@ public abstract class GlowBerryCustardFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends GlowBerryCustardFluid {
+    public static class Still extends TomatoSauceFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

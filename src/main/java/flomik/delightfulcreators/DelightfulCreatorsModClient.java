@@ -1,6 +1,6 @@
 package flomik.delightfulcreators;
 
-import flomik.delightfulcreators.fluid.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;

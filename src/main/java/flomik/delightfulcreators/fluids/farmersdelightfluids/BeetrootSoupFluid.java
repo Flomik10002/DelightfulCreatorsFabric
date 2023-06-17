@@ -1,4 +1,4 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
@@ -6,6 +6,8 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 
 public abstract class BeetrootSoupFluid extends ModFluidsTemplate {
 

@@ -1,4 +1,4 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

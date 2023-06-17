@@ -1,0 +1,24 @@
+{
+  "replace": "true",
+  "type": "create:filling",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "delightfulcreators:pasta_with_meatballs_billet"
+    },
+    {
+      "fluid": "delightfulcreators:tomato_sauce",
+      "amount": 20250
+    }
+  ],
+  "results": [
+    {
+      "item": "farmersdelight:pasta_with_meatballs"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
@@ -6,27 +6,29 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 
-public abstract class FishStewFluid extends ModFluidsTemplate {
+public abstract class BeefStewFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_FISH_STEW;
+        return ModFluidsRegister.STILL_BEEF_STEW;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_FISH_STEW;
+        return ModFluidsRegister.FLOWING_BEEF_STEW;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.FISH_STEW_BUCKET;
+        return ModFluidsRegister.BEEF_STEW_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.FISH_STEW_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.BEEF_STEW_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -34,7 +36,7 @@ public abstract class FishStewFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    public static class Flowing extends FishStewFluid {
+    public static class Flowing extends BeefStewFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -53,7 +55,7 @@ public abstract class FishStewFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends FishStewFluid {
+    public static class Still extends BeefStewFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

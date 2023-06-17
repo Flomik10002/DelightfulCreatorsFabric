@@ -1,4 +1,4 @@
-package flomik.delightfulcreators.fluid;
+package flomik.delightfulcreators.fluids.farmersdelightfluids;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.fluid.Fluid;
@@ -6,27 +6,30 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.world.WorldView;
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 
-public abstract class RabbitStewFluid extends ModFluidsTemplate {
+public abstract class MelonJuiceFluid extends ModFluidsTemplate {
 
     @Override
     public Fluid getStill() {
-        return ModFluidsRegister.STILL_RABBIT_STEW;
+        return ModFluidsRegister.STILL_MELON_JUICE;
     }
 
     @Override
     public Fluid getFlowing() {
-        return ModFluidsRegister.FLOWING_RABBIT_STEW;
+        return ModFluidsRegister.FLOWING_MELON_JUICE;
     }
 
     @Override
     public Item getBucketItem() {
-        return ModFluidsRegister.RABBIT_STEW_BUCKET;
+        return ModFluidsRegister.MELON_JUICE_BUCKET;
     }
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.RABBIT_STEW_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluidsRegister.MELON_JUICE_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
     }
 
     @Override
@@ -34,7 +37,22 @@ public abstract class RabbitStewFluid extends ModFluidsTemplate {
         return fluid == getStill() || fluid == getFlowing();
     }
 
-    public static class Flowing extends RabbitStewFluid {
+    @Override
+    protected int getFlowSpeed(WorldView worldView) {
+        return 4;
+    }
+
+    @Override
+    protected int getLevelDecreasePerBlock(WorldView worldView) {
+        return 1;
+    }
+
+    @Override
+    public int getTickRate(WorldView worldView) {
+        return 5;
+    }
+
+    public static class Flowing extends MelonJuiceFluid {
         @Override
         protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
             super.appendProperties(builder);
@@ -53,7 +71,7 @@ public abstract class RabbitStewFluid extends ModFluidsTemplate {
 
     }
 
-    public static class Still extends RabbitStewFluid {
+    public static class Still extends MelonJuiceFluid {
         @Override
         public int getLevel(FluidState state) {
             return 8;

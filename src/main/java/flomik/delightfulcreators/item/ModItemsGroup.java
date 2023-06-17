@@ -1,7 +1,7 @@
 package flomik.delightfulcreators.item;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
-import flomik.delightfulcreators.fluid.ModFluidsRegister;
+import flomik.delightfulcreators.fluids.ModFluidsRegister;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
