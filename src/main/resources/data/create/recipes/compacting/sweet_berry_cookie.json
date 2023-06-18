@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "tag": "c:flour/wheat"
+    },
+    {
+      "tag": "c:flour/wheat"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "farmersdelight:sweet_berry_cookie"
+    }
+  ]
+}

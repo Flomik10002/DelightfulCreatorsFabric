@@ -9,23 +9,18 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "amount": 20250,
+      "amount": 40500,
+      "fluid": "create:chocolate"
+    },
+    {
+      "amount": 40500,
       "fluidTag": "c:milk"
-    },
-    {
-      "item": "minecraft:sugar"
-    },
-    {
-      "item": "minecraft:cocoa_beans"
-    },
-    {
-      "item": "minecraft:cocoa_beans"
     }
   ],
   "results": [
     {
       "fluid": "delightfulcreators:hot_cocoa",
-      "amount": 27000
+      "amount": 81000
     }
   ]
 }

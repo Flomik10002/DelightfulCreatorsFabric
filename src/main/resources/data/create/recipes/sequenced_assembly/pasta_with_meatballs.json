@@ -1,0 +1,72 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:pasta_with_meatballs"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        },
+        {
+          "item": "farmersdelight:raw_pasta"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        },
+        {
+          "item": "farmersdelight:beef_patty"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        },
+        {
+          "fluid": "delightfulcreators:tomato_sauce",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_pasta_with_mutton_chop"
+  }
+}

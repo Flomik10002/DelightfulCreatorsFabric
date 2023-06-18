@@ -1,0 +1,23 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farmersdelight:apple_cider"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 27000,
+      "fluid": "delightfulcreators:apple_cider"
+    }
+  ]
+}

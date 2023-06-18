@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:bread"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:mutton_wrap"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_mutton_wrap"
+        },
+        {
+          "tag": "c:cooked_mutton"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_mutton_wrap"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_mutton_wrap"
+        },
+        {
+          "tag": "c:salad_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_mutton_wrap"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_mutton_wrap"
+        },
+        {
+          "tag": "c:crops/onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_mutton_wrap"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_mutton_wrap"
+  }
+}

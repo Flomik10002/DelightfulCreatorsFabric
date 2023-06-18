@@ -96,11 +96,6 @@ public abstract class BackgroundRendererMixin {
             green = (float) 212 / 255;
             blue = (float) 140 / 255;
         }
-        if (ModFluidsRegister.isSweetBerryStuffing(state)) {
-            red = (float) 208 / 255;
-            green = (float) 40 / 255;
-            blue = (float) 20 / 255;
-        }
     }
 
     @Inject(method = "applyFog", at = @At("HEAD"), cancellable = true)
@@ -163,11 +158,6 @@ public abstract class BackgroundRendererMixin {
             ci.cancel();
         }
         if (ModFluidsRegister.isGlowBerryCustard(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isSweetBerryStuffing(state)) {
             RenderSystem.setShaderFogStart(-8);
             RenderSystem.setShaderFogEnd(5);
             ci.cancel();

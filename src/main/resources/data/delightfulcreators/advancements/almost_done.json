@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "delightfulcreators:fluid_bucket"
+            "tag": "delightfulcreators:incomplete_food"
           }
         ]
       },
@@ -16,16 +16,16 @@
     "announce_to_chat": true,
     "description": {
       "color": "#DBA213",
-      "translate": "advancement.delightfulcreators.fluid_bucket.desc"
+      "translate": "advancement.delightfulcreators.almost_done.desc"
     },
     "frame": "task",
     "hidden": true,
     "icon": {
-      "item": "delightfulcreators:tomato_sauce_bucket"
+      "item": "delightfulcreators:incomplete_pasta_with_meatballs"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancement.delightfulcreators.fluid_bucket"
+      "translate": "advancement.delightfulcreators.almost_done"
     }
   },
   "requirements": [

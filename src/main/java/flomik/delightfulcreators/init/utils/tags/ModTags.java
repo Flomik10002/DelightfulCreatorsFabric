@@ -1,6 +1,7 @@
 package flomik.delightfulcreators.init.utils.tags;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
+import net.fabricmc.fabric.impl.tag.convention.TagRegistration;
 import net.minecraft.block.Block;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
@@ -22,8 +23,9 @@ public class ModTags {
     }
 
     public static class ModItemTags {
-        public static final TagKey<Item> BILLET_FOOD = createCommonItemTag("billet_food");
-        public static final TagKey<Item> FLUID_BUCKET = createCommonItemTag("fluid_bucket");
+        public static final TagKey<Item> BILLET_FOOD = createItemTag("billet_food");
+        public static final TagKey<Item> FLUID_BUCKET = createItemTag("fluid_bucket");
+        public static final TagKey<Item> KNIVES = createCommonItemTag("tools/knives");
 
         public static @NotNull TagKey<Item> createItemTag(String modFluidTagName) {
             return TagKey.of(Registry.ITEM_KEY, new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
@@ -36,22 +38,7 @@ public class ModTags {
 
     public static class ModFluidTags {
 
-        public static final TagKey<Fluid> TOMATO_SAUCE = createCommonFluidTag("tomato_sauce");
-        public static final TagKey<Fluid> APPLE_CIDER = createCommonFluidTag("apple_cider");
-        public static final TagKey<Fluid> HOT_CHOCOLATE = createCommonFluidTag("hot_chocolate");
-        public static final TagKey<Fluid> MELON_JUICE = createCommonFluidTag("melon_juice");
-        public static final TagKey<Fluid> BEETROOT_SOUP = createCommonFluidTag("beetroot_soup");
-        public static final TagKey<Fluid> CHICKEN_SOUP = createCommonFluidTag("chicken_soup");
-        public static final TagKey<Fluid> NOODLE_SOUP = createCommonFluidTag("noodle_soup");
-        public static final TagKey<Fluid> PUMPKIN_SOUP = createCommonFluidTag("pumpkin_soup");
-        public static final TagKey<Fluid> FISH_STEW = createCommonFluidTag("fish_stew");
-        public static final TagKey<Fluid> BEEF_STEW = createCommonFluidTag("beef_stew");
-        public static final TagKey<Fluid> VEGETABLE_SOUP = createCommonFluidTag("vegetable_soup");
-        public static final TagKey<Fluid> RABBIT_STEW = createCommonFluidTag("rabbit_stew");
-        public static final TagKey<Fluid> MUSHROOM_STEW = createCommonFluidTag("mushroom_stew");
-
-
-
+        public static final TagKey<Fluid> SOUPS_STEWS = createCommonFluidTag("soups_stews");
 
         public static @NotNull TagKey<Fluid> createFluidTag(String modFluidTagName) {
             return TagKey.of(Registry.FLUID_KEY, new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));

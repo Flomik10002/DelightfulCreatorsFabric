@@ -27,18 +27,25 @@
   "block.delightfulcreators.rabbit_stew_block": "Rabbit Stew",
   "item.delightfulcreators.glow_berry_custard_bucket": "Glow Berry Custard Bucket",
   "block.delightfulcreators.glow_berry_custard_block": "Glow Berry Custard",
-  "item.delightfulcreators.sweet_berry_stuffing_bucket": "Sweet Berry Stuffing Bucket",
-  "block.delightfulcreators.sweet_berry_stuffing_block": "Sweet Berry Stuffing",
 
-  "item.delightfulcreators.pasta_with_mutton_chop_billet": "Pasta With Mutton Chop Billet",
-  "item.delightfulcreators.pasta_with_meatballs_billet": "Pasta With Meatballs Billet",
+  "item.delightfulcreators.incomplete_pasta_with_mutton_chop": "Incomplete Pasta With Mutton Chop",
+  "item.delightfulcreators.incomplete_pasta_with_meatballs": "Incomplete Pasta With Meatballs",
+  "item.delightfulcreators.incomplete_apple_pie": "Incomplete Apple Pie",
+  "item.delightfulcreators.incomplete_bacon_sandwich": "Incomplete Bacon Sandwich",
+  "item.delightfulcreators.incomplete_chicken_sandwich": "Incomplete Chicken Sandwich",
+  "item.delightfulcreators.incomplete_egg_sandwich": "Incomplete Egg Sandwich",
+  "item.delightfulcreators.incomplete_hamburger": "Incomplete Hamburger",
+  "item.delightfulcreators.incomplete_mutton_wrap": "Incomplete Mutton Wrap",
+  "item.delightfulcreators.incomplete_pumpkin_pie": "Incomplete Pumpkin Pie",
+  "item.delightfulcreators.incomplete_sweet_berry_cheesecake": "Incomplete Sweet Berry Cheesecake",
+  "item.delightfulcreators.pumpkin_pie_slice": "Slice of Pumpkin Pie",
 
   "itemGroup.delightfulcreators.main": "Delightful Creators",
 
   "advancement.delightfulcreators.root": "Delightful Creators",
   "advancement.delightfulcreators.root.desc": "Culinary inventions are waiting for you!",
-  "advancement.delightfulcreators.semifinished": "Semifinished",
-  "advancement.delightfulcreators.semifinished.desc": "Grunt, spit and securely glue with adhesive tape!",
+  "advancement.delightfulcreators.almost_done": "Almost done",
+  "advancement.delightfulcreators.almost_done.desc": "Grunt, spit and securely glue with adhesive tape!",
   "advancement.delightfulcreators.fluid_bucket": "Culinary engineer",
   "advancement.delightfulcreators.fluid_bucket.desc": "Application of engineering knowledge in cooking!"
 }

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "farmersdelight:egg_sandwich",
+    "farmersdelight:chicken_sandwich",
+    "farmersdelight:hamburger",
+    "farmersdelight:bacon_sandwich",
+    "farmersdelight:mutton_wrap",
+    "minecraft:rabbit_stew",
+    "minecraft:pumpkin_pie",
+    "minecraft:mushroom_stew",
+    "minecraft:beetroot_stew"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farmersdelight:glow_berry_custard"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 27000,
+      "fluid": "delightfulcreators:glow_berry_custard"
+    }
+  ]
+}

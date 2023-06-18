@@ -1,0 +1,23 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farmersdelight:tomato_sauce"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "amount": 20250,
+      "fluid": "delightfulcreators:tomato_sauce"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "c:flour/wheat"
+    },
+    {
+      "tag": "c:flour/wheat"
+    },
+    {
+      "amount": 20250,
+      "fluidTag": "c:honey"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "farmersdelight:honey_cookie"
+    }
+  ]
+}
