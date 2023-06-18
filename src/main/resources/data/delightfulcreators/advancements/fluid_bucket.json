@@ -1,11 +1,141 @@
 {
   "parent": "delightfulcreators:root",
   "criteria": {
-    "0": {
+    "tomato_sauce_bucket": {
       "conditions": {
         "items": [
           {
-            "tag": "delightfulcreators:fluid_bucket"
+            "items": ["delightfulcreators:tomato_sauce_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "hot_cocoa_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:hot_cocoa_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "melon_juice_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:melon_juice_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "apple_cider_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:apple_cider_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "beetroot_soup_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:beetroot_soup_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "chicken_soup_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:chicken_soup_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "noodle_soup_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:noodle_soup_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pumpkin_soup_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:pumpkin_soup_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "vegetable_soup_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:vegetable_soup_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "fish_stew_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:fish_stew_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "beef_stew_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:beef_stew_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "rabbit_stew_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:rabbit_stew_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "mushroom_stew_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:mushroom_stew_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "glow_berry_custard_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:glow_berry_custard_bucket"]
           }
         ]
       },
@@ -30,7 +160,20 @@
   },
   "requirements": [
     [
-      "0"
+      "tomato_sauce_bucket",
+      "hot_cocoa_bucket",
+      "melon_juice_bucket",
+      "apple_cider_bucket",
+      "beetroot_soup_bucket",
+      "chicken_soup_bucket",
+      "noodle_soup_bucket",
+      "pumpkin_soup_bucket",
+      "vegetable_soup_bucket",
+      "fish_stew_bucket",
+      "beef_stew_bucket",
+      "rabbit_stew_bucket",
+      "mushroom_stew_bucket",
+      "glow_berry_custard_bucket"
     ]
   ]
 }

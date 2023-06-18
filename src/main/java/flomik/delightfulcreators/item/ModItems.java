@@ -2,8 +2,6 @@ package flomik.delightfulcreators.item;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -29,6 +27,28 @@ public class ModItems {
     public static final Item INCOMPLETE_SWEET_BERRY_CHEESECAKE = registerItem("incomplete_sweet_berry_cheesecake",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_APPLE_PIE = registerItem("incomplete_apple_pie",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_ROAST_CHICKEN = registerItem("incomplete_roast_chicken",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_STUFFED_PUMPKIN = registerItem("incomplete_stuffed_pumpkin",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_HONEY_GLAZED_HAM = registerItem("incomplete_honey_glazed_ham",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_SHEPHERDS_PIE = registerItem("incomplete_shepherds_pie",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_RICE_ROLL_MEDLEY = registerItem("incomplete_rice_roll_medley",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_FRUIT_SALAD = registerItem("incomplete_fruit_salad",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_MIXED_SALAD = registerItem("incomplete_mixed_salad",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_NETHER_SALAD = registerItem("incomplete_nether_salad",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_BACON_AND_EGGS = registerItem("incomplete_bacon_and_eggs",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_GRILLED_SALMON = registerItem("incomplete_grilled_salmon",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+        public static final Item INCOMPLETE_HORSE_FEED = registerItem("incomplete_horse_feed",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));

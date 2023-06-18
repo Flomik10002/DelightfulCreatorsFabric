@@ -1,11 +1,211 @@
 {
   "parent": "delightfulcreators:root",
   "criteria": {
-    "0": {
+    "incomplete_pasta_with_meatballs": {
       "conditions": {
         "items": [
           {
-            "tag": "delightfulcreators:incomplete_food"
+            "items": ["delightfulcreators:incomplete_pasta_with_meatballs"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_pasta_with_mutton_chop": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_pasta_with_mutton_chop"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_egg_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_egg_sandwich"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_chicken_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_chicken_sandwich"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_hamburger": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_hamburger"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_bacon_sandwich": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_bacon_sandwich"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_mutton_wrap": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_mutton_wrap"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_pumpkin_pie": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_pumpkin_pie"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_sweet_berry_cheesecake": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_sweet_berry_cheesecake"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_apple_pie": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_apple_pie"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_roast_chicken": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_roast_chicken"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_stuffed_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_stuffed_pumpkin"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_honey_glazed_ham": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_honey_glazed_ham"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_shepherds_pie": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_shepherds_pie"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_rice_roll_medley": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_rice_roll_medley"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_fruit_salad": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_fruit_salad"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_mixed_salad": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_mixed_salad"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_nether_salad": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_nether_salad"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_bacon_and_eggs": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_bacon_and_eggs"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_grilled_salmon": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_grilled_salmon"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_horse_feed": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_horse_feed"]
           }
         ]
       },
@@ -21,7 +221,7 @@
     "frame": "task",
     "hidden": true,
     "icon": {
-      "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+      "item": "delightfulcreators:incomplete_sweet_berry_cheesecake"
     },
     "show_toast": true,
     "title": {
@@ -30,7 +230,27 @@
   },
   "requirements": [
     [
-      "0"
+      "incomplete_pasta_with_meatballs",
+      "incomplete_pasta_with_mutton_chop",
+      "incomplete_egg_sandwich",
+      "incomplete_chicken_sandwich",
+      "incomplete_hamburger",
+      "incomplete_bacon_sandwich",
+      "incomplete_mutton_wrap",
+      "incomplete_pumpkin_pie",
+      "incomplete_sweet_berry_cheesecake",
+      "incomplete_apple_pie",
+      "incomplete_roast_chicken",
+      "incomplete_stuffed_pumpkin",
+      "incomplete_honey_glazed_ham",
+      "incomplete_shepherds_pie",
+      "incomplete_rice_roll_medley",
+      "incomplete_fruit_salad",
+      "incomplete_mixed_salad",
+      "incomplete_nether_salad",
+      "incomplete_bacon_and_eggs",
+      "incomplete_grilled_salmon",
+      "incomplete_horse_feed"
     ]
   ]
 }

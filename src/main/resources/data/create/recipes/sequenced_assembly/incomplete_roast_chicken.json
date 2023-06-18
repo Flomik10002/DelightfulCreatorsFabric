@@ -1,0 +1,119 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:roast_chicken_block"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        },
+        {
+          "item": "minecraft:cooked_chicken"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        },
+        {
+          "item": "minecraft:baked_potato"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        },
+        {
+          "item": "minecraft:carrot"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        },
+        {
+          "item": "farmersdelight:onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        },
+        {
+          "tag": "c:eggs"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        },
+        {
+          "tag": "c:bread"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roast_chicken"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_roast_chicken"
+  }
+}

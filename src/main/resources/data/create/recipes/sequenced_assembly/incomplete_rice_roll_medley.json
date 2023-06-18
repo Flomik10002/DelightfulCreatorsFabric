@@ -1,0 +1,119 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:rice_roll_medley_block"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        },
+        {
+          "item": "farmersdelight:kelp_roll_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        },
+        {
+          "item": "farmersdelight:kelp_roll_slice"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        },
+        {
+          "item": "farmersdelight:cod_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        },
+        {
+          "item": "farmersdelight:cod_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        },
+        {
+          "item": "farmersdelight:salmon_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        },
+        {
+          "item": "farmersdelight:salmon_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_rice_roll_medley"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_rice_roll_medley"
+  }
+}

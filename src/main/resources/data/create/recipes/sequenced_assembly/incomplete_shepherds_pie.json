@@ -1,0 +1,104 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:shepherds_pie_block"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        },
+        {
+          "tag": "c:cooked_mutton"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        },
+        {
+          "tag": "c:cooked_mutton"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        },
+        {
+          "item": "minecraft:baked_potato"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        },
+        {
+          "item": "farmersdelight:onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        },
+        {
+          "fluidTag": "c:milk",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_shepherds_pie"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_shepherds_pie"
+  }
+}
