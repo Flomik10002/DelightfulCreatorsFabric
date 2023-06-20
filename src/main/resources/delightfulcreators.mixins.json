@@ -3,11 +3,11 @@
   "package": "flomik.delightfulcreators.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "BackgroundRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "client": [
+    "BackgroundRendererMixin"
   ]
 }
