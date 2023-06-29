@@ -11,10 +11,10 @@
       "item": "minecraft:sweet_berries"
     },
     {
-      "tag": "c:flour/wheat"
+      "item": "create:wheat_flour"
     },
     {
-      "tag": "c:flour/wheat"
+      "item": "create:wheat_flour"
     }
   ],
   "results": [

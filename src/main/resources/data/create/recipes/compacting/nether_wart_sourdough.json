@@ -1,0 +1,29 @@
+{
+  "type": "create:compacting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "farmersrespite"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    },
+    {
+      "item": "minecraft:red_mushroom"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "item": "farmersrespite:nether_wart_sourdough"
+    }
+  ]
+}

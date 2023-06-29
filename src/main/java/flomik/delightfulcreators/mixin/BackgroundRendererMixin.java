@@ -40,61 +40,86 @@ public abstract class BackgroundRendererMixin {
             red = (float) 196 / 255;
             green = (float) 24 / 255;
             blue = (float) 16 / 255;
-        }
-        if (ModFluidsRegister.isHotCocoa(state)) {
+        }if (ModFluidsRegister.isHotCocoa(state)) {
             red = (float) 96 / 255;
             green = (float) 56 / 255;
             blue = (float) 36 / 255;
-        }
-        if (ModFluidsRegister.isBeetrootSoup(state)) {
+        }if (ModFluidsRegister.isBeetrootSoup(state)) {
             red = (float) 132 / 255;
             green = (float) 20 / 255;
             blue = (float) 12 / 255;
-        }
-        if (ModFluidsRegister.isChickenSoup(state)) {
+        }if (ModFluidsRegister.isChickenSoup(state)) {
             red = (float) 224 / 255;
             green = (float) 144 / 255;
             blue = (float) 88 / 255;
-        }
-        if (ModFluidsRegister.isNoodleSoup(state)) {
+        }if (ModFluidsRegister.isNoodleSoup(state)) {
             red = (float) 236 / 255;
             green = (float) 180 / 255;
             blue = (float) 92 / 255;
-        }
-        if (ModFluidsRegister.isPumpkinSoup(state)) {
+        }if (ModFluidsRegister.isPumpkinSoup(state)) {
             red = (float) 252 / 255;
             green = (float) 140 / 255;
             blue = (float) 52 / 255;
-        }
-        if (ModFluidsRegister.isVegetableSoup(state)) {
+        }if (ModFluidsRegister.isVegetableSoup(state)) {
             red = (float) 140 / 255;
             green = (float) 124 / 255;
             blue = (float) 36 / 255;
-        }
-        if (ModFluidsRegister.isFishStew(state)) {
+        }if (ModFluidsRegister.isFishStew(state)) {
             red = (float) 196 / 255;
             green = (float) 60 / 255;
             blue = (float) 36 / 255;
-        }
-        if (ModFluidsRegister.isBeefStew(state)) {
+        }if (ModFluidsRegister.isBeefStew(state)) {
             red = (float) 255 / 255;
             green = (float) 140 / 255;
             blue = (float) 16 / 255;
-        }
-        if (ModFluidsRegister.isRabbitStew(state)) {
+        }if (ModFluidsRegister.isRabbitStew(state)) {
             red = (float) 212 / 255;
             green = (float) 124 / 255;
             blue = (float) 60 / 255;
-        }
-        if (ModFluidsRegister.isMushroomStew(state)) {
+        }if (ModFluidsRegister.isMushroomStew(state)) {
             red = (float) 212 / 255;
             green = (float) 140 / 255;
             blue = (float) 100 / 255;
-        }
-        if (ModFluidsRegister.isGlowBerryCustard(state)) {
+        }if (ModFluidsRegister.isGlowBerryCustard(state)) {
             red = (float) 244 / 255;
             green = (float) 212 / 255;
             blue = (float) 140 / 255;
+        }if (ModFluidsRegister.isCoffee(state)) {
+            red = (float) 78 / 255;
+            green = (float) 46 / 255;
+            blue = (float) 29 / 255;
+        }if (ModFluidsRegister.isAppleCider(state)) {
+            red = (float) 211 / 255;
+            green = (float) 152 / 255;
+            blue = (float) 87 / 255;
+        }if (ModFluidsRegister.isMelonJuice(state)) {
+            red = (float) 196 / 255;
+            green = (float) 47 / 255;
+            blue = (float) 33 / 255;
+        }if (ModFluidsRegister.isPurulentTea(state)) {
+            red = (float) 166 / 255;
+            green = (float) 37 / 255;
+            blue = (float) 48 / 255;
+        }if (ModFluidsRegister.isDandelionTea(state)) {
+            red = (float) 230 / 255;
+            green = (float) 205 / 255;
+            blue = (float) 108 / 255;
+        }if (ModFluidsRegister.isRoseHipTea(state)) {
+            red = (float) 134 / 255;
+            green = (float) 32 / 255;
+            blue = (float) 14 / 255;
+        }if (ModFluidsRegister.isBlackTea(state)) {
+            red = (float) 120 / 255;
+            green = (float) 62 / 255;
+            blue = (float) 39 / 255;
+        }if (ModFluidsRegister.isGreenTea(state)) {
+            red = (float) 161 / 255;
+            green = (float) 168 / 255;
+            blue = (float) 60 / 255;
+        }if (ModFluidsRegister.isYellowTea(state)) {
+            red = (float) 171 / 255;
+            green = (float) 133 / 255;
+            blue = (float) 66 / 255;
         }
     }
 
@@ -158,6 +183,11 @@ public abstract class BackgroundRendererMixin {
             ci.cancel();
         }
         if (ModFluidsRegister.isGlowBerryCustard(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isCoffee(state)) {
             RenderSystem.setShaderFogStart(-8);
             RenderSystem.setShaderFogEnd(5);
             ci.cancel();

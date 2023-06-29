@@ -3,7 +3,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelight", "farmersrespite"]
     }
   ],
   "ingredients": [
@@ -14,14 +14,13 @@
       "item": "create:wheat_flour"
     },
     {
-      "amount": 20250,
-      "fluidTag": "c:honey"
+      "item": "farmersrespite:green_tea_leaves"
     }
   ],
   "results": [
     {
       "count": 8,
-      "item": "farmersdelight:honey_cookie"
+      "item": "farmersrespite:green_tea_cookie"
     }
   ]
 }

@@ -7,12 +7,12 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "farmersdelight:pie_crust"
+    "item": "delightfulcreators:coffee_cake_sponge"
   },
-  "loops": 2,
+  "loops": 1,
   "results": [
     {
-      "item": "farmersdelight:apple_pie"
+      "item": "farmersrespite:coffee_cake"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_apple_pie"
+          "item": "delightfulcreators:incomplete_coffee_cake"
         },
         {
-          "item": "minecraft:apple"
+          "item": "delightfulcreators:coffee_cake_coating"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_apple_pie"
+          "item": "delightfulcreators:incomplete_coffee_cake"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_apple_pie"
+          "item": "delightfulcreators:incomplete_coffee_cake"
         },
         {
-          "item": "create:wheat_flour"
+          "item": "delightfulcreators:coffee_cake_sponge"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_apple_pie"
+          "item": "delightfulcreators:incomplete_coffee_cake"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_apple_pie"
+          "item": "delightfulcreators:incomplete_coffee_cake"
         },
         {
-          "item": "minecraft:sugar"
+          "item": "delightfulcreators:coffee_cake_coating"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_apple_pie"
+          "item": "delightfulcreators:incomplete_coffee_cake"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_apple_pie"
+    "item": "delightfulcreators:incomplete_coffee_cake"
   }
 }

@@ -2,6 +2,7 @@ package flomik.delightfulcreators.fluids;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import flomik.delightfulcreators.fluids.farmersdelightfluids.*;
+import flomik.delightfulcreators.fluids.farmersrespite.*;
 import flomik.delightfulcreators.item.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -17,10 +18,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModFluidsRegister {
-    public static FlowableFluid STILL_TOMATO_SAUCE, STILL_HOT_COCOA, STILL_MELON_JUICE, STILL_APPLE_CIDER, STILL_BEETROOT_SOUP, STILL_CHICKEN_SOUP, STILL_NOODLE_SOUP, STILL_PUMPKIN_SOUP, STILL_VEGETABLE_SOUP, STILL_FISH_STEW, STILL_BEEF_STEW, STILL_RABBIT_STEW, STILL_MUSHROOM_STEW, STILL_GLOW_BERRY_CUSTARD;
-    public static FlowableFluid FLOWING_TOMATO_SAUCE, FLOWING_HOT_COCOA, FLOWING_MELON_JUICE, FLOWING_APPLE_CIDER, FLOWING_BEETROOT_SOUP, FLOWING_CHICKEN_SOUP, FLOWING_NOODLE_SOUP, FLOWING_PUMPKIN_SOUP, FLOWING_VEGETABLE_SOUP, FLOWING_FISH_STEW, FLOWING_BEEF_STEW, FLOWING_RABBIT_STEW, FLOWING_MUSHROOM_STEW, FLOWING_GLOW_BERRY_CUSTARD;
-    public static Block TOMATO_SAUCE_BLOCK, HOT_COCOA_BLOCK, MELON_JUICE_BLOCK, APPLE_CIDER_BLOCK, BEETROOT_SOUP_BLOCK, CHICKEN_SOUP_BLOCK, NOODLE_SOUP_BLOCK, PUMPKIN_SOUP_BLOCK, VEGETABLE_SOUP_BLOCK, FISH_STEW_BLOCK, BEEF_STEW_BLOCK, RABBIT_STEW_BLOCK, MUSHROOM_STEW_BLOCK, GLOW_BERRY_CUSTARD_BLOCK;
-    public static Item TOMATO_SAUCE_BUCKET, HOT_COCOA_BUCKET, MELON_JUICE_BUCKET, APPLE_CIDER_BUCKET, BEETROOT_SOUP_BUCKET, CHICKEN_SOUP_BUCKET, NOODLE_SOUP_BUCKET, PUMPKIN_SOUP_BUCKET, VEGETABLE_SOUP_BUCKET, FISH_STEW_BUCKET, BEEF_STEW_BUCKET, RABBIT_STEW_BUCKET, MUSHROOM_STEW_BUCKET, GLOW_BERRY_CUSTARD_BUCKET;
+    public static FlowableFluid STILL_TOMATO_SAUCE, STILL_HOT_COCOA, STILL_MELON_JUICE, STILL_APPLE_CIDER, STILL_BEETROOT_SOUP, STILL_CHICKEN_SOUP, STILL_NOODLE_SOUP, STILL_PUMPKIN_SOUP, STILL_VEGETABLE_SOUP, STILL_FISH_STEW, STILL_BEEF_STEW, STILL_RABBIT_STEW, STILL_MUSHROOM_STEW, STILL_GLOW_BERRY_CUSTARD, STILL_PURULENT_TEA, STILL_DANDELION_TEA, STILL_ROSE_HIP_TEA, STILL_BLACK_TEA, STILL_YELLOW_TEA, STILL_GREEN_TEA, STILL_COFFEE;
+    public static FlowableFluid FLOWING_TOMATO_SAUCE, FLOWING_HOT_COCOA, FLOWING_MELON_JUICE, FLOWING_APPLE_CIDER, FLOWING_BEETROOT_SOUP, FLOWING_CHICKEN_SOUP, FLOWING_NOODLE_SOUP, FLOWING_PUMPKIN_SOUP, FLOWING_VEGETABLE_SOUP, FLOWING_FISH_STEW, FLOWING_BEEF_STEW, FLOWING_RABBIT_STEW, FLOWING_MUSHROOM_STEW, FLOWING_GLOW_BERRY_CUSTARD, FLOWING_PURULENT_TEA, FLOWING_DANDELION_TEA, FLOWING_ROSE_HIP_TEA, FLOWING_BLACK_TEA, FLOWING_YELLOW_TEA, FLOWING_GREEN_TEA, FLOWING_COFFEE;
+    public static Block TOMATO_SAUCE_BLOCK, HOT_COCOA_BLOCK, MELON_JUICE_BLOCK, APPLE_CIDER_BLOCK, BEETROOT_SOUP_BLOCK, CHICKEN_SOUP_BLOCK, NOODLE_SOUP_BLOCK, PUMPKIN_SOUP_BLOCK, VEGETABLE_SOUP_BLOCK, FISH_STEW_BLOCK, BEEF_STEW_BLOCK, RABBIT_STEW_BLOCK, MUSHROOM_STEW_BLOCK, GLOW_BERRY_CUSTARD_BLOCK, PURULENT_TEA_BLOCK, DANDELION_TEA_BLOCK, ROSE_HIP_TEA_BLOCK, BLACK_TEA_BLOCK, YELLOW_TEA_BLOCK, GREEN_TEA_BLOCK, COFFEE_BLOCK;
+    public static Item TOMATO_SAUCE_BUCKET, HOT_COCOA_BUCKET, MELON_JUICE_BUCKET, APPLE_CIDER_BUCKET, BEETROOT_SOUP_BUCKET, CHICKEN_SOUP_BUCKET, NOODLE_SOUP_BUCKET, PUMPKIN_SOUP_BUCKET, VEGETABLE_SOUP_BUCKET, FISH_STEW_BUCKET, BEEF_STEW_BUCKET, RABBIT_STEW_BUCKET, MUSHROOM_STEW_BUCKET, GLOW_BERRY_CUSTARD_BUCKET, PURULENT_TEA_BUCKET, DANDELION_TEA_BUCKET, ROSE_HIP_TEA_BUCKET, BLACK_TEA_BUCKET, YELLOW_TEA_BUCKET, GREEN_TEA_BUCKET, COFFEE_BUCKET;
 
     public static boolean isTomatoSauce(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_TOMATO_SAUCE) || state.isOf(ModFluidsRegister.FLOWING_TOMATO_SAUCE);
@@ -57,6 +58,42 @@ public class ModFluidsRegister {
     }
     public static boolean isGlowBerryCustard(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD) || state.isOf(ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
+    }
+
+    public static boolean isCoffee(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_COFFEE) || state.isOf(ModFluidsRegister.FLOWING_COFFEE);
+    }
+
+    public static boolean isAppleCider(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_APPLE_CIDER) || state.isOf(ModFluidsRegister.FLOWING_APPLE_CIDER);
+    }
+
+    public static boolean isMelonJuice(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_MELON_JUICE) || state.isOf(ModFluidsRegister.FLOWING_MELON_JUICE);
+    }
+
+    public static boolean isPurulentTea(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_PURULENT_TEA) || state.isOf(ModFluidsRegister.FLOWING_PURULENT_TEA);
+    }
+
+    public static boolean isDandelionTea(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_DANDELION_TEA) || state.isOf(ModFluidsRegister.FLOWING_DANDELION_TEA);
+    }
+
+    public static boolean isRoseHipTea(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_ROSE_HIP_TEA) || state.isOf(ModFluidsRegister.FLOWING_ROSE_HIP_TEA);
+    }
+
+    public static boolean isBlackTea(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_BLACK_TEA) || state.isOf(ModFluidsRegister.FLOWING_BLACK_TEA);
+    }
+
+    public static boolean isYellowTea(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_YELLOW_TEA) || state.isOf(ModFluidsRegister.FLOWING_YELLOW_TEA);
+    }
+
+    public static boolean isGreenTea(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_GREEN_TEA) || state.isOf(ModFluidsRegister.FLOWING_GREEN_TEA);
     }
 
 
@@ -186,5 +223,68 @@ public class ModFluidsRegister {
                 new FluidBlock(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, FabricBlockSettings.copyOf(Blocks.WATER)));
         GLOW_BERRY_CUSTARD_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "glow_berry_custard_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_PURULENT_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "purulent_tea"), new PurulentTeaFluid.Still());
+        FLOWING_PURULENT_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_purulent_tea"), new PurulentTeaFluid.Flowing());
+        PURULENT_TEA_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "purulent_tea_block"),
+                new FluidBlock(ModFluidsRegister.STILL_PURULENT_TEA, FabricBlockSettings.copyOf(Blocks.WATER)));
+        PURULENT_TEA_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "purulent_tea_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_PURULENT_TEA, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_DANDELION_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "dandelion_tea"), new DandelionTeaFluid.Still());
+        FLOWING_DANDELION_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_dandelion_tea"), new DandelionTeaFluid.Flowing());
+        DANDELION_TEA_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "dandelion_tea_block"),
+                new FluidBlock(ModFluidsRegister.STILL_DANDELION_TEA, FabricBlockSettings.copyOf(Blocks.WATER)));
+        DANDELION_TEA_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "dandelion_tea_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_DANDELION_TEA, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_ROSE_HIP_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "rose_hip_tea"), new RoseHipTeaFluid.Still());
+        FLOWING_ROSE_HIP_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_rose_hip_tea"), new RoseHipTeaFluid.Flowing());
+        ROSE_HIP_TEA_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "rose_hip_tea_block"),
+                new FluidBlock(ModFluidsRegister.STILL_ROSE_HIP_TEA, FabricBlockSettings.copyOf(Blocks.WATER)));
+        ROSE_HIP_TEA_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "rose_hip_tea_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_ROSE_HIP_TEA, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_BLACK_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "black_tea"), new BlackTeaFluid.Still());
+        FLOWING_BLACK_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_black_tea"), new BlackTeaFluid.Flowing());
+        BLACK_TEA_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "black_tea_block"),
+                new FluidBlock(ModFluidsRegister.STILL_BLACK_TEA, FabricBlockSettings.copyOf(Blocks.WATER)));
+        BLACK_TEA_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "black_tea_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_BLACK_TEA, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_YELLOW_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "yellow_tea"), new YellowTeaFluid.Still());
+        FLOWING_YELLOW_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_yellow_tea"), new YellowTeaFluid.Flowing());
+        YELLOW_TEA_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "yellow_tea_block"),
+                new FluidBlock(ModFluidsRegister.STILL_YELLOW_TEA, FabricBlockSettings.copyOf(Blocks.WATER)));
+        YELLOW_TEA_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "yellow_tea_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_YELLOW_TEA, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_GREEN_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "green_tea"), new GreenTeaFluid.Still());
+        FLOWING_GREEN_TEA = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_green_tea"), new GreenTeaFluid.Flowing());
+        GREEN_TEA_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "green_tea_block"),
+                new FluidBlock(ModFluidsRegister.STILL_GREEN_TEA, FabricBlockSettings.copyOf(Blocks.WATER)));
+        GREEN_TEA_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "green_tea_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_GREEN_TEA, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_COFFEE = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "coffee"), new CoffeeFluid.Still());
+        FLOWING_COFFEE = Registry.register(Registry.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_coffee"), new CoffeeFluid.Flowing());
+        COFFEE_BLOCK = Registry.register(Registry.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "coffee_block"),
+                new FluidBlock(ModFluidsRegister.STILL_COFFEE, FabricBlockSettings.copyOf(Blocks.WATER)));
+        COFFEE_BUCKET = Registry.register(Registry.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "coffee_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_COFFEE, new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BUCKET).maxCount(1)));
     }
 }

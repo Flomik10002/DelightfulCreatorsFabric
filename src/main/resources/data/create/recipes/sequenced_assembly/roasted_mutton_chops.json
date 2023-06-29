@@ -1,0 +1,87 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:roasted_mutton_chops"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        },
+        {
+          "item": "farmersdelight:cooked_mutton_chops"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        },
+        {
+          "item": "minecraft:beetroot"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        },
+        {
+          "item": "farmersdelight:cooked_rice"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        },
+        {
+          "item": "farmersdelight:tomato"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_roasted_mutton_chops"
+  }
+}

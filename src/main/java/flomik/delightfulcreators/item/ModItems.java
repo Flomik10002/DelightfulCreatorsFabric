@@ -48,7 +48,21 @@ public class ModItems {
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_GRILLED_SALMON = registerItem("incomplete_grilled_salmon",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
-        public static final Item INCOMPLETE_HORSE_FEED = registerItem("incomplete_horse_feed",
+    public static final Item INCOMPLETE_HORSE_FEED = registerItem("incomplete_horse_feed",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_BLACK_COD = registerItem("incomplete_black_cod",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_ROASTED_MUTTON_CHOPS = registerItem("incomplete_roasted_mutton_chops",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_ROSE_HIP_PIE = registerItem("incomplete_rose_hip_pie",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_STEAK_AND_POTATOES = registerItem("incomplete_steak_and_potatoes",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_COFFEE_CAKE = registerItem("incomplete_coffee_cake",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item COFFEE_CAKE_SPONGE = registerItem("coffee_cake_sponge",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item COFFEE_CAKE_COATING = registerItem("coffee_cake_coating",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));

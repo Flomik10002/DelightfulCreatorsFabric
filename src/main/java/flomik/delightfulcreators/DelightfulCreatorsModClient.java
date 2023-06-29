@@ -113,6 +113,50 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 new Identifier("delightfulcreators:fluid/glow_berry_custard_flow")
         ));
 
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_PURULENT_TEA, ModFluidsRegister.FLOWING_PURULENT_TEA, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0xa62530
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_DANDELION_TEA, ModFluidsRegister.FLOWING_DANDELION_TEA, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0xe6cd6c
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_ROSE_HIP_TEA, ModFluidsRegister.FLOWING_ROSE_HIP_TEA, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0x86200e
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_BLACK_TEA, ModFluidsRegister.FLOWING_BLACK_TEA, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0x783e27
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_YELLOW_TEA, ModFluidsRegister.FLOWING_YELLOW_TEA, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0xab8542
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_GREEN_TEA, ModFluidsRegister.FLOWING_GREEN_TEA, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0xa1a83c
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_COFFEE, ModFluidsRegister.FLOWING_COFFEE, new SimpleFluidRenderHandler(
+                new Identifier("minecraft:block/water_still"),
+                new Identifier("minecraft:block/water_flow"),
+                0x321f13
+        ));
+
+
+
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_APPLE_CIDER, ModFluidsRegister.FLOWING_APPLE_CIDER);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MELON_JUICE, ModFluidsRegister.FLOWING_MELON_JUICE);
@@ -127,5 +171,12 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_RABBIT_STEW, ModFluidsRegister.FLOWING_RABBIT_STEW);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MUSHROOM_STEW, ModFluidsRegister.FLOWING_MUSHROOM_STEW);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_PURULENT_TEA, ModFluidsRegister.FLOWING_PURULENT_TEA);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_DANDELION_TEA, ModFluidsRegister.FLOWING_DANDELION_TEA);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_ROSE_HIP_TEA, ModFluidsRegister.FLOWING_ROSE_HIP_TEA);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_BLACK_TEA, ModFluidsRegister.FLOWING_BLACK_TEA);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_YELLOW_TEA, ModFluidsRegister.FLOWING_YELLOW_TEA);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_GREEN_TEA, ModFluidsRegister.FLOWING_GREEN_TEA);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_COFFEE, ModFluidsRegister.FLOWING_COFFEE);
         }
 }
