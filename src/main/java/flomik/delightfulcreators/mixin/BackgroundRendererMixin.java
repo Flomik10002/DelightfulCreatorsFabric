@@ -36,6 +36,16 @@ public abstract class BackgroundRendererMixin {
     @ModifyArgs(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;clearColor(FFFF)V", remap = false))
     private static void delightfulcreators$modifyFogColors(Args args, Camera camera, float partialTicks, ClientWorld level, int renderDistanceChunks, float bossColorModifier) {
         FluidState state = level.getFluidState(camera.getBlockPos());
+        if (ModFluidsRegister.isAppleCider(state)) {
+            red = (float) 211 / 255;
+            green = (float) 152 / 255;
+            blue = (float) 87 / 255;
+        }
+        if (ModFluidsRegister.isMelonJuice(state)) {
+            red = (float) 196 / 255;
+            green = (float) 47 / 255;
+            blue = (float) 33 / 255;
+        }
         if (ModFluidsRegister.isTomatoSauce(state)) {
             red = (float) 196 / 255;
             green = (float) 24 / 255;
@@ -101,16 +111,6 @@ public abstract class BackgroundRendererMixin {
             green = (float) 46 / 255;
             blue = (float) 29 / 255;
         }
-        if (ModFluidsRegister.isAppleCider(state)) {
-            red = (float) 211 / 255;
-            green = (float) 152 / 255;
-            blue = (float) 87 / 255;
-        }
-        if (ModFluidsRegister.isMelonJuice(state)) {
-            red = (float) 196 / 255;
-            green = (float) 47 / 255;
-            blue = (float) 33 / 255;
-        }
         if (ModFluidsRegister.isPurulentTea(state)) {
             red = (float) 166 / 255;
             green = (float) 37 / 255;
@@ -127,9 +127,9 @@ public abstract class BackgroundRendererMixin {
             blue = (float) 14 / 255;
         }
         if (ModFluidsRegister.isBlackTea(state)) {
-            red = (float) 120 / 255;
-            green = (float) 62 / 255;
-            blue = (float) 39 / 255;
+            red = (float) 78 / 255;
+            green = (float) 46 / 255;
+            blue = (float) 29 / 255;
         }
         if (ModFluidsRegister.isGreenTea(state)) {
             red = (float) 161 / 255;
@@ -137,6 +137,60 @@ public abstract class BackgroundRendererMixin {
             blue = (float) 60 / 255;
         }
         if (ModFluidsRegister.isYellowTea(state)) {
+            red = (float) 171 / 255;
+            green = (float) 133 / 255;
+            blue = (float) 66 / 255;
+        }if (ModFluidsRegister.isLongCoffee(state)) {
+            red = (float) 78 / 255;
+            green = (float) 46 / 255;
+            blue = (float) 29 / 255;
+        }
+        if (ModFluidsRegister.isLongDandelionTea(state)) {
+            red = (float) 230 / 255;
+            green = (float) 205 / 255;
+            blue = (float) 108 / 255;
+        }
+        if (ModFluidsRegister.isLongBlackTea(state)) {
+            red = (float) 78 / 255;
+            green = (float) 46 / 255;
+            blue = (float) 29 / 255;
+        }
+        if (ModFluidsRegister.isLongGreenTea(state)) {
+            red = (float) 161 / 255;
+            green = (float) 168 / 255;
+            blue = (float) 60 / 255;
+        }
+        if (ModFluidsRegister.isLongYellowTea(state)) {
+            red = (float) 171 / 255;
+            green = (float) 133 / 255;
+            blue = (float) 66 / 255;
+        }
+        if (ModFluidsRegister.isStrongCoffee(state)) {
+            red = (float) 78 / 255;
+            green = (float) 46 / 255;
+            blue = (float) 29 / 255;
+        }
+        if (ModFluidsRegister.isStrongPurulentTea(state)) {
+            red = (float) 166 / 255;
+            green = (float) 37 / 255;
+            blue = (float) 48 / 255;
+        }
+        if (ModFluidsRegister.isStrongRoseHipTea(state)) {
+            red = (float) 134 / 255;
+            green = (float) 32 / 255;
+            blue = (float) 14 / 255;
+        }
+        if (ModFluidsRegister.isStrongBlackTea(state)) {
+            red = (float) 78 / 255;
+            green = (float) 46 / 255;
+            blue = (float) 29 / 255;
+        }
+        if (ModFluidsRegister.isStrongGreenTea(state)) {
+            red = (float) 161 / 255;
+            green = (float) 168 / 255;
+            blue = (float) 60 / 255;
+        }
+        if (ModFluidsRegister.isStrongYellowTea(state)) {
             red = (float) 171 / 255;
             green = (float) 133 / 255;
             blue = (float) 66 / 255;
@@ -203,11 +257,6 @@ public abstract class BackgroundRendererMixin {
             ci.cancel();
         }
         if (ModFluidsRegister.isGlowBerryCustard(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isCoffee(state)) {
             RenderSystem.setShaderFogStart(-8);
             RenderSystem.setShaderFogEnd(5);
             ci.cancel();
