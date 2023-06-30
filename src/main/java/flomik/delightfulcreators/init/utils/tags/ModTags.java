@@ -37,8 +37,6 @@ public class ModTags {
 
     public static class ModFluidTags {
 
-        public static final TagKey<Fluid> SOUPS_STEWS = createCommonFluidTag("soups_stews");
-
         public static @NotNull TagKey<Fluid> createFluidTag(String modFluidTagName) {
             return TagKey.of(Registry.FLUID_KEY, new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
         }
