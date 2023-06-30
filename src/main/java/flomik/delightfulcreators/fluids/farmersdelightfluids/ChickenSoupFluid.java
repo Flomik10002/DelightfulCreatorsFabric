@@ -6,7 +6,7 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
-import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.init.ModFluidsRegister;
 import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 
 public abstract class ChickenSoupFluid extends ModFluidsTemplate {

@@ -1,4 +1,4 @@
-package flomik.delightfulcreators.fluids;
+package flomik.delightfulcreators.init;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import flomik.delightfulcreators.fluids.farmersdelightfluids.*;
@@ -26,36 +26,47 @@ public class ModFluidsRegister {
     public static boolean isTomatoSauce(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_TOMATO_SAUCE) || state.isOf(ModFluidsRegister.FLOWING_TOMATO_SAUCE);
     }
+
     public static boolean isHotCocoa(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_HOT_COCOA) || state.isOf(ModFluidsRegister.FLOWING_HOT_COCOA);
     }
+
     public static boolean isBeetrootSoup(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_BEETROOT_SOUP) || state.isOf(ModFluidsRegister.FLOWING_BEETROOT_SOUP);
     }
+
     public static boolean isChickenSoup(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_CHICKEN_SOUP) || state.isOf(ModFluidsRegister.FLOWING_CHICKEN_SOUP);
     }
+
     public static boolean isNoodleSoup(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_NOODLE_SOUP) || state.isOf(ModFluidsRegister.FLOWING_NOODLE_SOUP);
     }
+
     public static boolean isPumpkinSoup(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_PUMPKIN_SOUP) || state.isOf(ModFluidsRegister.FLOWING_PUMPKIN_SOUP);
     }
+
     public static boolean isVegetableSoup(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_VEGETABLE_SOUP) || state.isOf(ModFluidsRegister.FLOWING_VEGETABLE_SOUP);
     }
+
     public static boolean isFishStew(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_FISH_STEW) || state.isOf(ModFluidsRegister.FLOWING_FISH_STEW);
     }
+
     public static boolean isBeefStew(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_BEEF_STEW) || state.isOf(ModFluidsRegister.FLOWING_BEEF_STEW);
     }
+
     public static boolean isRabbitStew(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_RABBIT_STEW) || state.isOf(ModFluidsRegister.FLOWING_RABBIT_STEW);
     }
+
     public static boolean isMushroomStew(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_MUSHROOM_STEW) || state.isOf(ModFluidsRegister.FLOWING_MUSHROOM_STEW);
     }
+
     public static boolean isGlowBerryCustard(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD) || state.isOf(ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
     }

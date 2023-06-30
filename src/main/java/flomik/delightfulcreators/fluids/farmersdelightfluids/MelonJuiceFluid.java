@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.world.WorldView;
-import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.init.ModFluidsRegister;
 import flomik.delightfulcreators.fluids.ModFluidsTemplate;
 
 public abstract class MelonJuiceFluid extends ModFluidsTemplate {

@@ -1,6 +1,6 @@
 package flomik.delightfulcreators;
 
-import flomik.delightfulcreators.fluids.ModFluidsRegister;
+import flomik.delightfulcreators.init.ModFluidsRegister;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
@@ -50,7 +50,7 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 new Identifier("minecraft:block/water_still"),
                 new Identifier("minecraft:block/water_flow"),
                 0xd5864d
-            ));
+        ));
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_MELON_JUICE, ModFluidsRegister.FLOWING_MELON_JUICE, new SimpleFluidRenderHandler(
                 new Identifier("minecraft:block/water_still"),
@@ -156,7 +156,6 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         ));
 
 
-
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_APPLE_CIDER, ModFluidsRegister.FLOWING_APPLE_CIDER);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MELON_JUICE, ModFluidsRegister.FLOWING_MELON_JUICE);
@@ -178,5 +177,5 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_YELLOW_TEA, ModFluidsRegister.FLOWING_YELLOW_TEA);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_GREEN_TEA, ModFluidsRegister.FLOWING_GREEN_TEA);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_COFFEE, ModFluidsRegister.FLOWING_COFFEE);
-        }
+    }
 }
