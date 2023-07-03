@@ -12,6 +12,8 @@
 
 <h3>Making automation between <a href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric" rel="noopener nofollow ugc">Farmer's Delight</a> and <a href="https://www.curseforge.com/minecraft/mc-mods/create-fabric" rel="noopener nofollow ugc">Create</a> more correct.</h3>
 
+The mod also supports the Farmers Respite add-on.
+
 ## License
 
 This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
