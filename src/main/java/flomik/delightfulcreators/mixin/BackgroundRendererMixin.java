@@ -195,6 +195,21 @@ public abstract class BackgroundRendererMixin {
             green = (float) 133 / 255;
             blue = (float) 66 / 255;
         }
+        if (ModFluidsRegister.isRoseHipJam(state)) {
+            red = (float) 134 / 255;
+            green = (float) 32 / 255;
+            blue = (float) 14 / 255;
+        }
+        if (ModFluidsRegister.isBlazingChili(state)) {
+            red = (float) 135 / 255;
+            green = (float) 36 / 255;
+            blue = (float) 35 / 255;
+        }
+        if (ModFluidsRegister.isTeaCurry(state)) {
+            red = (float) 126 / 255;
+            green = (float) 84 / 255;
+            blue = (float) 45 / 255;
+        }
     }
 
     @Inject(method = "applyFog", at = @At("HEAD"), cancellable = true)
@@ -257,6 +272,16 @@ public abstract class BackgroundRendererMixin {
             ci.cancel();
         }
         if (ModFluidsRegister.isGlowBerryCustard(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isTeaCurry(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isBlazingChili(state)) {
             RenderSystem.setShaderFogStart(-8);
             RenderSystem.setShaderFogEnd(5);
             ci.cancel();

@@ -1,0 +1,36 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "farmersrespite"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "farmersrespite:coffee_beans"
+    },
+    {
+      "tag": "c:raw_beef"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:blazing_chili",
+      "amount": 20250
+    }
+  ]
+}

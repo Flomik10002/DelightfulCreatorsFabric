@@ -40,6 +40,10 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
             registry.register(new Identifier("delightfulcreators:fluid/glow_berry_custard_flow"));
             registry.register(new Identifier("delightfulcreators:fluid/rose_hip_jam_still"));
             registry.register(new Identifier("delightfulcreators:fluid/rose_hip_jam_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/blazing_chili_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/blazing_chili_flow"));
+            registry.register(new Identifier("delightfulcreators:fluid/tea_curry_still"));
+            registry.register(new Identifier("delightfulcreators:fluid/tea_curry_flow"));
         });
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE,
@@ -228,6 +232,15 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 new Identifier("delightfulcreators:fluid/rose_hip_jam_flow")
         ));
 
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_TEA_CURRY, ModFluidsRegister.FLOWING_TEA_CURRY, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/tea_curry_still"),
+                new Identifier("delightfulcreators:fluid/tea_curry_flow")
+        ));
+
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_BLAZING_CHILI, ModFluidsRegister.FLOWING_BLAZING_CHILI, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:fluid/blazing_chili_still"),
+                new Identifier("delightfulcreators:fluid/blazing_chili_flow")
+        ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_APPLE_CIDER, ModFluidsRegister.FLOWING_APPLE_CIDER);
@@ -262,5 +275,7 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_STRONG_GREEN_TEA, ModFluidsRegister.FLOWING_STRONG_GREEN_TEA);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_STRONG_COFFEE, ModFluidsRegister.FLOWING_STRONG_COFFEE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_ROSE_HIP_JAM, ModFluidsRegister.FLOWING_ROSE_HIP_JAM);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.FLOWING_BLAZING_CHILI, ModFluidsRegister.FLOWING_BLAZING_CHILI);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TEA_CURRY, ModFluidsRegister.FLOWING_TEA_CURRY);
     }
 }

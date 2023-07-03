@@ -1,0 +1,36 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "farmersrespite"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:raw_chicken"
+    },
+    {
+      "tag": "c:salad_ingredients"
+    },
+    {
+      "item": "farmersrespite:yellow_tea_leaves"
+    },
+    {
+      "item": "farmersrespite:yellow_tea_leaves"
+    },
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "item": "farmersdelight:rice"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:tea_curry",
+      "amount": 20250
+    }
+  ]
+}
