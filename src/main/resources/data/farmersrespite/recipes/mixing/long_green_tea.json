@@ -1,0 +1,26 @@
+{
+    "type": "create:mixing",
+    "heatRequirement": "heated",
+    "fabric:load_conditions": [
+        {
+            "condition": "fabric:all_mods_loaded",
+            "values": ["create", "farmersdelight", "farmersrespite"]
+        }
+    ],
+    "ingredients": [
+        {
+            "fluidTag": "c:milk",
+            "amount": 10125
+        },
+        {
+            "fluid": "delightfulcreators:green_tea",
+            "amount": 10125
+        }
+    ],
+    "results": [
+        {
+            "fluid": "delightfulcreators:long_green_tea",
+            "amount": 20250
+        }
+    ]
+}
