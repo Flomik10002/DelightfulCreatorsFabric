@@ -1,6 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "delightfulcreators:item/tea_curry_bucket"
-    }
-}
