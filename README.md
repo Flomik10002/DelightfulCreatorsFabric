@@ -1,5 +1,3 @@
-[CREATE_FABRIC]: https://www.curseforge.com/minecraft/mc-mods/create-fabric
-[FARMERS_DELIGHT_FABRIC]: https://www.curseforge.com/minecraft/mc-mods/farmers-delight-fabric
 [MODRINTH]: https://modrinth.com/mod/delightdulcreators
 [CURSEFORGE]: https://curseforge.com/minecraft/mc-mods/delightful-creators-fabric
 
