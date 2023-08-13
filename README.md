@@ -5,7 +5,7 @@
 
 # Delightful Creators 
 
-<img src="https://cdn.modrinth.com/data/jmJ87gsb/images/817a6483cf429656002308b597f65ed9f95ed130.png">
+<img src="https://cdn.modrinth.com/data/jmJ87gsb/images/527602ce254ed3b68f42d40960928767639d7760.png">
 
 [![](https://cf.way2muchnoise.eu/873936.svg?badge_style=for_the_badge)][CURSEFORGE]
 [![](https://img.shields.io/modrinth/dt/jmJ87gsb?color=brightgreen&logo=modrinth&logoColor=brightgreen&style=for-the-badge)][MODRINTH]
