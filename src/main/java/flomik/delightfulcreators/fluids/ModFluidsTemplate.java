@@ -7,14 +7,22 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.particle.ParticleEffect;
+import net.minecraft.registry.tag.FluidTags;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.WorldAccess;
-import net.minecraft.world.WorldView;
+import net.minecraft.world.*;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Optional;
+
 public abstract class ModFluidsTemplate extends FlowableFluid {
+
+    @Override
+    public Optional<SoundEvent> getBucketFillSound() {
+        return Optional.of(SoundEvents.ITEM_BUCKET_FILL);
+    }
 
     @Nullable
     protected ParticleEffect getParticle() {
@@ -27,19 +35,19 @@ public abstract class ModFluidsTemplate extends FlowableFluid {
     }
 
     @Override
-    protected boolean isInfinite() {
-        return false;
-    }
-
-    @Override
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
         final BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
         Block.dropStacks(state, world, pos, blockEntity);
     }
 
     @Override
-    protected boolean canBeReplacedWith(FluidState fluidState, BlockView blockView, BlockPos blockPos, Fluid fluid, Direction direction) {
+    public boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
         return false;
+    }
+
+    @Override
+    protected boolean isInfinite(World world) {
+        return world.getGameRules().getBoolean(GameRules.LAVA_SOURCE_CONVERSION);
     }
 
     @Override

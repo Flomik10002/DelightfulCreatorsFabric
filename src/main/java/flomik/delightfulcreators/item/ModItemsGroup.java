@@ -2,6 +2,7 @@ package flomik.delightfulcreators.item;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import flomik.delightfulcreators.init.ModItemsRegister;
+import flomik.delightfulcreators.init.ModFluidsRegister;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -11,9 +12,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemsGroup {
-    public static ItemGroup MAIN = Registry.register(Registries.ITEM_GROUP, new Identifier(DelightfulCreatorsMod.MOD_ID, "main"),
+    public static final ItemGroup MAIN = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(DelightfulCreatorsMod.MOD_ID, "main"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.main"))
-            .icon(() -> new ItemStack(ModItemsRegister.PUMPKIN_PIE_SLICE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItemsRegister.PUMPKIN_PIE_SLICE)).entries((displayContext, entries) -> {
+                        entries.add(ModItemsRegister.INCOMPLETE_PASTA_DISH);
                         entries.add(ModItemsRegister.INCOMPLETE_PASTA_WITH_MEATBALLS);
                         entries.add(ModItemsRegister.INCOMPLETE_PASTA_WITH_MUTTON_CHOP);
                         entries.add(ModItemsRegister.INCOMPLETE_EGG_SANDWICH);
@@ -38,8 +41,24 @@ public class ModItemsGroup {
                         entries.add(ModItemsRegister.INCOMPLETE_ROASTED_MUTTON_CHOPS);
                         entries.add(ModItemsRegister.INCOMPLETE_STEAK_AND_POTATOES);
                         entries.add(ModItemsRegister.PUMPKIN_PIE_SLICE);
+                        entries.add(ModFluidsRegister.TOMATO_SAUCE_BUCKET);
+                        entries.add(ModFluidsRegister.HOT_COCOA_BUCKET);
+                        entries.add(ModFluidsRegister.MELON_JUICE_BUCKET);
+                        entries.add(ModFluidsRegister.APPLE_CIDER_BUCKET);
+                        entries.add(ModFluidsRegister.BEETROOT_SOUP_BUCKET);
+                        entries.add(ModFluidsRegister.CHICKEN_SOUP_BUCKET);
+                        entries.add(ModFluidsRegister.NOODLE_SOUP_BUCKET);
+                        entries.add(ModFluidsRegister.PUMPKIN_SOUP_BUCKET);
+                        entries.add(ModFluidsRegister.VEGETABLE_SOUP_BUCKET);
+                        entries.add(ModFluidsRegister.FISH_STEW_BUCKET);
+                        entries.add(ModFluidsRegister.BEEF_STEW_BUCKET);
+                        entries.add(ModFluidsRegister.RABBIT_STEW_BUCKET);
+                        entries.add(ModFluidsRegister.MUSHROOM_STEW_BUCKET);
+                        entries.add(ModFluidsRegister.GLOW_BERRY_CUSTARD_BUCKET);
+
     }).build());
 
-    public static void registerItemGroup(){
+    public static void registerModItemGroup(){
+        DelightfulCreatorsMod.LOGGER.debug("Registering Mod Item Group for " + DelightfulCreatorsMod.MOD_ID);
     }
 }

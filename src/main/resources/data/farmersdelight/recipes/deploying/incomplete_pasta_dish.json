@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "farmersdelight:raw_pasta"
+    }
+  ],
+  "results": [
+    {
+      "item": "delightfulcreators:incomplete_pasta_dish"
+    }
+  ]
+}

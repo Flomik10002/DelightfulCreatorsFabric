@@ -1,15 +1,15 @@
 package flomik.delightfulcreators.init;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
-import flomik.delightfulcreators.item.ModItemsGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItemsRegister {
+    public static final Item INCOMPLETE_PASTA_DISH = registerItem("incomplete_pasta_dish",
+            new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_PASTA_WITH_MEATBALLS = registerItem("incomplete_pasta_with_meatballs",
             new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_PASTA_WITH_MUTTON_CHOP = registerItem("incomplete_pasta_with_mutton_chop",

@@ -7,7 +7,7 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bowl"
+    "item": "delightfulcreators:incomplete_pasta_dish"
   },
   "loops": 1,
   "results": [
@@ -16,22 +16,6 @@
     }
   ],
   "sequence": [
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
-        },
-        {
-          "item": "farmersdelight:raw_pasta"
-        }
-      ],
-      "results": [
-        {
-          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
-        }
-      ]
-    },
     {
       "type": "create:deploying",
       "ingredients": [
@@ -67,6 +51,6 @@
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_pasta_with_mutton_chop"
+    "item": "delightfulcreators:incomplete_pasta_with_meatballs"
   }
 }
