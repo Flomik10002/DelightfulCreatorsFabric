@@ -240,6 +240,7 @@
   },
   "requirements": [
     [
+      "incomplete_pasta_dish",
       "incomplete_pasta_with_meatballs",
       "incomplete_pasta_with_mutton_chop",
       "incomplete_egg_sandwich",
