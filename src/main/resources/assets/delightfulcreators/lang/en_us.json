@@ -103,6 +103,21 @@
   "item.delightfulcreators.coffee_cake_sponge": "Coffee Cake Sponge",
   "item.delightfulcreators.coffee_cake_coating": "Coffee Cake Coating",
 
+  "fluid.delightfulcreators.apple_cider": "Apple Cider",
+  "fluid.delightfulcreators.melon_juice": "Melon Juice",
+  "fluid.delightfulcreators.tomato_sauce": "Tomato Sauce",
+  "fluid.delightfulcreators.hot_cocoa": "Hot Cocoa",
+  "fluid.delightfulcreators.beetroot_soup": "Beetroot Soup",
+  "fluid.delightfulcreators.chicken_soup": "Chicken Soup",
+  "fluid.delightfulcreators.noodle_soup": "Noodle Soup",
+  "fluid.delightfulcreators.pumpkin_soup": "Pumpkin Soup",
+  "fluid.delightfulcreators.vegetable_soup": "Vegetable Soup",
+  "fluid.delightfulcreators.beef_stew": "Beef Stew",
+  "fluid.delightfulcreators.fish_stew": "Fish Stew",
+  "fluid.delightfulcreators.mushroom_stew": "Mushroom Stew",
+  "fluid.delightfulcreators.rabbit_stew": "Rabbit Stew",
+  "fluid.delightfulcreators.glow_berry_custard": "Glow Berry Custard",
+
   "itemGroup.delightfulcreators.main": "Delightful Creators",
 
   "advancement.delightfulcreators.root": "Delightful Creators",
