@@ -1,0 +1,24 @@
+{
+    "replace": "true",
+    "type": "create:filling",
+    "fabric:load_conditions": [
+        {
+            "condition": "fabric:all_mods_loaded",
+            "values": ["create", "farmersdelight"]
+        }
+    ],
+    "ingredients": [
+        {
+            "item": "minecraft:bowl"
+        },
+        {
+            "fluid": "delightfulcreators:baked_cod_stew",
+            "amount": 20250
+        }
+    ],
+    "results": [
+        {
+            "item": "farmersdelight:baked_cod_stew"
+        }
+    ]
+}

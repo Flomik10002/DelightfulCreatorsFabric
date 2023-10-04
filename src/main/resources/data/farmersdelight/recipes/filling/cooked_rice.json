@@ -1,0 +1,24 @@
+{
+    "replace": "true",
+    "type": "create:filling",
+    "fabric:load_conditions": [
+        {
+            "condition": "fabric:all_mods_loaded",
+            "values": ["create", "farmersdelight"]
+        }
+    ],
+    "ingredients": [
+        {
+            "item": "minecraft:bowl"
+        },
+        {
+            "fluid": "delightfulcreators:cooked_rice",
+            "amount": 20250
+        }
+    ],
+    "results": [
+        {
+            "item": "farmersdelight:cooked_rice"
+        }
+    ]
+}
