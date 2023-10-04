@@ -67,6 +67,7 @@
   "item.delightfulcreators.rose_hip_jam_bucket": "Rose Hip Jam Bucket",
   "block.delightfulcreators.rose_hip_jam_block": "Rose Hip Jam",
 
+  "item.delightfulcreators.incomplete_pasta_dish": "неполное блюдо из макарон",
   "item.delightfulcreators.incomplete_pasta_with_mutton_chop": "Неполная паста с бараньей отбивной",
   "item.delightfulcreators.incomplete_pasta_with_meatballs": "Неполная паста с фрикадельками",
   "item.delightfulcreators.incomplete_apple_pie": "Неполный яблочный пирог",
@@ -93,6 +94,21 @@
   "item.delightfulcreators.incomplete_roasted_mutton_chops": "Неполные бараньи отбивные",
   "item.delightfulcreators.incomplete_rose_hip_pie": "Неполный пирог с шиповником",
   "item.delightfulcreators.incomplete_steak_and_potatoes": "Неполный стейк с картофелем",
+
+  "fluid.delightfulcreators.apple_cider": "Apple Cider",
+  "fluid.delightfulcreators.melon_juice": "Melon Juice",
+  "fluid.delightfulcreators.tomato_sauce": "Tomato Sauce",
+  "fluid.delightfulcreators.hot_cocoa": "Hot Cocoa",
+  "fluid.delightfulcreators.beetroot_soup": "Beetroot Soup",
+  "fluid.delightfulcreators.chicken_soup": "Chicken Soup",
+  "fluid.delightfulcreators.noodle_soup": "Noodle Soup",
+  "fluid.delightfulcreators.pumpkin_soup": "Pumpkin Soup",
+  "fluid.delightfulcreators.vegetable_soup": "Vegetable Soup",
+  "fluid.delightfulcreators.beef_stew": "Beef Stew",
+  "fluid.delightfulcreators.fish_stew": "Fish Stew",
+  "fluid.delightfulcreators.mushroom_stew": "Mushroom Stew",
+  "fluid.delightfulcreators.rabbit_stew": "Rabbit Stew",
+  "fluid.delightfulcreators.glow_berry_custard": "Glow Berry Custard",
 
   "itemGroup.delightfulcreators.main": "Восхитительные создатели",
 

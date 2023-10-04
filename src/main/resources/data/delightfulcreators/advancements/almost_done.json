@@ -1,6 +1,16 @@
 {
   "parent": "delightfulcreators:root",
   "criteria": {
+    "incomplete_pasta_dish": {
+    "conditions": {
+      "items": [
+        {
+          "items": ["delightfulcreators:incomplete_pasta_dish"]
+        }
+      ]
+    },
+    "trigger": "minecraft:inventory_changed"
+  },
     "incomplete_pasta_with_meatballs": {
       "conditions": {
         "items": [

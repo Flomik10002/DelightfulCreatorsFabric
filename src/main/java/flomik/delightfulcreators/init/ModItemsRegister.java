@@ -10,6 +10,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItemsRegister {
+    public static final Item INCOMPLETE_PASTA_DISH = registerItem("incomplete_pasta_dish",
+            new Item(new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_PASTA_WITH_MEATBALLS = registerItem("incomplete_pasta_with_meatballs",
             new Item(new FabricItemSettings().group(ModItemsGroup.main).recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_PASTA_WITH_MUTTON_CHOP = registerItem("incomplete_pasta_with_mutton_chop",
