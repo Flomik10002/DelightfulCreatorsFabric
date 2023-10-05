@@ -17,10 +17,10 @@ import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registry;
 
 public class ModFluidsRegister {
-    public static FlowableFluid STILL_TOMATO_SAUCE, STILL_HOT_COCOA, STILL_MELON_JUICE, STILL_APPLE_CIDER, STILL_BEETROOT_SOUP, STILL_CHICKEN_SOUP, STILL_NOODLE_SOUP, STILL_PUMPKIN_SOUP, STILL_VEGETABLE_SOUP, STILL_FISH_STEW, STILL_BEEF_STEW, STILL_RABBIT_STEW, STILL_MUSHROOM_STEW, STILL_GLOW_BERRY_CUSTARD;
-    public static FlowableFluid FLOWING_TOMATO_SAUCE, FLOWING_HOT_COCOA, FLOWING_MELON_JUICE, FLOWING_APPLE_CIDER, FLOWING_BEETROOT_SOUP, FLOWING_CHICKEN_SOUP, FLOWING_NOODLE_SOUP, FLOWING_PUMPKIN_SOUP, FLOWING_VEGETABLE_SOUP, FLOWING_FISH_STEW, FLOWING_BEEF_STEW, FLOWING_RABBIT_STEW, FLOWING_MUSHROOM_STEW, FLOWING_GLOW_BERRY_CUSTARD;
-    public static Block TOMATO_SAUCE_BLOCK, HOT_COCOA_BLOCK, MELON_JUICE_BLOCK, APPLE_CIDER_BLOCK, BEETROOT_SOUP_BLOCK, CHICKEN_SOUP_BLOCK, NOODLE_SOUP_BLOCK, PUMPKIN_SOUP_BLOCK, VEGETABLE_SOUP_BLOCK, FISH_STEW_BLOCK, BEEF_STEW_BLOCK, RABBIT_STEW_BLOCK, MUSHROOM_STEW_BLOCK, GLOW_BERRY_CUSTARD_BLOCK;
-    public static Item TOMATO_SAUCE_BUCKET, HOT_COCOA_BUCKET, MELON_JUICE_BUCKET, APPLE_CIDER_BUCKET, BEETROOT_SOUP_BUCKET, CHICKEN_SOUP_BUCKET, NOODLE_SOUP_BUCKET, PUMPKIN_SOUP_BUCKET, VEGETABLE_SOUP_BUCKET, FISH_STEW_BUCKET, BEEF_STEW_BUCKET, RABBIT_STEW_BUCKET, MUSHROOM_STEW_BUCKET, GLOW_BERRY_CUSTARD_BUCKET;
+    public static FlowableFluid STILL_TOMATO_SAUCE, STILL_HOT_COCOA, STILL_MELON_JUICE, STILL_APPLE_CIDER, STILL_BEETROOT_SOUP, STILL_CHICKEN_SOUP, STILL_NOODLE_SOUP, STILL_PUMPKIN_SOUP, STILL_VEGETABLE_SOUP, STILL_FISH_STEW, STILL_BEEF_STEW, STILL_RABBIT_STEW, STILL_MUSHROOM_STEW, STILL_GLOW_BERRY_CUSTARD, STILL_COOKED_RICE, STILL_BONE_BROTH, STILL_BAKED_COD_STEW, STILL_RATATOUILLE, STILL_DOG_FOOD;
+    public static FlowableFluid FLOWING_TOMATO_SAUCE, FLOWING_HOT_COCOA, FLOWING_MELON_JUICE, FLOWING_APPLE_CIDER, FLOWING_BEETROOT_SOUP, FLOWING_CHICKEN_SOUP, FLOWING_NOODLE_SOUP, FLOWING_PUMPKIN_SOUP, FLOWING_VEGETABLE_SOUP, FLOWING_FISH_STEW, FLOWING_BEEF_STEW, FLOWING_RABBIT_STEW, FLOWING_MUSHROOM_STEW, FLOWING_GLOW_BERRY_CUSTARD, FLOWING_COOKED_RICE, FLOWING_BONE_BROTH, FLOWING_BAKED_COD_STEW, FLOWING_RATATOUILLE, FLOWING_DOG_FOOD;
+    public static Block TOMATO_SAUCE_BLOCK, HOT_COCOA_BLOCK, MELON_JUICE_BLOCK, APPLE_CIDER_BLOCK, BEETROOT_SOUP_BLOCK, CHICKEN_SOUP_BLOCK, NOODLE_SOUP_BLOCK, PUMPKIN_SOUP_BLOCK, VEGETABLE_SOUP_BLOCK, FISH_STEW_BLOCK, BEEF_STEW_BLOCK, RABBIT_STEW_BLOCK, MUSHROOM_STEW_BLOCK, GLOW_BERRY_CUSTARD_BLOCK, COOKED_RICE_BLOCK, BONE_BROTH_BLOCK, BAKED_COD_STEW_BLOCK, RATATOUILLE_BLOCK, DOG_FOOD_BLOCK;
+    public static Item TOMATO_SAUCE_BUCKET, HOT_COCOA_BUCKET, MELON_JUICE_BUCKET, APPLE_CIDER_BUCKET, BEETROOT_SOUP_BUCKET, CHICKEN_SOUP_BUCKET, NOODLE_SOUP_BUCKET, PUMPKIN_SOUP_BUCKET, VEGETABLE_SOUP_BUCKET, FISH_STEW_BUCKET, BEEF_STEW_BUCKET, RABBIT_STEW_BUCKET, MUSHROOM_STEW_BUCKET, GLOW_BERRY_CUSTARD_BUCKET, COOKED_RICE_BUCKET, BONE_BROTH_BUCKET, BAKED_COD_STEW_BUCKET, RATATOUILLE_BUCKET, DOG_FOOD_BUCKET;
 
 
     public static boolean isAppleCider(FluidState state) {
@@ -76,6 +76,26 @@ public class ModFluidsRegister {
 
     public static boolean isGlowBerryCustard(FluidState state) {
         return state.isOf(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD) || state.isOf(ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
+    }
+
+    public static boolean isBoneBroth(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_BONE_BROTH) || state.isOf(ModFluidsRegister.FLOWING_BONE_BROTH);
+    }
+
+    public static boolean isCookedRice(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_COOKED_RICE) || state.isOf(ModFluidsRegister.FLOWING_COOKED_RICE);
+    }
+
+    public static boolean isBakedCodStew(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_BAKED_COD_STEW) || state.isOf(ModFluidsRegister.FLOWING_BAKED_COD_STEW);
+    }
+
+    public static boolean isRatatouille(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_RATATOUILLE) || state.isOf(ModFluidsRegister.FLOWING_RATATOUILLE);
+    }
+
+    public static boolean isDogFood(FluidState state) {
+        return state.isOf(ModFluidsRegister.STILL_DOG_FOOD) || state.isOf(ModFluidsRegister.FLOWING_DOG_FOOD);
     }
 
 
@@ -205,6 +225,51 @@ public class ModFluidsRegister {
                 new FluidBlock(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, FabricBlockSettings.copyOf(Blocks.WATER)));
         GLOW_BERRY_CUSTARD_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "glow_berry_custard_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_COOKED_RICE = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "cooked_rice"), new CookedRiceFluid.Still());
+        FLOWING_COOKED_RICE = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_cooked_rice"), new CookedRiceFluid.Flowing());
+        COOKED_RICE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "cooked_rice_block"),
+                new FluidBlock(ModFluidsRegister.STILL_COOKED_RICE, FabricBlockSettings.copyOf(Blocks.WATER)));
+        COOKED_RICE_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "cooked_rice_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_COOKED_RICE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_BONE_BROTH = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "bone_broth"), new BoneBrothFluid.Still());
+        FLOWING_BONE_BROTH = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_bone_broth"), new BoneBrothFluid.Flowing());
+        BONE_BROTH_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "bone_broth_block"),
+                new FluidBlock(ModFluidsRegister.STILL_BONE_BROTH, FabricBlockSettings.copyOf(Blocks.WATER)));
+        BONE_BROTH_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "bone_broth_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_BONE_BROTH, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_BAKED_COD_STEW = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "baked_cod_stew"), new BakedCodStewFluid.Still());
+        FLOWING_BAKED_COD_STEW = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_baked_cod_stew"), new BakedCodStewFluid.Flowing());
+        BAKED_COD_STEW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "baked_cod_stew_block"),
+                new FluidBlock(ModFluidsRegister.STILL_BAKED_COD_STEW, FabricBlockSettings.copyOf(Blocks.WATER)));
+        BAKED_COD_STEW_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "baked_cod_stew_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_BAKED_COD_STEW, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_RATATOUILLE = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "ratatouille"), new RatatouilleFluid.Still());
+        FLOWING_RATATOUILLE = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_ratatouille"), new RatatouilleFluid.Flowing());
+        RATATOUILLE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "ratatouille_block"),
+                new FluidBlock(ModFluidsRegister.STILL_RATATOUILLE, FabricBlockSettings.copyOf(Blocks.WATER)));
+        RATATOUILLE_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "ratatouille_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_RATATOUILLE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        STILL_DOG_FOOD = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "dog_food"), new DogFoodFluid.Still());
+        FLOWING_DOG_FOOD = Registry.register(Registries.FLUID,
+                new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_dog_food"), new DogFoodFluid.Flowing());
+        DOG_FOOD_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "dog_food_block"),
+                new FluidBlock(ModFluidsRegister.STILL_DOG_FOOD, FabricBlockSettings.copyOf(Blocks.WATER)));
+        DOG_FOOD_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "dog_food_bucket"),
+                new BucketItem(ModFluidsRegister.STILL_DOG_FOOD, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
     }
 
     public static void registerModFluids() {

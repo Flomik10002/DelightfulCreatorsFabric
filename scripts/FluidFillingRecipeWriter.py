@@ -5,7 +5,7 @@ into_id = input('Enter Into: ')
 list_of_items = item_id.split(",")
 
 for item in list_of_items:
-    with open(file=f"..\src\main/resources\data/{mod_id}/recipes/filling/{item}.json", mode="a",
+    with open(file=f"..\src\main/resources\data/farmersdelight/recipes/filling/{item}.json", mode="a",
               encoding="utf-8") as file:
         file.write('{\n'
                    '    "replace": "true",\n'
@@ -13,7 +13,7 @@ for item in list_of_items:
                    '    "fabric:load_conditions": [\n'
                    '        {\n'
                    '            "condition": "fabric:all_mods_loaded",\n'
-                   f'            "values": ["create", "farmersdelight", "{mod_id}"]\n'
+                   f'            "values": ["create", "farmersdelight"]\n'
                    '        }\n'
                    '    ],\n'
                    '    "ingredients": [\n'
@@ -27,7 +27,7 @@ for item in list_of_items:
                    '    ],\n'
                    '    "results": [\n'
                    '        {\n'
-                   f'            "item": "{mod_id}:{item}"\n'
+                   f'            "item": "farmersdelight:{item}"\n'
                    '        }\n'
                    '    ]\n'
                    '}')

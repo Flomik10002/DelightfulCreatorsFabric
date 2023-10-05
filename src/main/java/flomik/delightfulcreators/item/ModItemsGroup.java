@@ -55,6 +55,11 @@ public class ModItemsGroup {
                         entries.add(ModFluidsRegister.RABBIT_STEW_BUCKET);
                         entries.add(ModFluidsRegister.MUSHROOM_STEW_BUCKET);
                         entries.add(ModFluidsRegister.GLOW_BERRY_CUSTARD_BUCKET);
+                        entries.add(ModFluidsRegister.RATATOUILLE_BUCKET);
+                        entries.add(ModFluidsRegister.DOG_FOOD_BUCKET);
+                        entries.add(ModFluidsRegister.BAKED_COD_STEW_BUCKET);
+                        entries.add(ModFluidsRegister.BONE_BROTH_BUCKET);
+                        entries.add(ModFluidsRegister.COOKED_RICE_BUCKET);
 
     }).build());
 

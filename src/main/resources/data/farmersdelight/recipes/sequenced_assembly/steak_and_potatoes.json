@@ -7,7 +7,7 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bowl"
+    "item": "farmersdelight:cooked_rice"
   },
   "loops": 1,
   "results": [
@@ -40,22 +40,6 @@
         },
         {
           "item": "minecraft:baked_potato"
-        }
-      ],
-      "results": [
-        {
-          "item": "delightfulcreators:incomplete_steak_and_potatoes"
-        }
-      ]
-    },
-    {
-      "type": "create:deploying",
-      "ingredients": [
-        {
-          "item": "delightfulcreators:incomplete_steak_and_potatoes"
-        },
-        {
-          "item": "farmersdelight:cooked_rice"
         }
       ],
       "results": [

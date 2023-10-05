@@ -83,6 +83,26 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
                 new Identifier("delightfulcreators:block/glow_berry_custard_still"),
                 new Identifier("delightfulcreators:block/glow_berry_custard_flow")
         ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_RATATOUILLE, ModFluidsRegister.FLOWING_RATATOUILLE, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:block/ratatouille_still"),
+                new Identifier("delightfulcreators:block/ratatouille_flow")
+        ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_DOG_FOOD, ModFluidsRegister.FLOWING_DOG_FOOD, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:block/dog_food_still"),
+                new Identifier("delightfulcreators:block/dog_food_flow")
+        ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_BAKED_COD_STEW, ModFluidsRegister.FLOWING_BAKED_COD_STEW, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:block/baked_cod_stew_still"),
+                new Identifier("delightfulcreators:block/baked_cod_stew_flow")
+        ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_BONE_BROTH, ModFluidsRegister.FLOWING_BONE_BROTH, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:block/bone_broth_still"),
+                new Identifier("delightfulcreators:block/bone_broth_flow")
+        ));
+        FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_COOKED_RICE, ModFluidsRegister.FLOWING_COOKED_RICE, new SimpleFluidRenderHandler(
+                new Identifier("delightfulcreators:block/cooked_rice_still"),
+                new Identifier("delightfulcreators:block/cooked_rice_flow")
+        ));
 
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_APPLE_CIDER, ModFluidsRegister.FLOWING_APPLE_CIDER);
@@ -98,5 +118,10 @@ public class DelightfulCreatorsModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_RABBIT_STEW, ModFluidsRegister.FLOWING_RABBIT_STEW);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_MUSHROOM_STEW, ModFluidsRegister.FLOWING_MUSHROOM_STEW);
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, ModFluidsRegister.FLOWING_GLOW_BERRY_CUSTARD);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_RATATOUILLE, ModFluidsRegister.FLOWING_RATATOUILLE);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_DOG_FOOD, ModFluidsRegister.FLOWING_DOG_FOOD);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_BAKED_COD_STEW, ModFluidsRegister.FLOWING_BAKED_COD_STEW);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_BONE_BROTH, ModFluidsRegister.FLOWING_BONE_BROTH);
+        BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), ModFluidsRegister.STILL_COOKED_RICE, ModFluidsRegister.FLOWING_COOKED_RICE);
     }
 }

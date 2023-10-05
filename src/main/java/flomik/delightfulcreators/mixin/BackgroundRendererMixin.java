@@ -103,6 +103,31 @@ public abstract class BackgroundRendererMixin {
             green = (float) 212 / 255;
             blue = (float) 140 / 255;
         }
+        if (ModFluidsRegister.isRatatouille(state)) {
+            red = (float) 204 / 255;
+            green = (float) 76 / 255;
+            blue = (float) 58 / 255;
+        }
+        if (ModFluidsRegister.isCookedRice(state)) {
+            red = (float) 193 / 255;
+            green = (float) 185 / 255;
+            blue = (float) 174 / 255;
+        }
+        if (ModFluidsRegister.isDogFood(state)) {
+            red = (float) 91 / 255;
+            green = (float) 41 / 255;
+            blue = (float) 15 / 255;
+        }
+        if (ModFluidsRegister.isBoneBroth(state)) {
+            red = (float) 170 / 255;
+            green = (float) 139 / 255;
+            blue = (float) 68 / 255;
+        }
+        if (ModFluidsRegister.isBakedCodStew(state)) {
+            red = (float) 192 / 255;
+            green = (float) 149 / 255;
+            blue = (float) 78 / 255;
+        }
     }
 
     @Inject(method = "applyFog", at = @At("HEAD"), cancellable = true)
@@ -165,6 +190,31 @@ public abstract class BackgroundRendererMixin {
             ci.cancel();
         }
         if (ModFluidsRegister.isGlowBerryCustard(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isRatatouille(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isCookedRice(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isDogFood(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isBoneBroth(state)) {
+            RenderSystem.setShaderFogStart(-8);
+            RenderSystem.setShaderFogEnd(5);
+            ci.cancel();
+        }
+        if (ModFluidsRegister.isBakedCodStew(state)) {
             RenderSystem.setShaderFogStart(-8);
             RenderSystem.setShaderFogEnd(5);
             ci.cancel();
