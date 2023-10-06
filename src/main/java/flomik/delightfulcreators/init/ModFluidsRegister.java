@@ -105,7 +105,7 @@ public class ModFluidsRegister {
         FLOWING_TOMATO_SAUCE = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_tomato_sauce"), new TomatoSauceFluid.Flowing());
         TOMATO_SAUCE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "tomato_sauce_block"),
-                new FluidBlock(ModFluidsRegister.STILL_TOMATO_SAUCE, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_TOMATO_SAUCE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         TOMATO_SAUCE_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "tomato_sauce_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_TOMATO_SAUCE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
     
@@ -114,7 +114,7 @@ public class ModFluidsRegister {
         FLOWING_HOT_COCOA = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_hot_cocoa"), new HotCocoaFluid.Flowing());
         HOT_COCOA_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "hot_cocoa_block"),
-                new FluidBlock(ModFluidsRegister.STILL_HOT_COCOA, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_HOT_COCOA, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         HOT_COCOA_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "hot_cocoa_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_HOT_COCOA, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -123,7 +123,7 @@ public class ModFluidsRegister {
         FLOWING_MELON_JUICE = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_melon_juice"), new MelonJuiceFluid.Flowing());
         MELON_JUICE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "melon_juice_block"),
-                new FluidBlock(ModFluidsRegister.STILL_MELON_JUICE, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_MELON_JUICE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         MELON_JUICE_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "melon_juice_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_MELON_JUICE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -132,7 +132,7 @@ public class ModFluidsRegister {
         FLOWING_APPLE_CIDER = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_apple_cider"), new AppleCiderFluid.Flowing());
         APPLE_CIDER_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "apple_cider_block"),
-                new FluidBlock(ModFluidsRegister.STILL_APPLE_CIDER, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_APPLE_CIDER, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         APPLE_CIDER_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "apple_cider_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_APPLE_CIDER, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -141,7 +141,7 @@ public class ModFluidsRegister {
         FLOWING_BEETROOT_SOUP = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_beetroot_soup"), new BeetrootSoupFluid.Flowing());
         BEETROOT_SOUP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "beetroot_soup_block"),
-                new FluidBlock(ModFluidsRegister.STILL_BEETROOT_SOUP, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_BEETROOT_SOUP, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         BEETROOT_SOUP_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "beetroot_soup_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_BEETROOT_SOUP, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -150,7 +150,7 @@ public class ModFluidsRegister {
         FLOWING_CHICKEN_SOUP = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_chicken_soup"), new ChickenSoupFluid.Flowing());
         CHICKEN_SOUP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "chicken_soup_block"),
-                new FluidBlock(ModFluidsRegister.STILL_CHICKEN_SOUP, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_CHICKEN_SOUP, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         CHICKEN_SOUP_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "chicken_soup_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_CHICKEN_SOUP, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -159,7 +159,7 @@ public class ModFluidsRegister {
         FLOWING_NOODLE_SOUP = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_noodle_soup"), new NoodleSoupFluid.Flowing());
         NOODLE_SOUP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "noodle_soup_block"),
-                new FluidBlock(ModFluidsRegister.STILL_NOODLE_SOUP, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_NOODLE_SOUP, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         NOODLE_SOUP_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "noodle_soup_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_NOODLE_SOUP, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -168,7 +168,7 @@ public class ModFluidsRegister {
         FLOWING_PUMPKIN_SOUP = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_pumpkin_soup"), new PumpkinSoupFluid.Flowing());
         PUMPKIN_SOUP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "pumpkin_soup_block"),
-                new FluidBlock(ModFluidsRegister.STILL_PUMPKIN_SOUP, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_PUMPKIN_SOUP, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         PUMPKIN_SOUP_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "pumpkin_soup_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_PUMPKIN_SOUP, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -177,7 +177,7 @@ public class ModFluidsRegister {
         FLOWING_VEGETABLE_SOUP = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_vegetable_soup"), new VegetableSoupFluid.Flowing());
         VEGETABLE_SOUP_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "vegetable_soup_block"),
-                new FluidBlock(ModFluidsRegister.STILL_VEGETABLE_SOUP, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_VEGETABLE_SOUP, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         VEGETABLE_SOUP_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "vegetable_soup_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_VEGETABLE_SOUP, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -186,7 +186,7 @@ public class ModFluidsRegister {
         FLOWING_FISH_STEW = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_fish_stew"), new FishStewFluid.Flowing());
         FISH_STEW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "fish_stew_block"),
-                new FluidBlock(ModFluidsRegister.STILL_FISH_STEW, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_FISH_STEW, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         FISH_STEW_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "fish_stew_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_FISH_STEW, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -195,7 +195,7 @@ public class ModFluidsRegister {
         FLOWING_BEEF_STEW = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_beef_stew"), new BeefStewFluid.Flowing());
         BEEF_STEW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "beef_stew_block"),
-                new FluidBlock(ModFluidsRegister.STILL_BEEF_STEW, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_BEEF_STEW, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         BEEF_STEW_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "beef_stew_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_BEEF_STEW, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -204,7 +204,7 @@ public class ModFluidsRegister {
         FLOWING_RABBIT_STEW = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_rabbit_stew"), new RabbitStewFluid.Flowing());
         RABBIT_STEW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "rabbit_stew_block"),
-                new FluidBlock(ModFluidsRegister.STILL_RABBIT_STEW, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_RABBIT_STEW, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         RABBIT_STEW_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "rabbit_stew_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_RABBIT_STEW, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -213,7 +213,7 @@ public class ModFluidsRegister {
         FLOWING_MUSHROOM_STEW = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_mushroom_stew"), new MushroomStewFluid.Flowing());
         MUSHROOM_STEW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "mushroom_stew_block"),
-                new FluidBlock(ModFluidsRegister.STILL_MUSHROOM_STEW, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_MUSHROOM_STEW, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         MUSHROOM_STEW_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "mushroom_stew_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_MUSHROOM_STEW, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -222,7 +222,7 @@ public class ModFluidsRegister {
         FLOWING_GLOW_BERRY_CUSTARD = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_glow_berry_custard"), new GlowBerryCustardFluid.Flowing());
         GLOW_BERRY_CUSTARD_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "glow_berry_custard_block"),
-                new FluidBlock(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         GLOW_BERRY_CUSTARD_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "glow_berry_custard_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_GLOW_BERRY_CUSTARD, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -231,7 +231,7 @@ public class ModFluidsRegister {
         FLOWING_COOKED_RICE = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_cooked_rice"), new CookedRiceFluid.Flowing());
         COOKED_RICE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "cooked_rice_block"),
-                new FluidBlock(ModFluidsRegister.STILL_COOKED_RICE, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_COOKED_RICE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         COOKED_RICE_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "cooked_rice_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_COOKED_RICE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -240,7 +240,7 @@ public class ModFluidsRegister {
         FLOWING_BONE_BROTH = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_bone_broth"), new BoneBrothFluid.Flowing());
         BONE_BROTH_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "bone_broth_block"),
-                new FluidBlock(ModFluidsRegister.STILL_BONE_BROTH, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_BONE_BROTH, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         BONE_BROTH_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "bone_broth_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_BONE_BROTH, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -249,7 +249,7 @@ public class ModFluidsRegister {
         FLOWING_BAKED_COD_STEW = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_baked_cod_stew"), new BakedCodStewFluid.Flowing());
         BAKED_COD_STEW_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "baked_cod_stew_block"),
-                new FluidBlock(ModFluidsRegister.STILL_BAKED_COD_STEW, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_BAKED_COD_STEW, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         BAKED_COD_STEW_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "baked_cod_stew_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_BAKED_COD_STEW, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -258,7 +258,7 @@ public class ModFluidsRegister {
         FLOWING_RATATOUILLE = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_ratatouille"), new RatatouilleFluid.Flowing());
         RATATOUILLE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "ratatouille_block"),
-                new FluidBlock(ModFluidsRegister.STILL_RATATOUILLE, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_RATATOUILLE, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         RATATOUILLE_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "ratatouille_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_RATATOUILLE, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
@@ -267,7 +267,7 @@ public class ModFluidsRegister {
         FLOWING_DOG_FOOD = Registry.register(Registries.FLUID,
                 new Identifier(DelightfulCreatorsMod.MOD_ID, "flowing_dog_food"), new DogFoodFluid.Flowing());
         DOG_FOOD_BLOCK = Registry.register(Registries.BLOCK, new Identifier(DelightfulCreatorsMod.MOD_ID, "dog_food_block"),
-                new FluidBlock(ModFluidsRegister.STILL_DOG_FOOD, FabricBlockSettings.copyOf(Blocks.WATER)));
+                new FluidBlock(ModFluidsRegister.STILL_DOG_FOOD, FabricBlockSettings.copyOf(Blocks.WATER).replaceable()));
         DOG_FOOD_BUCKET = Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, "dog_food_bucket"),
                 new BucketItem(ModFluidsRegister.STILL_DOG_FOOD, new FabricItemSettings().recipeRemainder(Items.BUCKET).maxCount(1)));
     }

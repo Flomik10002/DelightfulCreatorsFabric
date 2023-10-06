@@ -1,0 +1,72 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "tag": "c:dough"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:dumplings",
+      "count": 2
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_dumplings"
+        },
+        {
+          "item": "farmersdelight:onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_dumplings"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_dumplings"
+        },
+        {
+          "tag": "c:dumplings_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_dumplings"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_dumplings"
+        },
+        {
+          "tag": "c:salad_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_dumplings"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_dumplings"
+  }
+}

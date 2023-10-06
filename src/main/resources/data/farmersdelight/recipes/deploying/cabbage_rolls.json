@@ -8,15 +8,15 @@
   ],
   "ingredients": [
     {
-      "item": "minecraft:bowl"
+      "tag": "c:salad_ingredients"
     },
     {
-      "item": "farmersdelight:raw_pasta"
+      "tag": "farmersdelight:cabbage_roll_ingredients"
     }
   ],
   "results": [
     {
-      "item": "delightfulcreators:incomplete_pasta_dish"
+      "item": "farmersdelight:cabbage_rolls"
     }
   ]
 }

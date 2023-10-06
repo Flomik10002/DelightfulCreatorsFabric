@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "farmersdelight:cooked_rice"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:mushroom_rice"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_mushroom_rice"
+        },
+        {
+          "item": "minecraft:brown_mushroom"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_mushroom_rice"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_mushroom_rice"
+        },
+        {
+          "item": "minecraft:red_mushroom"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_mushroom_rice"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_mushroom_rice"
+        },
+        {
+          "tag": "c:mushroom_rice_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_mushroom_rice"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_mushroom_rice"
+  }
+}

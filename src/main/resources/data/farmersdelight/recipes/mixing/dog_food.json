@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "amount": 20250,
+      "fluid": "delightfulcreators:cooked_rice"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "tag": "farmersdelight:wolf_prey"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:dog_food",
+      "amount": 27000
+    }
+  ]
+}

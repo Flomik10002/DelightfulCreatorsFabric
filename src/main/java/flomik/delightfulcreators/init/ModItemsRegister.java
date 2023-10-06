@@ -8,6 +8,16 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItemsRegister {
+    public static final Item INCOMPLETE_VEGETABLE_NOODLES = registerItem("incomplete_vegetable_noodles",
+            new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_SQUID_INK_PASTA = registerItem("incomplete_squid_ink_pasta",
+            new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_MUSHROOM_RICE = registerItem("incomplete_mushroom_rice",
+            new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_FRIED_RICE = registerItem("incomplete_fried_rice",
+            new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item INCOMPLETE_DUMPLINGS = registerItem("incomplete_dumplings",
+            new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_PASTA_DISH = registerItem("incomplete_pasta_dish",
             new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item INCOMPLETE_PASTA_WITH_MEATBALLS = registerItem("incomplete_pasta_with_meatballs",

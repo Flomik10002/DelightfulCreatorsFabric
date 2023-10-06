@@ -1,0 +1,87 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "delightfulcreators:incomplete_pasta_dish"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:vegetable_noodles"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        },
+        {
+          "item": "minecraft:carrot"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        },
+        {
+          "tag": "c:salad_ingredients"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        },
+        {
+          "tag": "c:vegetables"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        },
+        {
+          "item": "minecraft:brown_mushroom"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_vegetable_noodles"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_vegetable_noodles"
+  }
+}

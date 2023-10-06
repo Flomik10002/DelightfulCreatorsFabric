@@ -1,22 +1,24 @@
 {
-  "type": "create:deploying",
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": ["create", "farmersdelight"]
     }
   ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "minecraft:bowl"
+      "item": "minecraft:bone"
     },
     {
-      "item": "farmersdelight:raw_pasta"
+      "tag": "c:bone_broth_ingredients"
     }
   ],
   "results": [
     {
-      "item": "delightfulcreators:incomplete_pasta_dish"
+      "fluid": "delightfulcreators:bone_broth",
+      "amount": 27000
     }
   ]
 }

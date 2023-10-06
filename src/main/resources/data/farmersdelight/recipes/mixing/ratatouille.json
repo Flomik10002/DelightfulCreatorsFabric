@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "farmersdelight:tomato"
+    },
+    {
+      "item": "farmersdelight:onion"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "tag": "c:vegetables"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:ratatouille",
+      "amount": 27000
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "delightfulcreators:incomplete_pasta_dish"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:squid_ink_pasta"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_squid_ink_pasta"
+        },
+        {
+          "item": "minecraft:ink_sac"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_squid_ink_pasta"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_squid_ink_pasta"
+        },
+        {
+          "item": "farmersdelight:tomato"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_squid_ink_pasta"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_squid_ink_pasta"
+        },
+        {
+          "tag": "c:raw_fishes"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_squid_ink_pasta"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_squid_ink_pasta"
+  }
+}

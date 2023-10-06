@@ -16,6 +16,11 @@ public class ModItemsGroup {
             new Identifier(DelightfulCreatorsMod.MOD_ID, "main"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.main"))
                     .icon(() -> new ItemStack(ModItemsRegister.PUMPKIN_PIE_SLICE)).entries((displayContext, entries) -> {
+                        entries.add(ModItemsRegister.INCOMPLETE_DUMPLINGS);
+                        entries.add(ModItemsRegister.INCOMPLETE_FRIED_RICE);
+                        entries.add(ModItemsRegister.INCOMPLETE_MUSHROOM_RICE);
+                        entries.add(ModItemsRegister.INCOMPLETE_SQUID_INK_PASTA);
+                        entries.add(ModItemsRegister.INCOMPLETE_VEGETABLE_NOODLES);
                         entries.add(ModItemsRegister.INCOMPLETE_PASTA_DISH);
                         entries.add(ModItemsRegister.INCOMPLETE_PASTA_WITH_MEATBALLS);
                         entries.add(ModItemsRegister.INCOMPLETE_PASTA_WITH_MUTTON_CHOP);

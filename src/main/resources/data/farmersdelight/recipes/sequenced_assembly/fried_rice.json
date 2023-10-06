@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "farmersdelight:cooked_rice"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelight:fried_rice"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_fried_rice"
+        },
+        {
+          "item": "minecraft:egg"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_fried_rice"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_fried_rice"
+        },
+        {
+          "item": "minecraft:carrot"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_fried_rice"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_fried_rice"
+        },
+        {
+          "item": "farmersdelight:onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_fried_rice"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_fried_rice"
+  }
+}

@@ -1,22 +1,21 @@
 {
-  "type": "create:deploying",
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
       "values": ["create", "farmersdelight"]
     }
   ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "minecraft:bowl"
-    },
-    {
-      "item": "farmersdelight:raw_pasta"
+      "item": "farmersdelight:rice"
     }
   ],
   "results": [
     {
-      "item": "delightfulcreators:incomplete_pasta_dish"
+      "fluid" : "delightfulcreators:cooked_rice",
+      "amount": 27000
     }
   ]
 }

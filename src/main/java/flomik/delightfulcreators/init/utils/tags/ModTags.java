@@ -12,25 +12,28 @@ import org.jetbrains.annotations.NotNull;
 public class ModTags {
 
     public static class ModBlockTags {
-        public static @NotNull TagKey<Block> createBlockTag(String modFluidTagName) {
-            return TagKey.of(Registries.BLOCK.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
+        public static @NotNull TagKey<Block> createBlockTag(String modBlockTagName) {
+            return TagKey.of(Registries.BLOCK.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modBlockTagName));
         }
 
-        public static @NotNull TagKey<Block> createBlockFluidTag(String modFluidTagName) {
-            return TagKey.of(Registries.BLOCK.getKey(), new Identifier("c", modFluidTagName));
+        public static @NotNull TagKey<Block> createBlockFluidTag(String modBlockTagName) {
+            return TagKey.of(Registries.BLOCK.getKey(), new Identifier("c", modBlockTagName));
         }
     }
 
     public static class ModItemTags {
         public static final TagKey<Item> KNIVES = createCommonItemTag("tools/knives");
         public static final TagKey<Item> BALE = createCommonItemTag("bale");
+        public static final TagKey<Item> BONE_BROTH_INGREDIENTS = createCommonItemTag("bone_broth_ingredients");
+        public static final TagKey<Item> DUMPLINGS_INGREDIENTS = createCommonItemTag("dumplings_ingredients");
+        public static final TagKey<Item> MUSHROOM_RICE_INGREDIENTS = createCommonItemTag("mushroom_rice_ingredients");
 
-        public static @NotNull TagKey<Item> createItemTag(String modFluidTagName) {
-            return TagKey.of(Registries.ITEM.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
+        public static @NotNull TagKey<Item> createItemTag(String modItemTagName) {
+            return TagKey.of(Registries.ITEM.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modItemTagName));
         }
 
-        public static @NotNull TagKey<Item> createCommonItemTag(String modFluidTagName) {
-            return TagKey.of(Registries.ITEM.getKey(), new Identifier("c", modFluidTagName));
+        public static @NotNull TagKey<Item> createCommonItemTag(String modItemTagName) {
+            return TagKey.of(Registries.ITEM.getKey(), new Identifier("c", modItemTagName));
         }
     }
 
