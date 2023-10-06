@@ -25,7 +25,7 @@
 <h4>• Recipe for chocolate pie.</h4>
 
 
-<h1>Localization: </h1>
+Localization:
 <h4>• English (en_us) - Flomik<h4/>
 <h4>• Russian (ru_ru) - Flomik<h4/>
 
