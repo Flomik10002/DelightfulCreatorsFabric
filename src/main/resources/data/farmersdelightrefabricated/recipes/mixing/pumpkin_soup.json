@@ -1,0 +1,31 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+    "item": "farmersdelightrefabricated:pumpkin_slice"
+    },
+    {
+      "tag": "c:salad_ingredients"
+    },
+    {
+      "tag": "c:raw_pork"
+    },
+    {
+      "amount": 20250,
+      "fluidTag": "c:milk"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:pumpkin_soup",
+      "amount": 27000
+    }
+  ]
+}

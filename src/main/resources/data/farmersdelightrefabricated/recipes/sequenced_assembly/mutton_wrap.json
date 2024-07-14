@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelightrefabricated"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelight:bacon_sandwich"
+      "item": "farmersdelightrefabricated:mutton_wrap"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mutton_wrap"
         },
         {
-          "tag": "c:cooked_bacon"
+          "tag": "c:cooked_mutton"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mutton_wrap"
         }
       ]
     },
@@ -36,7 +36,7 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mutton_wrap"
         },
         {
           "tag": "c:salad_ingredients"
@@ -44,7 +44,7 @@
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mutton_wrap"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mutton_wrap"
         },
         {
-          "tag": "c:crops/tomato"
+          "tag": "c:crops/onion"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mutton_wrap"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_bacon_sandwich"
+    "item": "delightfulcreators:incomplete_mutton_wrap"
   }
 }

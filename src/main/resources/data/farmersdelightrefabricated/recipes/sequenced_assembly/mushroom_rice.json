@@ -2,17 +2,17 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelightrefabricated"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bread"
+    "item": "farmersdelightrefabricated:cooked_rice"
   },
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelight:bacon_sandwich"
+      "item": "farmersdelightrefabricated:mushroom_rice"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mushroom_rice"
         },
         {
-          "tag": "c:cooked_bacon"
+          "item": "minecraft:brown_mushroom"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mushroom_rice"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mushroom_rice"
         },
         {
-          "tag": "c:salad_ingredients"
+          "item": "minecraft:red_mushroom"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mushroom_rice"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mushroom_rice"
         },
         {
-          "tag": "c:crops/tomato"
+          "tag": "c:mushroom_rice_ingredients"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_mushroom_rice"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_bacon_sandwich"
+    "item": "delightfulcreators:incomplete_mushroom_rice"
   }
 }

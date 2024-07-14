@@ -1,0 +1,22 @@
+{
+  "type": "create:deploying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "farmersdelightrefabricated:raw_pasta"
+    }
+  ],
+  "results": [
+    {
+      "item": "delightfulcreators:incomplete_pasta_dish"
+    }
+  ]
+}

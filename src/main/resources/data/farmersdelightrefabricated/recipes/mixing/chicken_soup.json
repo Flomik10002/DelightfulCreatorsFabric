@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:raw_chicken"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "tag": "c:salad_ingredients"
+    },
+    {
+      "tag": "c:vegetables"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:chicken_soup",
+      "amount": 27000
+    }
+  ]
+}

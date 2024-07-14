@@ -1,0 +1,56 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "delightfulcreators:incomplete_pasta_dish"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelightrefabricated:pasta_with_meatballs"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        },
+        {
+          "item": "farmersdelightrefabricated:beef_patty"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        },
+        {
+          "fluid": "delightfulcreators:tomato_sauce",
+          "amount": 20250
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_pasta_with_meatballs"
+  }
+}

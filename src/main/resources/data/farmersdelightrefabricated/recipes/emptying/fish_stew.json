@@ -1,0 +1,23 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "farmersdelightrefabricated:fish_stew"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "amount": 20250,
+      "fluid": "delightfulcreators:fish_stew"
+    }
+  ]
+}

@@ -2,17 +2,17 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelightrefabricated"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bread"
+    "item": "farmersdelightrefabricated:pie_crust"
   },
-  "loops": 1,
+  "loops": 2,
   "results": [
     {
-      "item": "farmersdelight:bacon_sandwich"
+      "item": "farmersdelightrefabricated:apple_pie"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_apple_pie"
         },
         {
-          "tag": "c:cooked_bacon"
+          "item": "minecraft:apple"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_apple_pie"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_apple_pie"
         },
         {
-          "tag": "c:salad_ingredients"
+          "item": "create:wheat_flour"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_apple_pie"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_apple_pie"
         },
         {
-          "tag": "c:crops/tomato"
+          "item": "minecraft:sugar"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_apple_pie"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_bacon_sandwich"
+    "item": "delightfulcreators:incomplete_apple_pie"
   }
 }

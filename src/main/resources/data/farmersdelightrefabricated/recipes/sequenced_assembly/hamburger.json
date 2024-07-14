@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelightrefabricated"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelight:hamburger"
+      "item": "farmersdelightrefabricated:hamburger"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_hamburger"
         },
         {
-          "item": "farmersdelight:beef_patty"
+          "item": "farmersdelightrefabricated:beef_patty"
         }
       ],
       "results": [

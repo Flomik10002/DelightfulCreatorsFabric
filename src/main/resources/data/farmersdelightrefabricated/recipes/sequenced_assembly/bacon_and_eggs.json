@@ -1,0 +1,55 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelightrefabricated:bacon_and_eggs"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_bacon_and_eggs"
+        },
+        {
+          "item": "farmersdelightrefabricated:cooked_bacon"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_bacon_and_eggs"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_bacon_and_eggs"
+        },
+        {
+          "item": "farmersdelightrefabricated:fried_egg"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_bacon_and_eggs"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_bacon_and_eggs"
+  }
+}

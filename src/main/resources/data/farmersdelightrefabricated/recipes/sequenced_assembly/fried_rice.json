@@ -2,17 +2,17 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelightrefabricated"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bread"
+    "item": "farmersdelightrefabricated:cooked_rice"
   },
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelight:bacon_sandwich"
+      "item": "farmersdelightrefabricated:fried_rice"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_fried_rice"
         },
         {
-          "tag": "c:cooked_bacon"
+          "item": "minecraft:egg"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_fried_rice"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_fried_rice"
         },
         {
-          "tag": "c:salad_ingredients"
+          "item": "minecraft:carrot"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_fried_rice"
         }
       ]
     },
@@ -52,20 +52,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_fried_rice"
         },
         {
-          "tag": "c:crops/tomato"
+          "item": "farmersdelightrefabricated:onion"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_bacon_sandwich"
+          "item": "delightfulcreators:incomplete_fried_rice"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_bacon_sandwich"
+    "item": "delightfulcreators:incomplete_fried_rice"
   }
 }

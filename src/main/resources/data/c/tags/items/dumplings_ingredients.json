@@ -6,6 +6,9 @@
     "minecraft:brown_mushroom",
     "farmersdelight:minced_beef",
     "farmersdelight:chicken_cuts",
-    "farmersdelight:bacon"
+    "farmersdelight:bacon",
+    "farmersdelightrefabricated:minced_beef",
+    "farmersdelightrefabricated:chicken_cuts",
+    "farmersdelightrefabricated:bacon"
   ]
 }

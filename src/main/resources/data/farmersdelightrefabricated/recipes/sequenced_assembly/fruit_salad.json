@@ -2,17 +2,17 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelight"]
+      "values": ["create", "farmersdelightrefabricated"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "minecraft:bread"
+    "item": "minecraft:bowl"
   },
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelight:hamburger"
+      "item": "farmersdelightrefabricated:fruit_salad"
     }
   ],
   "sequence": [
@@ -20,15 +20,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         },
         {
-          "item": "farmersdelight:beef_patty"
+          "item": "minecraft:melon_slice"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         }
       ]
     },
@@ -36,15 +36,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         },
         {
-          "tag": "c:salad_ingredients"
+          "item": "minecraft:apple"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         }
       ]
     },
@@ -52,15 +52,15 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         },
         {
-          "tag": "c:crops/tomato"
+          "tag": "c:berries"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         }
       ]
     },
@@ -68,20 +68,20 @@
       "type": "create:deploying",
       "ingredients": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         },
         {
-          "tag": "c:crops/onion"
+          "item": "farmersdelightrefabricated:pumpkin_slice"
         }
       ],
       "results": [
         {
-          "item": "delightfulcreators:incomplete_hamburger"
+          "item": "delightfulcreators:incomplete_fruit_salad"
         }
       ]
     }
   ],
   "transitionalItem": {
-    "item": "delightfulcreators:incomplete_hamburger"
+    "item": "delightfulcreators:incomplete_fruit_salad"
   }
 }

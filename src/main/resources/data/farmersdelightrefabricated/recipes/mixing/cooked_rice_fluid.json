@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "farmersdelightrefabricated:rice"
+    }
+  ],
+  "results": [
+    {
+      "fluid" : "delightfulcreators:cooked_rice",
+      "amount": 27000
+    }
+  ]
+}

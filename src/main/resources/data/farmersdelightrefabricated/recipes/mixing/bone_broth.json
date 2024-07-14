@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "tag": "c:bone_broth_ingredients"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "delightfulcreators:bone_broth",
+      "amount": 27000
+    }
+  ]
+}

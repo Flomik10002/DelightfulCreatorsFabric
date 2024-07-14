@@ -7,7 +7,7 @@
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "tag": "c:bread"
+    "item": "minecraft:bread"
   },
   "loops": 1,
   "results": [

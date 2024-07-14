@@ -1,0 +1,71 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelightrefabricated"]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "farmersdelightrefabricated:cooked_rice"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "farmersdelightrefabricated:steak_and_potatoes"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_steak_and_potatoes"
+        },
+        {
+          "item": "minecraft:cooked_beef"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_steak_and_potatoes"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_steak_and_potatoes"
+        },
+        {
+          "item": "minecraft:baked_potato"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_steak_and_potatoes"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "delightfulcreators:incomplete_steak_and_potatoes"
+        },
+        {
+          "item": "farmersdelightrefabricated:onion"
+        }
+      ],
+      "results": [
+        {
+          "item": "delightfulcreators:incomplete_steak_and_potatoes"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "delightfulcreators:incomplete_steak_and_potatoes"
+  }
+}
