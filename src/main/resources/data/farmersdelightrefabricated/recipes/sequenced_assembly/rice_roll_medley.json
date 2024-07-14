@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:rice_roll_medley_block"
+      "item": "farmersdelight:rice_roll_medley_block"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_rice_roll_medley"
         },
         {
-          "item": "farmersdelightrefabricated:kelp_roll_slice"
+          "item": "farmersdelight:kelp_roll_slice"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_rice_roll_medley"
         },
         {
-          "item": "farmersdelightrefabricated:kelp_roll_slice"
+          "item": "farmersdelight:kelp_roll_slice"
         }
       ],
       "results": [
@@ -55,7 +55,7 @@
           "item": "delightfulcreators:incomplete_rice_roll_medley"
         },
         {
-          "item": "farmersdelightrefabricated:cod_roll"
+          "item": "farmersdelight:cod_roll"
         }
       ],
       "results": [
@@ -71,7 +71,7 @@
           "item": "delightfulcreators:incomplete_rice_roll_medley"
         },
         {
-          "item": "farmersdelightrefabricated:cod_roll"
+          "item": "farmersdelight:cod_roll"
         }
       ],
       "results": [
@@ -87,7 +87,7 @@
           "item": "delightfulcreators:incomplete_rice_roll_medley"
         },
         {
-          "item": "farmersdelightrefabricated:salmon_roll"
+          "item": "farmersdelight:salmon_roll"
         }
       ],
       "results": [
@@ -103,7 +103,7 @@
           "item": "delightfulcreators:incomplete_rice_roll_medley"
         },
         {
-          "item": "farmersdelightrefabricated:salmon_roll"
+          "item": "farmersdelight:salmon_roll"
         }
       ],
       "results": [

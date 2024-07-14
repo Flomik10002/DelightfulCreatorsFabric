@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:hamburger"
+      "item": "farmersdelight:hamburger"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_hamburger"
         },
         {
-          "item": "farmersdelightrefabricated:beef_patty"
+          "item": "farmersdelight:beef_patty"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_hamburger"
         },
         {
-          "tag": "c:salad_ingredients"
+          "tag": "c:salad_ingredients/cabbages"
         }
       ],
       "results": [
@@ -55,7 +55,7 @@
           "item": "delightfulcreators:incomplete_hamburger"
         },
         {
-          "tag": "c:crops/tomato"
+          "tag": "c:foods/vegetables/tomatoes"
         }
       ],
       "results": [
@@ -71,7 +71,7 @@
           "item": "delightfulcreators:incomplete_hamburger"
         },
         {
-          "tag": "c:crops/onion"
+          "tag": "c:foods/vegetables/onions"
         }
       ],
       "results": [

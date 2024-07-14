@@ -2,17 +2,17 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "farmersdelightrefabricated:cooked_rice"
+    "item": "farmersdelight:cooked_rice"
   },
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:fried_rice"
+      "item": "farmersdelight:fried_rice"
     }
   ],
   "sequence": [
@@ -55,7 +55,7 @@
           "item": "delightfulcreators:incomplete_fried_rice"
         },
         {
-          "item": "farmersdelightrefabricated:onion"
+          "item": "farmersdelight:onion"
         }
       ],
       "results": [

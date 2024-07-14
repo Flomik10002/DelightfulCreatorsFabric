@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:roasted_mutton_chops"
+      "item": "farmersdelight:roasted_mutton_chops"
     }
   ],
   "sequence": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_roasted_mutton_chops"
         },
         {
-          "item": "farmersdelightrefabricated:cooked_mutton_chops"
+          "item": "farmersdelight:cooked_mutton_chops"
         }
       ],
       "results": [
@@ -55,7 +55,7 @@
           "item": "delightfulcreators:incomplete_roasted_mutton_chops"
         },
         {
-          "item": "farmersdelightrefabricated:cooked_rice"
+          "item": "farmersdelight:cooked_rice"
         }
       ],
       "results": [
@@ -71,7 +71,7 @@
           "item": "delightfulcreators:incomplete_roasted_mutton_chops"
         },
         {
-          "item": "farmersdelightrefabricated:tomato"
+          "item": "farmersdelight:tomato"
         }
       ],
       "results": [

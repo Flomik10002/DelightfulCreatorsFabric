@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:mixing",
@@ -18,7 +18,7 @@
       "item": "minecraft:beetroot"
     },
     {
-      "tag": "c:salad_ingredients"
+      "tag": "c:salad_ingredients/cabbages"
     }
   ],
   "results": [

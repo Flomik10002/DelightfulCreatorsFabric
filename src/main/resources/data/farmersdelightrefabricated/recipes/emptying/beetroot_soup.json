@@ -3,12 +3,12 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "ingredients": [
     {
-      "item": "farmersdelightrefabricated:beetroot_soup"
+      "item": "farmersdelight:beetroot_soup"
     }
   ],
   "results": [

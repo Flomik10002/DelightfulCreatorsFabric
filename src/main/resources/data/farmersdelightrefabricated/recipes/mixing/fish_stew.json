@@ -2,21 +2,21 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:mixing",
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "tag": "c:raw_fishes"
+      "tag": "c:foods/raw_fishes"
     },
     {
       "amount" : 27000,
       "fluid" : "delightfulcreators:tomato_sauce"
     },
     {
-      "tag": "c:crops/onion"
+      "tag": "c:foods/vegetables/onions"
     }
   ],
   "results": [

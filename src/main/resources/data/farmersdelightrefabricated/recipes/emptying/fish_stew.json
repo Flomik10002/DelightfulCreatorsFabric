@@ -3,12 +3,12 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "ingredients": [
     {
-      "item": "farmersdelightrefabricated:fish_stew"
+      "item": "farmersdelight:fish_stew"
     }
   ],
   "results": [

@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:squid_ink_pasta"
+      "item": "farmersdelight:squid_ink_pasta"
     }
   ],
   "sequence": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_squid_ink_pasta"
         },
         {
-          "item": "farmersdelightrefabricated:tomato"
+          "item": "farmersdelight:tomato"
         }
       ],
       "results": [
@@ -55,7 +55,7 @@
           "item": "delightfulcreators:incomplete_squid_ink_pasta"
         },
         {
-          "tag": "c:raw_fishes"
+          "tag": "c:foods/raw_fishes"
         }
       ],
       "results": [

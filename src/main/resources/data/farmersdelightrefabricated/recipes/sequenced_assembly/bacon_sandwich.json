@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:bacon_sandwich"
+      "item": "farmersdelight:bacon_sandwich"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_bacon_sandwich"
         },
         {
-          "tag": "c:cooked_bacon"
+          "tag": "c:foods/cooked_meats/cooked_bacon"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_bacon_sandwich"
         },
         {
-          "tag": "c:salad_ingredients"
+          "tag": "c:salad_ingredients/cabbages"
         }
       ],
       "results": [
@@ -55,7 +55,7 @@
           "item": "delightfulcreators:incomplete_bacon_sandwich"
         },
         {
-          "tag": "c:crops/tomato"
+          "tag": "c:foods/vegetables/tomatoes"
         }
       ],
       "results": [

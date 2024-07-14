@@ -4,12 +4,12 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "ingredients": [
     {
-      "item": "farmersdelightrefabricated:pie_crust"
+      "item": "farmersdelight:pie_crust"
     },
     {
       "fluid": "create:chocolate",
@@ -18,7 +18,7 @@
   ],
   "results": [
     {
-      "item": "farmersdelightrefabricated:chocolate_pie"
+      "item": "farmersdelight:chocolate_pie"
     }
   ]
 }

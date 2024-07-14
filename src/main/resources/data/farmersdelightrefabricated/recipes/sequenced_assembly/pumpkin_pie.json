@@ -2,12 +2,12 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "farmersdelightrefabricated:pie_crust"
+    "item": "farmersdelight:pie_crust"
   },
   "loops": 2,
   "results": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_pumpkin_pie"
         },
         {
-          "item": "farmersdelightrefabricated:pumpkin_slice"
+          "item": "farmersdelight:pumpkin_slice"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_pumpkin_pie"
         },
         {
-          "item": "farmersdelightrefabricated:pumpkin_slice"
+          "item": "farmersdelight:pumpkin_slice"
         }
       ],
       "results": [

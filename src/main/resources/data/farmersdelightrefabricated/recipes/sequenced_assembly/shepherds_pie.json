@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:shepherds_pie_block"
+      "item": "farmersdelight:shepherds_pie_block"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_shepherds_pie"
         },
         {
-          "tag": "c:cooked_mutton"
+          "tag": "c:foods/cooked_meats/cooked_mutton"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_shepherds_pie"
         },
         {
-          "tag": "c:cooked_mutton"
+          "tag": "c:foods/cooked_meats/cooked_mutton"
         }
       ],
       "results": [
@@ -71,7 +71,7 @@
           "item": "delightfulcreators:incomplete_shepherds_pie"
         },
         {
-          "item": "farmersdelightrefabricated:onion"
+          "item": "farmersdelight:onion"
         }
       ],
       "results": [

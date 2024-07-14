@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:bacon_and_eggs"
+      "item": "farmersdelight:bacon_and_eggs"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_bacon_and_eggs"
         },
         {
-          "item": "farmersdelightrefabricated:cooked_bacon"
+          "item": "farmersdelight:cooked_bacon"
         }
       ],
       "results": [
@@ -39,7 +39,7 @@
           "item": "delightfulcreators:incomplete_bacon_and_eggs"
         },
         {
-          "item": "farmersdelightrefabricated:fried_egg"
+          "item": "farmersdelight:fried_egg"
         }
       ],
       "results": [

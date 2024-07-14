@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:mixing",
@@ -19,7 +19,7 @@
       "item": "minecraft:bone_meal"
     },
     {
-      "tag": "farmersdelightrefabricated:wolf_prey"
+      "tag": "farmersdelight:wolf_prey"
     }
   ],
   "results": [

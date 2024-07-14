@@ -3,12 +3,12 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "ingredients": [
     {
-      "item": "farmersdelightrefabricated:bone_broth"
+      "item": "farmersdelight:bone_broth"
     }
   ],
   "results": [

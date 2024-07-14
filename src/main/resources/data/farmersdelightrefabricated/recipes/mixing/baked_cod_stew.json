@@ -2,14 +2,14 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:mixing",
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "item": "farmersdelightrefabricated:tomato"
+      "item": "farmersdelight:tomato"
     },
     {
       "item": "minecraft:egg"
@@ -18,7 +18,7 @@
       "item": "minecraft:potato"
     },
     {
-      "tag": "c:raw_fishes/cod"
+      "tag": "c:foods/raw_fishes/cod"
     }
   ],
   "results": [

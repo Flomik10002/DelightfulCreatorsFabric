@@ -3,20 +3,20 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "ingredients": [
     {
-      "tag": "c:salad_ingredients"
+      "tag": "c:salad_ingredients/cabbages"
     },
     {
-      "tag": "farmersdelightrefabricated:cabbage_roll_ingredients"
+      "tag": "farmersdelight:cabbage_roll_ingredients"
     }
   ],
   "results": [
     {
-      "item": "farmersdelightrefabricated:cabbage_rolls"
+      "item": "farmersdelight:cabbage_rolls"
     }
   ]
 }

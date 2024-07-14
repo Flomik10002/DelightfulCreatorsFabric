@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
@@ -12,7 +12,7 @@
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:pasta_with_mutton_chop"
+      "item": "farmersdelight:pasta_with_mutton_chop"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_pasta_with_mutton_chop"
         },
         {
-          "tag": "c:cooked_mutton"
+          "tag": "c:foods/cooked_meats/cooked_mutton"
         }
       ],
       "results": [

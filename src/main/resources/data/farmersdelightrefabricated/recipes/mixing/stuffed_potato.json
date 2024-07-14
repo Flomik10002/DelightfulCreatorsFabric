@@ -2,7 +2,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:mixing",
@@ -20,7 +20,7 @@
   ],
   "results": [
     {
-      "item": "farmersdelightrefabricated:stuffed_potato"
+      "item": "farmersdelight:stuffed_potato"
     }
   ]
 }

@@ -2,23 +2,23 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:mixing",
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "tag": "c:pasta"
+      "tag": "c:foods/pastas/raw_pastas"
     },
     {
-      "tag": "c:cooked_eggs"
+      "tag": "c:foods/cooked_meats/cooked_eggs"
     },
     {
       "item": "minecraft:dried_kelp"
     },
     {
-      "tag": "c:raw_pork"
+      "tag": "c:foods/raw_meats/raw_pork"
     }
   ],
   "results": [

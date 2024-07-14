@@ -2,17 +2,17 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "farmersdelightrefabricated:cooked_rice"
+    "item": "farmersdelight:cooked_rice"
   },
   "loops": 1,
   "results": [
     {
-      "item": "farmersdelightrefabricated:honey_glazed_ham_block"
+      "item": "farmersdelight:honey_glazed_ham_block"
     }
   ],
   "sequence": [
@@ -23,7 +23,7 @@
           "item": "delightfulcreators:incomplete_honey_glazed_ham"
         },
         {
-          "item": "farmersdelightrefabricated:smoked_ham"
+          "item": "farmersdelight:smoked_ham"
         }
       ],
       "results": [

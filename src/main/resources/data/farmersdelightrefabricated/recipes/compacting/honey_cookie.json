@@ -3,7 +3,7 @@
   "fabric:load_conditions": [
     {
       "condition": "fabric:all_mods_loaded",
-      "values": ["create", "farmersdelightrefabricated"]
+      "values": ["create", "farmersdelight"]
     }
   ],
   "ingredients": [
@@ -21,7 +21,7 @@
   "results": [
     {
       "count": 8,
-      "item": "farmersdelightrefabricated:honey_cookie"
+      "item": "farmersdelight:honey_cookie"
     }
   ]
 }
