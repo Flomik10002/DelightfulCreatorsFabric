@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "delightfulslicer"]
+    }
+  ],
+  "pattern": [
+    "III",
+    "KKK"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "K": {
+      "item": "farmersdelight:iron_knife"
+    }
+  },
+  "result": {
+    "item": "delightfulcreators:blades"
+  }
+}
+

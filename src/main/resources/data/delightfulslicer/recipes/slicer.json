@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create", "farmersdelight", "delightfulslicer"]
+    }
+  ],
+  "pattern": [
+    "S",
+    "C",
+    "K"
+  ],
+  "key": {
+    "S": {
+      "item": "create:shaft"
+    },
+    "C": {
+      "item": "create:andesite_casing"
+    },
+    "K": {
+      "item": "delightfulcreators:blades"
+    }
+  },
+  "result": {
+    "item": "delightfulslicer:slicer"
+  }
+}
+

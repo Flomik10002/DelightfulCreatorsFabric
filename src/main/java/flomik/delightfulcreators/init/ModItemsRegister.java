@@ -68,6 +68,8 @@ public class ModItemsRegister {
             new Item(new FabricItemSettings().recipeRemainder(Items.BOWL).food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
     public static final Item PUMPKIN_PIE_SLICE = registerItem("pumpkin_pie_slice",
             new Item(new FabricItemSettings().food(new FoodComponent.Builder().hunger(3).saturationModifier(0.3f).build())));
+    public static final Item BLADES = registerItem("blades",
+            new Item(new FabricItemSettings().maxCount(64)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(DelightfulCreatorsMod.MOD_ID, name), item);
