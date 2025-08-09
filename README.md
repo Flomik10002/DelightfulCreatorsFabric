@@ -1,4 +1,4 @@
-[MODRINTH]: https://modrinth.com/mod/delightdulcreators
+[MODRINTH]: https://modrinth.com/mod/cultural-creators-fabric
 [CURSEFORGE]: https://curseforge.com/minecraft/mc-mods/delightful-creators-fabric
 
 # Delightful Creators 
