@@ -1,4 +1,4 @@
-[MODRINTH]: https://modrinth.com/mod/cultural-creators-fabric
+[MODRINTH]: https://modrinth.com/mod/delightdulcreators
 [CURSEFORGE]: https://curseforge.com/minecraft/mc-mods/delightful-creators-fabric
 
 # Delightful Creators 
@@ -30,4 +30,3 @@ There is also a <a href="https://www.curseforge.com/minecraft/mc-mods/respite-cr
 ## Localization:
 • English (en_us) - Flomik<br>
 • Russian (ru_ru) - Flomik
-
