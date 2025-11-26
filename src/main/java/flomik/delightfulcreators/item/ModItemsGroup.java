@@ -45,7 +45,6 @@ public class ModItemsGroup {
                         entries.add(ModItemsRegister.INCOMPLETE_HORSE_FEED);
                         entries.add(ModItemsRegister.INCOMPLETE_ROASTED_MUTTON_CHOPS);
                         entries.add(ModItemsRegister.INCOMPLETE_STEAK_AND_POTATOES);
-                        entries.add(ModItemsRegister.BLADES);
                         entries.add(ModItemsRegister.PUMPKIN_PIE_SLICE);
                         entries.add(ModFluidsRegister.TOMATO_SAUCE_BUCKET);
                         entries.add(ModFluidsRegister.HOT_COCOA_BUCKET);
