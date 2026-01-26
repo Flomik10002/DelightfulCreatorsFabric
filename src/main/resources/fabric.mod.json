@@ -30,7 +30,9 @@
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"farmersdelight": ">=1.20.1-1.4.2",
+		"create": ">=0.5.1"
 	},
 	"suggests": {
 		"another-mod": "*"
