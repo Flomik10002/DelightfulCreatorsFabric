@@ -13,11 +13,11 @@ public class ModTags {
 
     public static class ModBlockTags {
         public static @NotNull TagKey<Block> createBlockTag(String modBlockTagName) {
-            return TagKey.of(Registries.BLOCK.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modBlockTagName));
+            return TagKey.of(Registries.BLOCK.getKey(), Identifier.of(DelightfulCreatorsMod.MOD_ID, modBlockTagName));
         }
 
         public static @NotNull TagKey<Block> createBlockFluidTag(String modBlockTagName) {
-            return TagKey.of(Registries.BLOCK.getKey(), new Identifier("c", modBlockTagName));
+            return TagKey.of(Registries.BLOCK.getKey(), Identifier.of("c", modBlockTagName));
         }
     }
 
@@ -29,22 +29,22 @@ public class ModTags {
         public static final TagKey<Item> MUSHROOM_RICE_INGREDIENTS = createCommonItemTag("mushroom_rice_ingredients");
 
         public static @NotNull TagKey<Item> createItemTag(String modItemTagName) {
-            return TagKey.of(Registries.ITEM.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modItemTagName));
+            return TagKey.of(Registries.ITEM.getKey(), Identifier.of(DelightfulCreatorsMod.MOD_ID, modItemTagName));
         }
 
         public static @NotNull TagKey<Item> createCommonItemTag(String modItemTagName) {
-            return TagKey.of(Registries.ITEM.getKey(), new Identifier("c", modItemTagName));
+            return TagKey.of(Registries.ITEM.getKey(), Identifier.of("c", modItemTagName));
         }
     }
 
     public static class ModFluidTags {
 
         public static @NotNull TagKey<Fluid> createFluidTag(String modFluidTagName) {
-            return TagKey.of(Registries.FLUID.getKey(), new Identifier(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
+            return TagKey.of(Registries.FLUID.getKey(), Identifier.of(DelightfulCreatorsMod.MOD_ID, modFluidTagName));
         }
 
         public static @NotNull TagKey<Fluid> createCommonFluidTag(String modFluidTagName) {
-            return TagKey.of(Registries.FLUID.getKey(), new Identifier("c", modFluidTagName));
+            return TagKey.of(Registries.FLUID.getKey(), Identifier.of("c", modFluidTagName));
         }
     }
 

@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemsGroup {
     public static final ItemGroup MAIN = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(DelightfulCreatorsMod.MOD_ID, "main"),
+            Identifier.of(DelightfulCreatorsMod.MOD_ID, "main"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.main"))
                     .icon(() -> new ItemStack(ModItemsRegister.PUMPKIN_PIE_SLICE)).entries((displayContext, entries) -> {
                         entries.add(ModItemsRegister.INCOMPLETE_DUMPLINGS);

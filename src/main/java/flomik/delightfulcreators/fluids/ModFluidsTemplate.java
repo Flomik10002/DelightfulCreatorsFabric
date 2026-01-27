@@ -7,12 +7,13 @@ import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.particle.ParticleEffect;
-import net.minecraft.registry.tag.FluidTags;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.*;
+import net.minecraft.world.rule.GameRules;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
@@ -46,11 +47,12 @@ public abstract class ModFluidsTemplate extends FlowableFluid {
     }
 
     @Override
-    protected boolean isInfinite(World world) {
-        return world.getGameRules().getBoolean(GameRules.LAVA_SOURCE_CONVERSION);
+    protected boolean isInfinite(ServerWorld world) {
+        return world.getGameRules().getValue(GameRules.LAVA_SOURCE_CONVERSION);
     }
 
-    @Override
+    // TODO: getFlowSpeed was removed, find a proper replacement
+    // Looks like it now only uses getNextTickDelay and getTickRate
     protected int getFlowSpeed(WorldView worldView) {
         return 2;
     }
@@ -70,5 +72,8 @@ public abstract class ModFluidsTemplate extends FlowableFluid {
         return 100.0f;
     }
 
-
+    @Override
+    protected int getMaxFlowDistance(WorldView world) {
+        return 4;
+    }
 }
