@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/liquid",
+  "textures": {
+    "still": "delightfulcreators:block/glow_berry_custard_still",
+    "flow": "delightfulcreators:block/glow_berry_custard_flow",
+    "particle": "delightfulcreators:block/glow_berry_custard_still"
+  }
+}

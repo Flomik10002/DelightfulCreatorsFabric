@@ -1,5 +1,8 @@
 {
+  "parent": "minecraft:block/liquid",
   "textures": {
-    "particle": ""
+    "still": "delightfulcreators:block/tomato_sauce_still",
+    "flow": "delightfulcreators:block/tomato_sauce_flow",
+    "particle": "delightfulcreators:block/tomato_sauce_still"
   }
 }

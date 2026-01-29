@@ -1,5 +1,8 @@
 {
+  "parent": "minecraft:block/liquid",
   "textures": {
-    "particle": ""
+    "still": "delightfulcreators:block/hot_cocoa_still",
+    "flow": "delightfulcreators:block/hot_cocoa_flow",
+    "particle": "delightfulcreators:block/hot_cocoa_still"
   }
 }

@@ -1,5 +1,8 @@
 {
+  "parent": "minecraft:block/liquid",
   "textures": {
-    "particle": ""
+    "still": "delightfulcreators:block/beef_stew_still",
+    "flow": "delightfulcreators:block/beef_stew_flow",
+    "particle": "delightfulcreators:block/beef_stew_still"
   }
 }

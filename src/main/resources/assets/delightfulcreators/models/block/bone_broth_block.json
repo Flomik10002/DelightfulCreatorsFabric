@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/liquid",
+  "textures": {
+    "still": "delightfulcreators:block/bone_broth_still",
+    "flow": "delightfulcreators:block/bone_broth_flow",
+    "particle": "delightfulcreators:block/bone_broth_still"
+  }
+}

@@ -1,7 +1,20 @@
 {
   "variants": {
-    "": {
-      "model": "delightfulcreators:block/noodle_sauce_block"
-    }
+    "level=0": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=1": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=2": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=3": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=4": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=5": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=6": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=7": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=8": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=9": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=10": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=11": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=12": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=13": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=14": { "model": "delightfulcreators:block/noodle_soup_block" },
+    "level=15": { "model": "delightfulcreators:block/noodle_soup_block" }
   }
 }
