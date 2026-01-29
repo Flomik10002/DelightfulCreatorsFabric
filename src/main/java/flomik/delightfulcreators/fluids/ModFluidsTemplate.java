@@ -1,79 +1,82 @@
 package flomik.delightfulcreators.fluids;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.fluid.FlowableFluid;
-import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.particle.ParticleEffect;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundEvent;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Direction;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.*;
-import net.minecraft.world.rule.GameRules;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.gamerules.GameRules;
+import net.minecraft.world.level.material.FlowingFluid;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.FluidState;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
 
-public abstract class ModFluidsTemplate extends FlowableFluid {
+public abstract class ModFluidsTemplate extends FlowingFluid {
 
     @Override
-    public Optional<SoundEvent> getBucketFillSound() {
-        return Optional.of(SoundEvents.ITEM_BUCKET_FILL);
+    public Optional<SoundEvent> getPickupSound() {
+        return Optional.of(SoundEvents.BUCKET_FILL);
     }
 
     @Nullable
-    protected ParticleEffect getParticle() {
+    protected ParticleOptions getDripParticle() {
         return null;
     }
 
     @Override
-    public boolean matchesType(Fluid fluid) {
-        return fluid.equals(getStill()) || fluid.equals(getFlowing());
+    public boolean isSame(Fluid fluid) {
+        return fluid.equals(getSource()) || fluid.equals(getFlowing());
     }
 
     @Override
-    protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
+    protected void beforeDestroyingBlock(LevelAccessor world, BlockPos pos, BlockState state) {
         final BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
-        Block.dropStacks(state, world, pos, blockEntity);
+        Block.dropResources(state, world, pos, blockEntity);
     }
 
     @Override
-    public boolean canBeReplacedWith(FluidState state, BlockView world, BlockPos pos, Fluid fluid, Direction direction) {
+    public boolean canBeReplacedWith(FluidState state, BlockGetter world, BlockPos pos, Fluid fluid, Direction direction) {
         return false;
     }
 
     @Override
-    protected boolean isInfinite(ServerWorld world) {
-        return world.getGameRules().getValue(GameRules.LAVA_SOURCE_CONVERSION);
+    protected boolean canConvertToSource(ServerLevel world) {
+        return world.getGameRules().get(GameRules.LAVA_SOURCE_CONVERSION);
     }
 
     // TODO: getFlowSpeed was removed, find a proper replacement
     // Looks like it now only uses getNextTickDelay and getTickRate
-    protected int getFlowSpeed(WorldView worldView) {
+    protected int getFlowSpeed(LevelReader worldView) {
         return 2;
     }
 
     @Override
-    protected int getLevelDecreasePerBlock(WorldView worldView) {
+    protected int getDropOff(LevelReader worldView) {
         return 2;
     }
 
     @Override
-    public int getTickRate(WorldView worldView) {
+    public int getTickDelay(LevelReader worldView) {
         return 30;
     }
 
     @Override
-    protected float getBlastResistance() {
+    protected float getExplosionResistance() {
         return 100.0f;
     }
 
     @Override
-    protected int getMaxFlowDistance(WorldView world) {
+    protected int getSlopeFindDistance(LevelReader world) {
         return 4;
     }
 }

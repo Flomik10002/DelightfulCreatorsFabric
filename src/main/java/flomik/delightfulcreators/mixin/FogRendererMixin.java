@@ -3,11 +3,11 @@ package flomik.delightfulcreators.mixin;
 import flomik.delightfulcreators.init.ModFluidsRegister;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.render.Camera;
-import net.minecraft.client.render.RenderTickCounter;
-import net.minecraft.client.render.fog.FogRenderer;
-import net.minecraft.client.world.ClientWorld;
-import net.minecraft.fluid.FluidState;
+import net.minecraft.client.Camera;
+import net.minecraft.client.DeltaTracker;
+import net.minecraft.client.multiplayer.ClientLevel;
+import net.minecraft.client.renderer.fog.FogRenderer;
+import net.minecraft.world.level.material.FluidState;
 import org.joml.Vector4f;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -34,11 +34,11 @@ public abstract class FogRendererMixin {
         Args args,
         Camera camera,
         int viewDistance,
-        RenderTickCounter renderTickCounter,
+        DeltaTracker renderTickCounter,
         float skyDarkness,
-        ClientWorld clientWorld
+        ClientLevel clientWorld
     ) {
-        FluidState state = clientWorld.getFluidState(camera.getBlockPos());
+        FluidState state = clientWorld.getFluidState(camera.blockPosition());
         Vector4f fogColor = args.get(2);
         if (fogColor != null) {
             delightfulcreators$applyFogColor(state, fogColor);

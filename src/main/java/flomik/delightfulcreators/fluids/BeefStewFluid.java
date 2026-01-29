@@ -1,17 +1,17 @@
 package flomik.delightfulcreators.fluids;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.FluidState;
-import net.minecraft.item.Item;
-import net.minecraft.state.StateManager;
-import net.minecraft.state.property.Properties;
 import flomik.delightfulcreators.init.ModFluidsRegister;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.FluidState;
 
 public abstract class BeefStewFluid extends ModFluidsTemplate {
 
     @Override
-    public Fluid getStill() {
+    public Fluid getSource() {
         return ModFluidsRegister.STILL_BEEF_STEW;
     }
 
@@ -21,34 +21,34 @@ public abstract class BeefStewFluid extends ModFluidsTemplate {
     }
 
     @Override
-    public Item getBucketItem() {
+    public Item getBucket() {
         return ModFluidsRegister.BEEF_STEW_BUCKET;
     }
 
     @Override
-    protected BlockState toBlockState(FluidState state) {
-        return ModFluidsRegister.BEEF_STEW_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+    protected BlockState createLegacyBlock(FluidState state) {
+        return ModFluidsRegister.BEEF_STEW_BLOCK.defaultBlockState().setValue(BlockStateProperties.LEVEL, getLegacyLevel(state));
     }
 
     @Override
-    public boolean matchesType(Fluid fluid) {
-        return fluid == getStill() || fluid == getFlowing();
+    public boolean isSame(Fluid fluid) {
+        return fluid == getSource() || fluid == getFlowing();
     }
 
     public static class Flowing extends BeefStewFluid {
         @Override
-        protected void appendProperties(StateManager.Builder<Fluid, FluidState> builder) {
-            super.appendProperties(builder);
+        protected void createFluidStateDefinition(StateDefinition.Builder<Fluid, FluidState> builder) {
+            super.createFluidStateDefinition(builder);
             builder.add(LEVEL);
         }
 
         @Override
-        public int getLevel(FluidState state) {
-            return state.get(LEVEL);
+        public int getAmount(FluidState state) {
+            return state.getValue(LEVEL);
         }
 
         @Override
-        public boolean isStill(FluidState state) {
+        public boolean isSource(FluidState state) {
             return false;
         }
 
@@ -56,12 +56,12 @@ public abstract class BeefStewFluid extends ModFluidsTemplate {
 
     public static class Still extends BeefStewFluid {
         @Override
-        public int getLevel(FluidState state) {
+        public int getAmount(FluidState state) {
             return 8;
         }
 
         @Override
-        public boolean isStill(FluidState state) {
+        public boolean isSource(FluidState state) {
             return true;
         }
     }
