@@ -1,0 +1,44 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "farmersdelight:pie_crust",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_sweet_berry_cheesecake"
+  },
+  "result": {
+    "id": "farmersdelight:sweet_berry_cheesecake"
+  },
+  "loops": 2,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:sweet_berries",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:sweet_berries",
+      "result": "$result"
+    },
+    {
+      "type": "create:filling",
+      "ingredient": "$ingredient",
+      "fluid_ingredient": {
+        "type": "fluid_tag",
+        "amount": 20250,
+        "fluid_tag": "#c:milk"
+      },
+      "result": "$result"
+    }
+  ]
+}

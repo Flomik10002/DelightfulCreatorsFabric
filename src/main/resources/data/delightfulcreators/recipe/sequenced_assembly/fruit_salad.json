@@ -1,0 +1,46 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:bowl",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_fruit_salad"
+  },
+  "result": {
+    "id": "farmersdelight:fruit_salad"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:melon_slice",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:apple",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/berry",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "farmersdelight:pumpkin_slice",
+      "result": "$result"
+    }
+  ]
+}

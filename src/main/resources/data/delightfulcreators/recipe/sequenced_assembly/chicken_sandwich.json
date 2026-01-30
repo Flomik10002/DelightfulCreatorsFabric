@@ -1,0 +1,40 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:bread",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_chicken_sandwich"
+  },
+  "result": {
+    "id": "farmersdelight:chicken_sandwich"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/cooked_chicken",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/cabbage",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:carrot",
+      "result": "$result"
+    }
+  ]
+}

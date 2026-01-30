@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "target": "minecraft:bowl",
+  "ingredient": "farmersdelight:raw_pasta",
+  "result": {
+    "id": "delightfulcreators:incomplete_pasta_dish"
+  }
+}

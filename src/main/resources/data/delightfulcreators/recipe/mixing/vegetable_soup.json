@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:beetroot",
+    "#c:foods/leafy_green"
+  ],
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:vegetable_soup"
+  }
+}

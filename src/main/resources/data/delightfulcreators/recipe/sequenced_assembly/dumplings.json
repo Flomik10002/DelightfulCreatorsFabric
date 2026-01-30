@@ -1,0 +1,45 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "create:sequenced_assembly",
+  "ingredient": "#c:foods/dough",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_dumplings"
+  },
+  "result": {
+    "id": "farmersdelight:dumplings",
+    "count": 2
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:crops/onion",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": {
+        "fabric:type": "fabric:any",
+        "ingredients": [
+          "#c:dumplings_ingredients"
+        ]
+      },
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/leafy_green",
+      "result": "$result"
+    }
+  ]
+}

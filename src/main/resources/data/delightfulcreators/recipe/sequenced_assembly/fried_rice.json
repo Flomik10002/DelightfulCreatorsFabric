@@ -1,0 +1,40 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "farmersdelight:cooked_rice",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_fried_rice"
+  },
+  "result": {
+    "id": "farmersdelight:fried_rice"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:egg",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:carrot",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/onion",
+      "result": "$result"
+    }
+  ]
+}

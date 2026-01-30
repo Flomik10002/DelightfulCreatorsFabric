@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    "#c:foods/pasta",
+    "#c:foods/cooked_egg",
+    "minecraft:dried_kelp",
+    "#c:foods/raw_pork"
+  ],
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:noodle_soup"
+  }
+}

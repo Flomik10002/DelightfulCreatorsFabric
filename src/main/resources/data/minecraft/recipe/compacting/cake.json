@@ -1,0 +1,28 @@
+{
+  "replace": "true",
+  "type": "create:compacting",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "ingredients": [
+    "#c:eggs",
+    "minecraft:sugar",
+    "minecraft:sugar",
+    "#c:flours",
+    "#c:flours",
+    "#c:flours"
+  ],
+  "fluid_ingredient": {
+    "type": "fluid_tag",
+    "amount": 81000,
+    "fluid_tag": "#c:milk"
+  },
+  "result": {
+    "id": "minecraft:cake"
+  }
+}

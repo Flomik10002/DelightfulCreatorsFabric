@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    "#c:foods/raw_beef",
+    "minecraft:carrot",
+    "minecraft:potato"
+  ],
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:beef_stew"
+  }
+}

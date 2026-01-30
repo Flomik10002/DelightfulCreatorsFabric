@@ -1,0 +1,34 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:bowl",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_nether_salad"
+  },
+  "result": {
+    "id": "farmersdelight:nether_salad"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:crimson_fungus",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:warped_fungus",
+      "result": "$result"
+    }
+  ]
+}

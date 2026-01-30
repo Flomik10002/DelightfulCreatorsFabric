@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredients": [
+    "delightfulcreators:pumpkin_pie_slice",
+    "delightfulcreators:pumpkin_pie_slice",
+    "delightfulcreators:pumpkin_pie_slice",
+    "delightfulcreators:pumpkin_pie_slice"
+  ],
+  "result": {
+    "id": "minecraft:pumpkin_pie"
+  }
+}

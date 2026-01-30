@@ -1,0 +1,34 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:bowl",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_bacon_and_eggs"
+  },
+  "result": {
+    "id": "farmersdelight:bacon_and_eggs"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "farmersdelight:cooked_bacon",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "farmersdelight:fried_egg",
+      "result": "$result"
+    }
+  ]
+}

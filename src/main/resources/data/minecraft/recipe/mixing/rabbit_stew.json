@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    "minecraft:baked_potato",
+    "minecraft:rabbit",
+    "minecraft:carrot",
+    "#c:mushrooms"
+  ],
+  "fluid_result": {
+    "id": "delightfulcreators:rabbit_stew",
+    "amount": 27000
+  }
+}
