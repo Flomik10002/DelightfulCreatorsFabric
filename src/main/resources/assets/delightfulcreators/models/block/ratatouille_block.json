@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/liquid",
+  "textures": {
+    "still": "delightfulcreators:block/ratatouille_still",
+    "flow": "delightfulcreators:block/ratatouille_flow",
+    "particle": "delightfulcreators:block/ratatouille_still"
+  }
+}

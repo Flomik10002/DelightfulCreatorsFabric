@@ -1,0 +1,20 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "farmersdelight:dog_food",
+  "fluid_result": {
+    "amount": 20250,
+    "id": "delightfulcreators:dog_food"
+  },
+  "result": {
+    "id": "minecraft:bowl"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "farmersdelight:melon_juice",
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:melon_juice"
+  },
+  "result": {
+    "id": "minecraft:glass_bottle"
+  }
+}

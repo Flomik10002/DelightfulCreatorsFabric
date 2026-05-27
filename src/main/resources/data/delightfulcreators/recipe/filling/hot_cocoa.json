@@ -1,0 +1,22 @@
+{
+  "replace": true,
+  "type": "create:filling",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:glass_bottle",
+  "fluid_ingredient": {
+    "type": "fluid_stack",
+    "amount": 27000,
+    "fluid": "delightfulcreators:hot_cocoa"
+  },
+  "result": {
+    "id": "farmersdelight:hot_cocoa"
+  }
+}

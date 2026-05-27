@@ -1,0 +1,30 @@
+{
+  "type": "create:mixing",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    "minecraft:rotten_flesh",
+    "minecraft:bone_meal",
+    "#c:foods/raw_meat",
+    "#c:crops/rice"
+  ],
+  "fluid_ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 20250,
+      "fluid": "delightfulcreators:cooked_rice"
+    }
+  ],
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:dog_food"
+  }
+}

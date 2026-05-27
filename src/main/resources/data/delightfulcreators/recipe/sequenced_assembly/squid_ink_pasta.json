@@ -1,0 +1,40 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "delightfulcreators:incomplete_pasta_dish",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_squid_ink_pasta"
+  },
+  "result": {
+    "id": "farmersdelight:squid_ink_pasta"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:ink_sac",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/tomato",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/raw_fish",
+      "result": "$result"
+    }
+  ]
+}

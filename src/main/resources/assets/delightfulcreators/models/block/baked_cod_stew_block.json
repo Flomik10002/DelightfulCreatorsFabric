@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/liquid",
+  "textures": {
+    "still": "delightfulcreators:block/baked_cod_stew_still",
+    "flow": "delightfulcreators:block/baked_cod_stew_flow",
+    "particle": "delightfulcreators:block/baked_cod_stew_still"
+  }
+}

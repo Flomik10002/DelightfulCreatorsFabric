@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "heat_requirement": "heated",
+  "ingredients": [
+    "#c:foods/raw_fish",
+    "#c:foods/onion"
+  ],
+  "fluid_ingredients": [
+    {
+      "type": "fluid_stack",
+      "amount": 27000,
+      "fluid": "delightfulcreators:tomato_sauce"
+    }
+  ],
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:fish_stew"
+  }
+}

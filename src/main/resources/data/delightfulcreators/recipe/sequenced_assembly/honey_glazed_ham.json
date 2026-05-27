@@ -1,0 +1,44 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "farmersdelight:cooked_rice",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_honey_glazed_ham"
+  },
+  "result": {
+    "id": "farmersdelight:honey_glazed_ham_block"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "farmersdelight:smoked_ham",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:sweet_berries",
+      "result": "$result"
+    },
+    {
+      "type": "create:filling",
+      "ingredient": "$ingredient",
+      "fluid_ingredient": {
+        "type": "fluid_tag",
+        "amount": 20250,
+        "fluid_tag": "#c:honey"
+      },
+      "result": "$result"
+    }
+  ]
+}

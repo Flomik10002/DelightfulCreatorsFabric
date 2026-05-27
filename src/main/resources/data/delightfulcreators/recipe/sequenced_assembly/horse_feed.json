@@ -1,0 +1,45 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": {
+    "fabric:type": "fabric:any",
+    "ingredients": [
+      "#c:bale"
+    ]
+  },
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_horse_feed"
+  },
+  "result": {
+    "id": "farmersdelight:horse_feed"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:apple",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:apple",
+      "result": "$result"
+    },
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "minecraft:golden_carrot",
+      "result": "$result"
+    }
+  ]
+}

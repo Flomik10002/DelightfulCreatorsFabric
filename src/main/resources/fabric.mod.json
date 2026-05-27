@@ -24,15 +24,13 @@
 		]
 	},
 	"mixins": [
-		"delightfulcreators.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*",
+		"farmersdelight": ">=1.21.11-3.4.1",
+		"create": ">=1.21.11-6.0.8-2"
 	}
 }

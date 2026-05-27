@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredients": [
+    "minecraft:baked_potato",
+    "minecraft:cooked_beef"
+  ],
+  "fluid_ingredients": [
+    {
+      "type": "fluid_tag",
+      "amount": 27000,
+      "fluid_tag": "#c:milk"
+    }
+  ],
+  "result": {
+    "id": "farmersdelight:stuffed_potato"
+  }
+}
