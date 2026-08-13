@@ -1,16 +1,28 @@
 package flomik.delightfulcreators;
 
+import flomik.delightfulcreators.block.cutter.MechanicalCutterRenderer;
+import flomik.delightfulcreators.block.cutter.ModPartialModels;
+import flomik.delightfulcreators.compat.ponder.DelightfulCreatorsPonderPlugin;
+import flomik.delightfulcreators.init.ModBlockEntityTypesRegister;
 import flomik.delightfulcreators.init.ModFluidsRegister;
+import net.createmod.ponder.foundation.PonderIndex;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
 import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.api.ClientModInitializer;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.util.Identifier;
 
 public class DelightfulCreatorsModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+
+        ModPartialModels.init();
+        BlockEntityRendererFactories.register(
+                ModBlockEntityTypesRegister.MECHANICAL_CUTTER,
+                MechanicalCutterRenderer::new);
+        PonderIndex.addPlugin(new DelightfulCreatorsPonderPlugin());
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE, new SimpleFluidRenderHandler(
                 new Identifier("delightfulcreators:block/tomato_sauce_still"),

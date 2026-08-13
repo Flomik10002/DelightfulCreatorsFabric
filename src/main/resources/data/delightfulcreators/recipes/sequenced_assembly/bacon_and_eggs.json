@@ -9,7 +9,7 @@
   "ingredient": {
     "item": "minecraft:bowl"
   },
-  "loops": 1,
+  "loops": 2,
   "results": [
     {
       "item": "farmersdelight:bacon_and_eggs"

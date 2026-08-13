@@ -220,6 +220,86 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_dumplings": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_dumplings"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_fried_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_fried_rice"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_mushroom_rice": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_mushroom_rice"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_roasted_mutton_chops": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_roasted_mutton_chops"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_squid_ink_pasta": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_squid_ink_pasta"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_steak_and_potatoes": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_steak_and_potatoes"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_stuffed_potato": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_stuffed_potato"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "incomplete_vegetable_noodles": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:incomplete_vegetable_noodles"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -261,7 +341,15 @@
       "incomplete_nether_salad",
       "incomplete_bacon_and_eggs",
       "incomplete_grilled_salmon",
-      "incomplete_horse_feed"
+      "incomplete_horse_feed",
+      "incomplete_dumplings",
+      "incomplete_fried_rice",
+      "incomplete_mushroom_rice",
+      "incomplete_roasted_mutton_chops",
+      "incomplete_squid_ink_pasta",
+      "incomplete_steak_and_potatoes",
+      "incomplete_stuffed_potato",
+      "incomplete_vegetable_noodles"
     ]
   ]
 }

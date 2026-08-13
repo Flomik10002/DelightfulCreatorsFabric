@@ -1,0 +1,23 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": ["create"]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:rabbit_stew"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "amount": 27000,
+      "fluid": "delightfulcreators:rabbit_stew"
+    }
+  ]
+}

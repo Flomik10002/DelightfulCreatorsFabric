@@ -140,6 +140,56 @@
         ]
       },
       "trigger": "minecraft:inventory_changed"
+    },
+    "baked_cod_stew_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:baked_cod_stew_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bone_broth_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:bone_broth_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cooked_rice_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:cooked_rice_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "dog_food_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:dog_food_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "ratatouille_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": ["delightfulcreators:ratatouille_bucket"]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "display": {
@@ -173,7 +223,12 @@
       "beef_stew_bucket",
       "rabbit_stew_bucket",
       "mushroom_stew_bucket",
-      "glow_berry_custard_bucket"
+      "glow_berry_custard_bucket",
+      "baked_cod_stew_bucket",
+      "bone_broth_bucket",
+      "cooked_rice_bucket",
+      "dog_food_bucket",
+      "ratatouille_bucket"
     ]
   ]
 }

@@ -88,8 +88,20 @@
   "item.delightfulcreators.pumpkin_pie_slice": "Porción de tarta de calabaza",
   "item.delightfulcreators.incomplete_roasted_mutton_chops": "Chuletas de cordero asadas incompletas",
   "item.delightfulcreators.incomplete_steak_and_potatoes": "Filete y papas incompletos",
+  "item.delightfulcreators.incomplete_stuffed_potato": "Papa rellena incompleta",
+  "item.delightfulcreators.blades": "Cuchillas",
+
+  "block.delightfulcreators.mechanical_cutter": "Cortadora Mecánica",
 
   "itemgroup.main": "Delightful Creators",
+
+  "jei.delightfulcreators.mechanical_cutting": "Corte",
+  "delightfulcreators.ponder.mechanical_cutter.header": "Cortar objetos con la Cortadora Mecánica",
+  "delightfulcreators.ponder.mechanical_cutter.text_1": "La Cortadora Mecánica puede procesar recetas de la tabla de cortar sobre los objetos colocados debajo de ella",
+  "delightfulcreators.ponder.mechanical_cutter.text_2": "Los objetos de entrada se pueden soltar o colocar sobre un Depósito bajo la Cortadora",
+  "delightfulcreators.ponder.mechanical_cutter.text_3": "Cuando los objetos llegan por una cinta transportadora...",
+  "delightfulcreators.ponder.mechanical_cutter.text_4": "La Cortadora los sostendrá y procesará automáticamente",
+  "delightfulcreators.recipe.assembly.cutting": "Cortar en una Cortadora Mecánica",
 
   "advancement.delightfulcreators.root": "Delightful Creators",
   "advancement.delightfulcreators.root.desc": "¡Las invenciones culinarias te esperan!",

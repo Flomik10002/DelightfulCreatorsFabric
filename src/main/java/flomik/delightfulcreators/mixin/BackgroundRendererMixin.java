@@ -1,14 +1,7 @@
 package flomik.delightfulcreators.mixin;
 
-import flomik.delightfulcreators.init.ModFluidsRegister;
-import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.ModifyArgs;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import com.mojang.blaze3d.systems.RenderSystem;
+import flomik.delightfulcreators.init.ModFluidsRegister;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.MinecraftClient;
@@ -17,207 +10,117 @@ import net.minecraft.client.render.BackgroundRenderer.FogType;
 import net.minecraft.client.render.Camera;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.fluid.FluidState;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.ModifyArgs;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 
+/** Applies each food fluid's underwater tint and visibility range on Fabric. */
 @Environment(EnvType.CLIENT)
 @Mixin(BackgroundRenderer.class)
 public abstract class BackgroundRendererMixin {
-    @Shadow
-    private static float red;
 
-    @Shadow
-    private static float green;
+    @ModifyArgs(
+            method = "render",
+            at = @At(
+                    value = "INVOKE",
+                    target = "Lcom/mojang/blaze3d/systems/RenderSystem;clearColor(FFFF)V",
+                    remap = false))
+    private static void delightfulcreators$modifyFogColors(
+            Args args,
+            Camera camera,
+            float tickDelta,
+            ClientWorld world,
+            int viewDistance,
+            float skyDarkness) {
+        FluidState state = world.getFluidState(camera.getBlockPos());
 
-    @Shadow
-    private static float blue;
-
-    @ModifyArgs(method = "render", at = @At(value = "INVOKE", target = "Lcom/mojang/blaze3d/systems/RenderSystem;clearColor(FFFF)V", remap = false))
-    private static void delightfulcreators$modifyFogColors(Args args, Camera camera, float partialTicks, ClientWorld level, int renderDistanceChunks, float bossColorModifier) {
-        FluidState state = level.getFluidState(camera.getBlockPos());
         if (ModFluidsRegister.isAppleCider(state)) {
-            red = (float) 211 / 255;
-            green = (float) 152 / 255;
-            blue = (float) 87 / 255;
-        }
-        if (ModFluidsRegister.isMelonJuice(state)) {
-            red = (float) 196 / 255;
-            green = (float) 47 / 255;
-            blue = (float) 33 / 255;
-        }
-        if (ModFluidsRegister.isTomatoSauce(state)) {
-            red = (float) 196 / 255;
-            green = (float) 24 / 255;
-            blue = (float) 16 / 255;
-        }
-        if (ModFluidsRegister.isHotCocoa(state)) {
-            red = (float) 96 / 255;
-            green = (float) 56 / 255;
-            blue = (float) 36 / 255;
-        }
-        if (ModFluidsRegister.isBeetrootSoup(state)) {
-            red = (float) 132 / 255;
-            green = (float) 20 / 255;
-            blue = (float) 12 / 255;
-        }
-        if (ModFluidsRegister.isChickenSoup(state)) {
-            red = (float) 224 / 255;
-            green = (float) 144 / 255;
-            blue = (float) 88 / 255;
-        }
-        if (ModFluidsRegister.isNoodleSoup(state)) {
-            red = (float) 236 / 255;
-            green = (float) 180 / 255;
-            blue = (float) 92 / 255;
-        }
-        if (ModFluidsRegister.isPumpkinSoup(state)) {
-            red = (float) 252 / 255;
-            green = (float) 140 / 255;
-            blue = (float) 52 / 255;
-        }
-        if (ModFluidsRegister.isVegetableSoup(state)) {
-            red = (float) 140 / 255;
-            green = (float) 124 / 255;
-            blue = (float) 36 / 255;
-        }
-        if (ModFluidsRegister.isFishStew(state)) {
-            red = (float) 196 / 255;
-            green = (float) 60 / 255;
-            blue = (float) 36 / 255;
-        }
-        if (ModFluidsRegister.isBeefStew(state)) {
-            red = (float) 255 / 255;
-            green = (float) 140 / 255;
-            blue = (float) 16 / 255;
-        }
-        if (ModFluidsRegister.isRabbitStew(state)) {
-            red = (float) 212 / 255;
-            green = (float) 124 / 255;
-            blue = (float) 60 / 255;
-        }
-        if (ModFluidsRegister.isMushroomStew(state)) {
-            red = (float) 212 / 255;
-            green = (float) 140 / 255;
-            blue = (float) 100 / 255;
-        }
-        if (ModFluidsRegister.isGlowBerryCustard(state)) {
-            red = (float) 244 / 255;
-            green = (float) 212 / 255;
-            blue = (float) 140 / 255;
-        }
-        if (ModFluidsRegister.isRatatouille(state)) {
-            red = (float) 204 / 255;
-            green = (float) 76 / 255;
-            blue = (float) 58 / 255;
-        }
-        if (ModFluidsRegister.isCookedRice(state)) {
-            red = (float) 193 / 255;
-            green = (float) 185 / 255;
-            blue = (float) 174 / 255;
-        }
-        if (ModFluidsRegister.isDogFood(state)) {
-            red = (float) 91 / 255;
-            green = (float) 41 / 255;
-            blue = (float) 15 / 255;
-        }
-        if (ModFluidsRegister.isBoneBroth(state)) {
-            red = (float) 170 / 255;
-            green = (float) 139 / 255;
-            blue = (float) 68 / 255;
-        }
-        if (ModFluidsRegister.isBakedCodStew(state)) {
-            red = (float) 192 / 255;
-            green = (float) 149 / 255;
-            blue = (float) 78 / 255;
+            setColor(args, 211, 152, 87);
+        } else if (ModFluidsRegister.isMelonJuice(state)) {
+            setColor(args, 196, 47, 33);
+        } else if (ModFluidsRegister.isTomatoSauce(state)) {
+            setColor(args, 196, 24, 16);
+        } else if (ModFluidsRegister.isHotCocoa(state)) {
+            setColor(args, 96, 56, 36);
+        } else if (ModFluidsRegister.isBeetrootSoup(state)) {
+            setColor(args, 132, 20, 12);
+        } else if (ModFluidsRegister.isChickenSoup(state)) {
+            setColor(args, 224, 144, 88);
+        } else if (ModFluidsRegister.isNoodleSoup(state)) {
+            setColor(args, 236, 180, 92);
+        } else if (ModFluidsRegister.isPumpkinSoup(state)) {
+            setColor(args, 252, 140, 52);
+        } else if (ModFluidsRegister.isVegetableSoup(state)) {
+            setColor(args, 140, 124, 36);
+        } else if (ModFluidsRegister.isFishStew(state)) {
+            setColor(args, 196, 60, 36);
+        } else if (ModFluidsRegister.isBeefStew(state)) {
+            setColor(args, 255, 140, 16);
+        } else if (ModFluidsRegister.isRabbitStew(state)) {
+            setColor(args, 212, 124, 60);
+        } else if (ModFluidsRegister.isMushroomStew(state)) {
+            setColor(args, 212, 140, 100);
+        } else if (ModFluidsRegister.isGlowBerryCustard(state)) {
+            setColor(args, 244, 212, 140);
+        } else if (ModFluidsRegister.isRatatouille(state)) {
+            setColor(args, 204, 76, 58);
+        } else if (ModFluidsRegister.isCookedRice(state)) {
+            setColor(args, 193, 185, 174);
+        } else if (ModFluidsRegister.isDogFood(state)) {
+            setColor(args, 91, 41, 15);
+        } else if (ModFluidsRegister.isBoneBroth(state)) {
+            setColor(args, 170, 139, 68);
+        } else if (ModFluidsRegister.isBakedCodStew(state)) {
+            setColor(args, 192, 149, 78);
         }
     }
 
     @Inject(method = "applyFog", at = @At("HEAD"), cancellable = true)
-    private static void delightfulcreators$applyFog(Camera camera, FogType fogType, float viewDistance, boolean thickFog, float tickDelta, CallbackInfo ci) {
-        assert MinecraftClient.getInstance().world != null;
-        FluidState state = MinecraftClient.getInstance().world.getFluidState(camera.getBlockPos());
-        if (ModFluidsRegister.isTomatoSauce(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
+    private static void delightfulcreators$applyFog(
+            Camera camera,
+            FogType fogType,
+            float viewDistance,
+            boolean thickFog,
+            float tickDelta,
+            CallbackInfo callback) {
+        ClientWorld world = MinecraftClient.getInstance().world;
+        if (world == null || !isFoodFluid(world.getFluidState(camera.getBlockPos()))) {
+            return;
         }
-        if (ModFluidsRegister.isHotCocoa(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isBeetrootSoup(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isChickenSoup(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isNoodleSoup(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isPumpkinSoup(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isVegetableSoup(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isFishStew(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isBeefStew(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isRabbitStew(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isMushroomStew(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isGlowBerryCustard(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isRatatouille(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isCookedRice(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isDogFood(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isBoneBroth(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
-        if (ModFluidsRegister.isBakedCodStew(state)) {
-            RenderSystem.setShaderFogStart(-8);
-            RenderSystem.setShaderFogEnd(5);
-            ci.cancel();
-        }
+
+        RenderSystem.setShaderFogStart(-8);
+        RenderSystem.setShaderFogEnd(5);
+        callback.cancel();
+    }
+
+    private static void setColor(Args args, int red, int green, int blue) {
+        args.set(0, red / 255.0F);
+        args.set(1, green / 255.0F);
+        args.set(2, blue / 255.0F);
+    }
+
+    private static boolean isFoodFluid(FluidState state) {
+        return ModFluidsRegister.isAppleCider(state)
+                || ModFluidsRegister.isMelonJuice(state)
+                || ModFluidsRegister.isTomatoSauce(state)
+                || ModFluidsRegister.isHotCocoa(state)
+                || ModFluidsRegister.isBeetrootSoup(state)
+                || ModFluidsRegister.isChickenSoup(state)
+                || ModFluidsRegister.isNoodleSoup(state)
+                || ModFluidsRegister.isPumpkinSoup(state)
+                || ModFluidsRegister.isVegetableSoup(state)
+                || ModFluidsRegister.isFishStew(state)
+                || ModFluidsRegister.isBeefStew(state)
+                || ModFluidsRegister.isRabbitStew(state)
+                || ModFluidsRegister.isMushroomStew(state)
+                || ModFluidsRegister.isGlowBerryCustard(state)
+                || ModFluidsRegister.isRatatouille(state)
+                || ModFluidsRegister.isCookedRice(state)
+                || ModFluidsRegister.isDogFood(state)
+                || ModFluidsRegister.isBoneBroth(state)
+                || ModFluidsRegister.isBakedCodStew(state);
     }
 }

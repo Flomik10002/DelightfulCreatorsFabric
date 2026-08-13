@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "delightfulcreators:block/noodle_sauce_block"
+      "model": "delightfulcreators:block/noodle_soup_block"
     }
   }
 }

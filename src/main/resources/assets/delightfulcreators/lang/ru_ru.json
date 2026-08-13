@@ -86,14 +86,23 @@
   "item.delightfulcreators.incomplete_grilled_salmon": "Неполный лосось на гриле",
   "item.delightfulcreators.incomplete_horse_feed": "Неполный корм для лошадей",
   "item.delightfulcreators.pumpkin_pie_slice": "Ломтик тыквенного пирога",
-  "item.delightfulcreators.incomplete_black_cod": "Неполная черная треска",
   "item.delightfulcreators.incomplete_roasted_mutton_chops": "Неполные бараньи отбивные",
-  "item.delightfulcreators.incomplete_rose_hip_pie": "Неполный пирог с шиповником",
   "item.delightfulcreators.incomplete_steak_and_potatoes": "Неполный стейк с картофелем",
+  "item.delightfulcreators.incomplete_stuffed_potato": "Неполный фаршированный картофель",
 
   "item.delightfulcreators.blades": "Лезвия",
 
+  "block.delightfulcreators.mechanical_cutter": "Механический резак",
+
   "itemgroup.main": "Восхитительные создатели",
+
+  "jei.delightfulcreators.mechanical_cutting": "Резка",
+  "delightfulcreators.ponder.mechanical_cutter.header": "Резка предметов Механическим Резаком",
+  "delightfulcreators.ponder.mechanical_cutter.text_1": "Механический Резак может обрабатывать рецепты разделочной доски на предметах, помещённых под ним",
+  "delightfulcreators.ponder.mechanical_cutter.text_2": "Входные предметы можно бросить или положить на Депо под Резаком",
+  "delightfulcreators.ponder.mechanical_cutter.text_3": "Когда предметы подаются по ленте...",
+  "delightfulcreators.ponder.mechanical_cutter.text_4": "Резак сам захватит и обработает их автоматически",
+  "delightfulcreators.recipe.assembly.cutting": "Разрезать в Механическом Резаке",
 
   "advancement.delightfulcreators.root": "Восхитительные создатели",
   "advancement.delightfulcreators.root.desc": "Кулинарные изобретения ждут вас!",

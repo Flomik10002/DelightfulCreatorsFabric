@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "delightfulcreators:block/mechanical_cutter",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "delightfulcreators:block/mechanical_cutter"
+    },
+    "facing=south": {
+      "model": "delightfulcreators:block/mechanical_cutter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "delightfulcreators:block/mechanical_cutter",
+      "y": 270
+    }
+  }
+}

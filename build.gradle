@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.2-SNAPSHOT'
+	id 'fabric-loom' version '1.10.+'
 	id 'maven-publish'
 }
 
@@ -16,6 +16,55 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	exclusiveContent {
+		forRepository {
+			maven { url = "https://jitpack.io" }
+		}
+		filter {
+			includeGroup "com.github.Chocohead"
+		}
+	}
+	maven {
+		url = "https://maven.greenhouse.lgbt/releases"
+		content { includeGroup "vectorwing" }
+	}
+	exclusiveContent {
+		forRepository {
+			maven { url = "https://mvn.devos.one/snapshots" }
+		}
+		filter {
+			includeGroup "com.simibubi.create"
+			includeGroup "com.tterrag.registrate_fabric"
+			includeGroup "io.github.tropheusj"
+		}
+	}
+	exclusiveContent {
+		forRepository {
+			maven { url = "https://mvn.devos.one/releases" }
+		}
+		filter {
+			includeGroupByRegex "io\\.github\\.fabricators_of_create\\.Porting-Lib.*"
+		}
+	}
+	maven {
+		url = "https://maven.createmod.net"
+		content {
+			includeGroupAndSubgroups "net.createmod"
+			includeGroupAndSubgroups "dev.engine-room"
+		}
+	}
+	maven {
+		url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven"
+		content { includeGroup "fuzs.forgeconfigapiport" }
+	}
+	maven {
+		url = "https://maven.jamieswhiteshirt.com/libs-release"
+		content { includeGroup "com.jamieswhiteshirt" }
+	}
+	maven {
+		url = "https://maven.blamejared.com"
+		content { includeGroup "mezz.jei" }
+	}
 }
 
 dependencies {
@@ -27,6 +76,30 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+	// Core integrations used by the Mechanical Cutter.
+	modImplementation("com.simibubi.create:create-fabric:${project.create_version}") {
+		// Ponder 1.0.91 still advertises an older split Flywheel API jar. Create ships the
+		// complete, matching Flywheel 1.0.5 runtime, so keeping both only creates duplicate classes.
+		exclude group: "dev.engine-room.flywheel", module: "flywheel-fabric-api-1.20.1"
+	}
+	// The official Maven metadata also exposes FDRF's Porting Lib and Fabric-ASM
+	// dependencies to Loom's remapped development runtime.
+	modImplementation "vectorwing:FarmersDelight:${project.fdrf_version}"
+	// Used directly for the server-side Mechanical Cutter setting. Create also brings this
+	// dependency transitively, but declaring it here keeps our own API usage explicit.
+	modImplementation "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${project.forge_config_api_port_version}"
+
+	// JEI is optional for players. Its APIs are needed to compile the integration, while the full
+	// runtime is enabled explicitly for local smoke tests with -Penable_jei_runtime=true.
+	modCompileOnlyApi "mezz.jei:jei-${project.minecraft_version}-fabric-api:${project.jei_version}"
+	if (project.findProperty("enable_jei_runtime") == "true") {
+		// JEI's Fabric jar is self-contained. Its POM also exposes Mojmap common modules;
+		// letting Loom remap both copies of the API produces a broken mixed-namespace jar.
+		modLocalRuntime("mezz.jei:jei-${project.minecraft_version}-fabric:${project.jei_version}") {
+			transitive = false
+		}
+	}
 
 	// Uncomment the following line to enable the deprecated Fabric API modules.
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
@@ -57,8 +130,9 @@ java {
 }
 
 jar {
+	def archiveName = base.archivesName.get()
 	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
+		rename { "${it}_${archiveName}" }
 	}
 }
 

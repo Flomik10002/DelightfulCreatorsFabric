@@ -3,6 +3,8 @@
   "package": "flomik.delightfulcreators.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "FoodPropertiesFallbackMixin",
+    "RecipeManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

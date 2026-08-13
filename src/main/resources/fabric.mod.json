@@ -21,18 +21,24 @@
 		],
 		"client": [
 			"flomik.delightfulcreators.DelightfulCreatorsModClient"
+		],
+		"jei_mod_plugin": [
+			"flomik.delightfulcreators.compat.jei.DelightfulCreatorsJeiPlugin"
 		]
 	},
 	"mixins": [
 		"delightfulcreators.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.14.21",
+		"fabricloader": ">=0.18.2",
 		"minecraft": "~1.20.1",
 		"java": ">=17",
-		"fabric-api": "*"
+		"fabric-api": ">=0.92.8+1.20.1",
+		"create": ">=6.0.8.1+build.1744-mc1.20.1",
+		"farmersdelight": ">=1.20.1-2.4.1+refabricated",
+		"forgeconfigapiport": ">=8.0.0"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"jei": ">=15.20.0.106"
 	}
 }

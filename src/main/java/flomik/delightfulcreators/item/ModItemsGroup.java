@@ -3,8 +3,11 @@ package flomik.delightfulcreators.item;
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import flomik.delightfulcreators.init.ModItemsRegister;
 import flomik.delightfulcreators.init.ModFluidsRegister;
+import flomik.delightfulcreators.init.ModBlocksRegister;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -15,7 +18,8 @@ public class ModItemsGroup {
     public static final ItemGroup MAIN = Registry.register(Registries.ITEM_GROUP,
             new Identifier(DelightfulCreatorsMod.MOD_ID, "main"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.main"))
-                    .icon(() -> new ItemStack(ModItemsRegister.PUMPKIN_PIE_SLICE)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocksRegister.MECHANICAL_CUTTER)).entries((displayContext, entries) -> {
+                        entries.add(ModBlocksRegister.MECHANICAL_CUTTER);
                         entries.add(ModItemsRegister.INCOMPLETE_DUMPLINGS);
                         entries.add(ModItemsRegister.INCOMPLETE_FRIED_RICE);
                         entries.add(ModItemsRegister.INCOMPLETE_MUSHROOM_RICE);
@@ -45,6 +49,7 @@ public class ModItemsGroup {
                         entries.add(ModItemsRegister.INCOMPLETE_HORSE_FEED);
                         entries.add(ModItemsRegister.INCOMPLETE_ROASTED_MUTTON_CHOPS);
                         entries.add(ModItemsRegister.INCOMPLETE_STEAK_AND_POTATOES);
+                        entries.add(ModItemsRegister.INCOMPLETE_STUFFED_POTATO);
                         entries.add(ModItemsRegister.PUMPKIN_PIE_SLICE);
                         entries.add(ModFluidsRegister.TOMATO_SAUCE_BUCKET);
                         entries.add(ModFluidsRegister.HOT_COCOA_BUCKET);
@@ -69,6 +74,8 @@ public class ModItemsGroup {
     }).build());
 
     public static void registerModItemGroup(){
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries ->
+                entries.add(ModItemsRegister.INCOMPLETE_VEGETABLE_NOODLES));
         DelightfulCreatorsMod.LOGGER.debug("Registering Mod Item Group for " + DelightfulCreatorsMod.MOD_ID);
     }
 }

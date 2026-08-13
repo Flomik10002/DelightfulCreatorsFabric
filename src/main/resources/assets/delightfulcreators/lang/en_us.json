@@ -88,10 +88,21 @@
   "item.delightfulcreators.pumpkin_pie_slice": "Slice of Pumpkin Pie",
   "item.delightfulcreators.incomplete_roasted_mutton_chops": "Incomplete Roasted Mutton Chops",
   "item.delightfulcreators.incomplete_steak_and_potatoes": "Incomplete Steak And Potatoes",
+  "item.delightfulcreators.incomplete_stuffed_potato": "Incomplete Stuffed Potato",
 
   "item.delightfulcreators.blades": "Blades",
 
+  "block.delightfulcreators.mechanical_cutter": "Mechanical Cutter",
+
   "itemgroup.main": "Delightful Creators",
+
+  "jei.delightfulcreators.mechanical_cutting": "Cutting",
+  "delightfulcreators.ponder.mechanical_cutter.header": "Cutting Items with the Mechanical Cutter",
+  "delightfulcreators.ponder.mechanical_cutter.text_1": "The Mechanical Cutter can process cutting board recipes on items provided beneath it",
+  "delightfulcreators.ponder.mechanical_cutter.text_2": "The Input items can be dropped or placed on a Depot under the Cutter",
+  "delightfulcreators.ponder.mechanical_cutter.text_3": "When items are provided on a belt...",
+  "delightfulcreators.ponder.mechanical_cutter.text_4": "The Cutter will hold and process them automatically",
+  "delightfulcreators.recipe.assembly.cutting": "Cut in a Mechanical Cutter",
 
   "advancement.delightfulcreators.root": "Delightful Creators",
   "advancement.delightfulcreators.root.desc": "Culinary inventions are waiting for you!",
