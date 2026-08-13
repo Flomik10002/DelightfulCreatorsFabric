@@ -24,10 +24,10 @@ public abstract class FogRendererMixin {
     private static final float FOG_END = 5.0F;
 
     @ModifyArgs(
-        method = "applyFog*",
+        method = "setupFog(Lnet/minecraft/client/Camera;ILnet/minecraft/client/DeltaTracker;FLnet/minecraft/client/multiplayer/ClientLevel;)Lorg/joml/Vector4f;",
         at = @At(
             value = "INVOKE",
-            target = "Lnet/minecraft/client/render/fog/FogRenderer;applyFog(Ljava/nio/ByteBuffer;ILorg/joml/Vector4f;FFFFFF)V"
+            target = "Lnet/minecraft/client/renderer/fog/FogRenderer;updateBuffer(Ljava/nio/ByteBuffer;ILorg/joml/Vector4f;FFFFFF)V"
         )
     )
     private void delightfulcreators$applyFluidFog(
