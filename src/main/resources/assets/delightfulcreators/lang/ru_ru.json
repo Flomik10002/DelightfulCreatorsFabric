@@ -37,7 +37,6 @@
   "block.delightfulcreators.ratatouille_block": "Ratatouille",
   "item.delightfulcreators.dog_food_bucket": "Dog Food Bucket",
   "block.delightfulcreators.dog_food_block": "Dog Food",
-
   "fluid.delightfulcreators.apple_cider": "Яблочный сидр",
   "fluid.delightfulcreators.melon_juice": "Арбузный сок",
   "fluid.delightfulcreators.tomato_sauce": "Томатный соус",
@@ -57,7 +56,6 @@
   "fluid.delightfulcreators.baked_cod_stew": "Baked Cod Stew",
   "fluid.delightfulcreators.ratatouille": "Ratatouille",
   "fluid.delightfulcreators.dog_food": "Dog Food",
-
   "item.delightfulcreators.incomplete_vegetable_noodles": "Incomplete Vegetable Noodles",
   "item.delightfulcreators.incomplete_squid_ink_pasta": "Incomplete Squid Ink Pasta",
   "item.delightfulcreators.incomplete_mushroom_rice": "Incomplete Mushroom Rice",
@@ -90,15 +88,21 @@
   "item.delightfulcreators.incomplete_roasted_mutton_chops": "Неполные бараньи отбивные",
   "item.delightfulcreators.incomplete_rose_hip_pie": "Неполный пирог с шиповником",
   "item.delightfulcreators.incomplete_steak_and_potatoes": "Неполный стейк с картофелем",
-
   "item.delightfulcreators.blades": "Лезвия",
-
   "itemgroup.main": "Восхитительные создатели",
-
   "advancement.delightfulcreators.root": "Восхитительные создатели",
   "advancement.delightfulcreators.root.desc": "Кулинарные изобретения ждут вас!",
   "advancement.delightfulcreators.almost_done": "Почти готово",
   "advancement.delightfulcreators.almost_done.desc": "Хрюкайте, плюйтесь и надежно приклейте клейкой лентой!",
   "advancement.delightfulcreators.fluid_bucket": "Инженер-кулинар",
-  "advancement.delightfulcreators.fluid_bucket.desc": "Применение инженерных знаний в кулинарии!"
+  "advancement.delightfulcreators.fluid_bucket.desc": "Применение инженерных знаний в кулинарии!",
+  "item.delightfulcreators.incomplete_stuffed_potato": "Неполный фаршированный картофель",
+  "block.delightfulcreators.mechanical_cutter": "Механический резак",
+  "jei.delightfulcreators.mechanical_cutting": "Резка",
+  "delightfulcreators.ponder.mechanical_cutter.header": "Резка предметов Механическим Резаком",
+  "delightfulcreators.ponder.mechanical_cutter.text_1": "Механический Резак может обрабатывать рецепты разделочной доски на предметах, помещённых под ним",
+  "delightfulcreators.ponder.mechanical_cutter.text_2": "Входные предметы можно бросить или положить на Депо под Резаком",
+  "delightfulcreators.ponder.mechanical_cutter.text_3": "Когда предметы подаются по ленте...",
+  "delightfulcreators.ponder.mechanical_cutter.text_4": "Резак сам захватит и обработает их автоматически",
+  "delightfulcreators.recipe.assembly.cutting": "Разрезать в Механическом Резаке"
 }

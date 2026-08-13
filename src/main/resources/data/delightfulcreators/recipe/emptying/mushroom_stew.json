@@ -1,0 +1,20 @@
+{
+  "type": "create:emptying",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:mushroom_stew",
+  "fluid_result": {
+    "amount": 27000,
+    "id": "delightfulcreators:mushroom_stew"
+  },
+  "result": {
+    "id": "minecraft:bowl"
+  }
+}

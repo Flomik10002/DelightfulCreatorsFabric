@@ -3,6 +3,9 @@
   "package": "flomik.delightfulcreators.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "FoodPropertiesFallbackMixin",
+    "RecipeManagerMixin",
+    "SawBarkBonusMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,0 +1,38 @@
+{
+  "type": "create:sequenced_assembly",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create",
+        "farmersdelight"
+      ]
+    }
+  ],
+  "ingredient": "minecraft:baked_potato",
+  "transitional_item": {
+    "id": "delightfulcreators:incomplete_stuffed_potato"
+  },
+  "result": {
+    "id": "farmersdelight:stuffed_potato"
+  },
+  "loops": 1,
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "target": "$ingredient",
+      "ingredient": "#c:foods/cooked_meats/cooked_beef",
+      "result": "$result"
+    },
+    {
+      "type": "create:filling",
+      "ingredient": "$ingredient",
+      "fluid_ingredient": {
+        "type": "fluid_tag",
+        "amount": 27000,
+        "fluid_tag": "#c:milk"
+      },
+      "result": "$result"
+    }
+  ]
+}

@@ -2,6 +2,7 @@ package flomik.delightfulcreators.item;
 
 import flomik.delightfulcreators.DelightfulCreatorsMod;
 import flomik.delightfulcreators.init.ModItemsRegister;
+import flomik.delightfulcreators.init.ModBlocksRegister;
 import flomik.delightfulcreators.init.ModFluidsRegister;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
@@ -15,7 +16,8 @@ public class ModItemsGroup {
     public static final CreativeModeTab MAIN = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(DelightfulCreatorsMod.MOD_ID, "main"),
             FabricItemGroup.builder().title(Component.translatable("itemgroup.main"))
-                    .icon(() -> new ItemStack(ModItemsRegister.PUMPKIN_PIE_SLICE)).displayItems((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModBlocksRegister.MECHANICAL_CUTTER)).displayItems((displayContext, entries) -> {
+                        entries.accept(ModBlocksRegister.MECHANICAL_CUTTER);
                         entries.accept(ModItemsRegister.INCOMPLETE_DUMPLINGS);
                         entries.accept(ModItemsRegister.INCOMPLETE_FRIED_RICE);
                         entries.accept(ModItemsRegister.INCOMPLETE_MUSHROOM_RICE);
@@ -45,6 +47,7 @@ public class ModItemsGroup {
                         entries.accept(ModItemsRegister.INCOMPLETE_HORSE_FEED);
                         entries.accept(ModItemsRegister.INCOMPLETE_ROASTED_MUTTON_CHOPS);
                         entries.accept(ModItemsRegister.INCOMPLETE_STEAK_AND_POTATOES);
+                        entries.accept(ModItemsRegister.INCOMPLETE_STUFFED_POTATO);
                         entries.accept(ModItemsRegister.PUMPKIN_PIE_SLICE);
                         entries.accept(ModFluidsRegister.TOMATO_SAUCE_BUCKET);
                         entries.accept(ModFluidsRegister.HOT_COCOA_BUCKET);

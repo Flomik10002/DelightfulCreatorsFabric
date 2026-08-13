@@ -1,6 +1,12 @@
 package flomik.delightfulcreators;
 
+import flomik.delightfulcreators.block.cutter.MechanicalCutterRenderer;
+import flomik.delightfulcreators.block.cutter.ModPartialModels;
+import flomik.delightfulcreators.compat.ponder.DelightfulCreatorsPonderPlugin;
+import flomik.delightfulcreators.init.ModBlockEntityTypesRegister;
 import flomik.delightfulcreators.init.ModFluidsRegister;
+import com.zurrtum.create.client.ponder.foundation.PonderIndex;
+import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockRenderLayerMap;
 import net.minecraft.client.renderer.chunk.ChunkSectionLayer;
 import net.minecraft.resources.Identifier;
@@ -11,6 +17,12 @@ import net.fabricmc.api.ClientModInitializer;
 public class DelightfulCreatorsModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+
+        ModPartialModels.init();
+        BlockEntityRendererRegistry.register(
+                ModBlockEntityTypesRegister.MECHANICAL_CUTTER,
+                MechanicalCutterRenderer::new);
+        PonderIndex.addPlugin(new DelightfulCreatorsPonderPlugin());
 
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluidsRegister.STILL_TOMATO_SAUCE, ModFluidsRegister.FLOWING_TOMATO_SAUCE, new SimpleFluidRenderHandler(
                 Identifier.parse("delightfulcreators:block/tomato_sauce_still"),

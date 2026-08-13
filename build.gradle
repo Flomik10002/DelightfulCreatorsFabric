@@ -37,6 +37,14 @@ repositories {
 			excludeGroup "io.github.fabricators_of_create"
 		}
 	}
+	maven {
+		url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven"
+		content { includeGroup "fuzs.forgeconfigapiport" }
+	}
+	maven {
+		url = "https://maven.blamejared.com"
+		content { includeGroup "mezz.jei" }
+	}
 }
 
 dependencies {
@@ -49,10 +57,27 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modRuntimeOnly "maven.modrinth:jei:${project.jei_version}"
-	modRuntimeOnly "maven.modrinth:create-fly:${project.create_version}"
-	modRuntimeOnly("vectorwing:FarmersDelight:${fdrf_version}") {
+	// Core integrations used by the Mechanical Cutter. On this Minecraft version the Fabric port of
+	// Create is Create Fly, which repackages Create, Ponder and Flywheel under com.zurrtum.create.
+	modImplementation "maven.modrinth:create-fly:${project.create_version}"
+	modImplementation("vectorwing:FarmersDelight:${fdrf_version}") {
 		exclude(group: "net.fabricmc")
+	}
+	// Used directly for the server-side Mechanical Cutter setting.
+	modImplementation "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${project.forge_config_api_port_version}"
+
+	// JEI is optional for players. Its APIs are needed to compile the integration, while the full
+	// runtime is only enabled for local smoke tests with -Penable_jei_runtime=true.
+	modCompileOnlyApi "mezz.jei:jei-${project.minecraft_version}-fabric-api:${project.jei_version}"
+	// Client-synced recipes live in JEI's own runtime; the plugin needs them because the vanilla
+	// client no longer keeps a recipe manager of its own. Compile-time only, exactly like the API.
+	modCompileOnly("mezz.jei:jei-${project.minecraft_version}-fabric:${project.jei_version}") {
+		transitive = false
+	}
+	// JEI's class files carry jspecify type annotations; javac needs them on the classpath.
+	compileOnly "org.jspecify:jspecify:1.0.0"
+	if (project.findProperty("enable_jei_runtime") == "true") {
+		modLocalRuntime "maven.modrinth:jei:${project.jei_version}"
 	}
 }
 
