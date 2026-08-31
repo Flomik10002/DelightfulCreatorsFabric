@@ -1,3 +1,5 @@
+
+
 [MODRINTH]: https://modrinth.com/mod/delightdulcreators
 [CURSEFORGE]: https://curseforge.com/minecraft/mc-mods/delightful-creators-fabric
 
@@ -24,7 +26,7 @@ There is also a <a href="https://www.curseforge.com/minecraft/mc-mods/respite-cr
 ## Quick Start
 1. Install Fabric Loader (MC 1.XX).
 2. Drop Farmer's Delight and Create JARs into `mods/`.
-3. Drop JAR into `mods/`.
+3. Drop the Delightful Creators JAR into `mods/`.
 4. Launch and explore new farming options.
 
 ## Localization:
